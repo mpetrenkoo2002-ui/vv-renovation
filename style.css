@@ -1,0 +1,1116 @@
+/* ===== Design Tokens ===== */
+:root{
+  --bg: #F4EFE8;
+  --nav-text: #0B2A4A;
+  --text: #0F172A;
+
+  /* Accent */
+  --accent: #ED7C0E;
+
+  /* Hero overlay */
+  --overlay-strong: rgba(13, 46, 78, .78);
+  --overlay: rgba(13, 46, 78, .64);
+  --overlay-soft: rgba(13, 46, 78, .40);
+
+  --white: #FFFFFF;
+ 
+  --footer-gap-left: 12px;   /* logo → services */
+  --footer-gap-right: 132px;  /* services → contact */
+}
+
+*{ box-sizing:border-box; }
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin:0;
+  padding-top: 78px;   /* высота хедера */
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 500;
+  background: var(--bg);
+  color: var(--text);
+  .burger{ 
+  display: none; 
+}
+}
+
+/* Layout */
+.container{
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header{
+  position: fixed;       /* фиксируем */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;         /* поверх hero */
+  background: rgba(244,239,232,.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.header-inner{
+  padding: 24px 0;              /* Figma-like vertical padding */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 16px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none;
+  color: var(--nav-text);
+}
+
+.brand-logo{
+  height: 30px;                 /* logo size */
+  width: auto;
+  display:block;
+}
+
+.brand-text{
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: .2px;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap: 36px;
+}
+
+.nav a{
+  text-decoration:none;
+  color: var(--nav-text);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* ===== Hero ===== */
+.hero{
+  position: relative;
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+.hero::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 54, 93, 0.6); /* твой цвет 60% */
+  z-index: 1;
+}
+.hero-img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;      /* масштабирует без искажений */
+  z-index:0;
+}
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+}
+
+.hero-inner{
+  padding: 96px 0;
+  max-width: 760px;
+}
+
+.hero h1{
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 18px;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.05;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero h1 .accent{
+  display: block;
+  background: linear-gradient(
+    90deg,
+    #ED7C0E 0%,
+    #FF9B0E 50%,
+    #FB961B 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p{
+  margin: 0 0 26px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+/* Buttons (no gradients, no shadows) */
+.cta-row{
+  display:flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height: 54px;
+  padding: 0 44px;        /* wider buttons */
+  min-width: 200px;       /* ensures strong width like reference */
+  border-radius: 0;       /* sharp angles */
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration:none;
+  user-select:none;
+  white-space:nowrap;
+  transition: transform .18s ease, filter .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.btn-primary{
+  min-width: 170px;
+  background: linear-gradient(
+    90deg,
+    #ED7C0E 0%,
+    #FF9B0E 50%,
+    #FB961B 100%
+  );
+  background-size: 200% 100%;
+  color: #fff;
+  border: none;
+  transition: background-position .3s ease, transform .2s ease;
+}
+
+.btn-primary:hover{
+  background-position: 100% 0;
+  transform: translateY(-2px);
+}
+
+.btn-outline{
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.55);
+  background: transparent;
+}
+.btn-outline:hover{
+  background: #fff;
+  color: var(--nav-text);   /* текст тёмный для контраста */
+  border-color: #fff;
+}
+
+/* Trust row */
+.trust-row{
+  display:flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.trust-item{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.check-icon{
+  width: 18px;
+  height: 18px;
+  display:block;
+}
+
+/* ===== Services ===== */
+.services{
+  padding: 96px 0 96px;
+  background: var(--bg);
+}
+
+.services-title{
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  color: var(--nav-text);
+}
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card container */
+.service-card{
+  position: relative;
+  height: 420px;                 /* подгони под свой макет */
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(0,0,0,.12);
+}
+
+/* Image area */
+.service-media{
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.service-photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+
+/* Bottom white panel (collapsed) */
+.service-panel{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 120px;
+  background: #fff;
+
+  padding: 48px 20px 18px;  /* чуть больше места сверху под “вылезающую” иконку */
+
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 10px;
+
+  transition: height .35s ease;
+
+  z-index: 1;
+  position: absolute;      /* у тебя уже есть */
+}
+
+.service-icon{
+  width: 64px;
+  height: 64px;
+  display: block;
+
+  position: absolute;
+  top: 0;                 /* верх панели */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 👈 половина иконки выше панели */
+  z-index: 2;
+
+  margin: 0;              /* убираем прошлые margin-top/margin-bottom */
+}
+
+.service-heading{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--nav-text);
+  line-height: 1.15;
+}
+
+/* Hidden list by default */
+.service-list{
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: #8A95A5;
+  font-weight: 500;
+  line-height: 1.9;
+
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .20s ease, transform .20s ease;
+  pointer-events: none;
+}
+
+/* Hover reveal behavior */
+.service-card:hover .service-panel{
+  height: 300px;                 /* белый фон “поднимается” */
+}
+
+.service-card:hover .service-list{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition-delay: .08s;
+}
+
+/* Optional: subtle image movement on hover */
+.service-card:hover .service-photo{
+  transform: scale(1.03);
+}
+
+/* CTA */
+.services-cta{
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+/* ===== Why Section ===== */
+
+.why{
+  padding: 0px 0 96px;
+  background: var(--bg);
+  text-align: center;
+}
+
+.why-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  color: var(--nav-text);
+  margin: 0 0 16px;
+}
+
+.why-subtitle{
+  max-width: 720px;
+  margin: 0 auto 48px;
+  color: #8A95A5;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.why-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch; /* чтобы все карточки тянулись одинаково */
+}
+
+.why-card{
+  background: #fff;
+  padding: 28px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,.05);
+
+  display: grid;
+  grid-template-rows: auto 1fr; /* header + text */
+  min-height: 160px; /* можно подогнать под Figma */
+}
+
+.why-card-head{
+  display: grid;
+  grid-template-columns: 18px 1fr; /* фикс ширина под чек */
+  column-gap: 12px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.why-check{
+  width: 18px;
+  height: 18px;
+  margin-top: 4px; /* выравниваем по baseline заголовка */
+  flex-shrink: 0;
+}
+
+.why-card h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--nav-text);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.why-card p{
+  margin: 0;
+  color: #8A95A5;
+  line-height: 1.7;
+}
+.why-card{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.why-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.08);
+}
+/* ===== Testimonials ===== */
+
+.testimonials{
+  padding: 0px 0 96px;
+  background: var(--bg);
+  text-align: center;
+}
+
+.section-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  color: var(--nav-text);
+  margin: 0 0 18px;
+}
+
+.section-subtitle{
+  max-width: 680px;
+  margin: 0 auto 48px;
+  color: #8A95A5;
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.testimonials-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.testimonial-card{
+  background: #fff;
+  padding: 32px 28px;
+  text-align: left;
+  box-shadow: 0 10px 22px rgba(0,0,0,.08);
+}
+
+.testimonial-card p{
+  margin: 0;
+  color: var(--nav-text);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.stars{
+  color: var(--accent);
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+/* ===== Our Work ===== */
+
+.work{
+  padding: 0px 0 96px;
+  background: var(--bg);
+  text-align: center;
+}
+
+.work-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 26px;
+}
+
+.work-item{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.work-item:hover{
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,.15);
+}
+
+.work-cta{
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+}
+/* ===== Contact ===== */
+.contact{
+  padding: 96px 0;
+  background: #0E2B4D; /* базовый тёмно-синий */
+  position: relative;
+}
+
+/* overlay как на твоём hero (60%) */
+.contact::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(26,54,93,.60); /* #1A365D @ 60% */
+  pointer-events:none;
+}
+
+.contact-grid{
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 3vw, 40px);
+  color: #fff;
+  margin: 0 0 48px;
+}
+
+/* left info */
+.contact-info{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: .95;
+}
+
+.contact-ico{
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.contact-link{
+  color: #fff;
+  text-decoration: none;
+}
+.contact-link:hover{
+  text-decoration: underline;
+}
+
+/* card */
+.contact-card{
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.14);
+  padding: 22px;
+  border-radius: 0; /* sharp */
+}
+
+.contact-form{
+  display: grid;
+  gap: 14px;
+}
+
+.field input,
+.field textarea{
+  width: 100%;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 0;            /* sharp */
+  padding: 14px 16px;
+  font-family: inherit;        /* Inter */
+  font-size: 16px;
+  outline: none;
+}
+
+.field textarea{
+  resize: vertical;
+  min-height: 140px;
+}
+
+.field input:focus,
+.field textarea:focus{
+  border-color: rgba(237,124,14,.8); /* accent */
+}
+
+/* button inside contact */
+.contact-submit{
+  width: 100%;
+  height: 56px;
+  margin-top: 8px;
+}
+
+/* accessibility helper */
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+/* ===== Footer ===== */
+
+.footer{
+  background: #16365D; /* твой футер-синий */
+  color: #fff;
+  padding: 64px 0 0;
+}
+
+/* 1) Один общий GRID: бренд | services(широкий) | contact */
+.footer-grid{
+  display: grid;
+  grid-template-columns: 260px 1fr 320px;
+  align-items: start;
+}
+
+/* Бренд */
+.footer-logo{ height: 28px; width: auto; display:block; }
+
+/* 2) Services */
+.footer-services .footer-title{
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+.footer-services-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 64px;
+}
+.footer-services{
+  margin-left: var(--footer-gap-left);
+}
+
+/* 3) Contact — ключ: НЕ центрировать, а выровнять по левому краю */
+.footer-contact{
+  text-align: left;
+  margin-left: var(--footer-gap-right);
+  justify-self: start;  /* чтобы блок начинался строго от своей колонки */
+}
+
+.footer-title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: .95;
+}
+
+.footer-col-title{
+  font-weight: 500;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.footer-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(255,255,255,.65);
+  line-height: 1.9;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.footer-contact-body{
+  margin-top: 28px; /* чтобы совпало с сервисными колонками визуально */
+  display: grid;
+  row-gap: 0px;   /* ← регулируй это */
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.footer-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+}
+
+.footer-contact-body a.footer-link{
+  display: block;
+}
+
+.footer-social{
+  display: block;
+  margin-top: 12px;
+}
+
+.footer-social img{
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+}
+
+/* Нижняя полоска */
+.footer-bottom{
+  margin-top: 56px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255,255,255,.25);
+  display:flex;
+  justify-content: space-between;
+  color: rgba(255,255,255,.75);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* =========================
+   Responsive (better mobile)
+   Put this at the END of your CSS
+========================= */
+
+/* 1100px and down: slightly tighter desktop/tablet */
+@media (max-width: 1100px){
+  .container{ width: min(1100px, calc(100% - 32px)); }
+
+  .services-grid,
+  .why-grid,
+  .testimonials-grid{
+    gap: 22px;
+  }
+
+  .footer-grid{
+    grid-template-columns: 240px 1fr 300px;
+  }
+
+  .footer-services-grid{
+    column-gap: 42px;
+  }
+}
+
+/* 980px and down: tablet -> single column sections */
+@media (max-width: 980px){
+  .container{ width: calc(100% - 32px); }
+
+  /* Header */
+  body{ padding-top: 66px; }
+  .header-inner{ padding: 16px 0; }
+  .brand-logo{ height: 26px; }
+  .nav{ gap: 18px; }
+
+  /* Hero */
+  .hero{ min-height: 92vh; }
+  .hero-inner{
+    padding: 64px 0;
+    max-width: 640px;
+  }
+  .hero p{
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Buttons smaller (this was one of your asks) */
+  .btn{
+    height: 48px;
+    padding: 0 28px;
+    min-width: 160px;
+    font-size: 16px;
+  }
+  .cta-row{ gap: 14px; }
+
+  /* Services */
+  .services{ padding: 72px 0; }
+  .services-grid{ grid-template-columns: 1fr; }
+  .service-card{ height: 420px; }
+
+  /* Why / Testimonials / Work */
+  .why{ padding: 0 0 72px; }
+  .testimonials{ padding: 0 0 72px; }
+  .work{ padding: 0 0 72px; }
+
+  .why-grid,
+  .testimonials-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .work-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .work-item{ height: 220px; }
+
+  /* Contact */
+  .contact{ padding: 72px 0; }
+  .contact-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .contact-title{ margin-bottom: 28px; }
+  .contact-info{
+    gap: 16px;
+    font-size: 16px;
+  }
+  .contact-ico{ width: 24px; height: 24px; }
+
+  /* Footer */
+  .footer{ padding: 72px 0 0; }
+
+  .footer-grid{
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .footer-services-grid{
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* 760px and down: large phones */
+@media (max-width: 760px){
+  .container{ width: calc(100% - 24px); }
+
+  /* Header */
+  body{ padding-top: 62px; }
+  .header-inner{ padding: 14px 0; }
+  .nav{ display:none; } /* same as you did, but here it's consistent */
+
+  /* Hero typography */
+  .hero-inner{ padding: 54px 0; }
+  .hero h1{
+    font-size: clamp(30px, 7vw, 44px);
+    line-height: 1.05;
+  }
+  .hero p{
+    font-size: 15px;
+    max-width: 520px;
+  }
+
+  /* Buttons full width (clean on small phones) */
+  .cta-row{ flex-direction: column; align-items: flex-start; }
+  .btn{
+    width: 100%;
+    min-width: 0;
+    height: 46px;
+    font-size: 16px;
+    padding: 0 18px;
+  }
+
+  .trust-row{ gap: 14px; }
+  .trust-item{ font-size: 14px; }
+
+  /* Services card tweak */
+  .service-card{ height: 400px; }
+  .service-heading{ font-size: 20px; }
+}
+
+/* 480px and down: small Android (old / compact devices) */
+@media (max-width: 480px){
+  .brand-logo{
+  height: 24px;                 /* logo size */
+  width: auto;
+  display:block;
+}
+  .hero h1{ font-size: 30px; }
+  .btn{ height: 42px; font-size: 14px; }
+  /* ===== Services - Mobile ===== */
+  .service-card{
+    height: 310px;           /* было 420 */
+  }
+  .service-card:hover .service-panel{
+    height: 190px; /* оставляем свернутым */
+  }
+  .service-panel{
+    height: 85px;            /* было 120 */
+    padding: 30px 14px 12px; /* компактнее */
+    gap: 6px;
+  }
+  .service-icon{
+  width: 36px;
+  height: 36px;
+} 
+
+ .service-heading{
+  font-size: 18px;
+}
+
+  .service-panel li{
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .why-subtitle{
+  font-size: 16px;
+}
+.why-card h3{
+  font-size: 16px;
+}
+.why-card p{
+  font-size: 14px;
+}
+.why-card{
+  padding: 18px;
+  min-height: 120px; /* можно подогнать под Figma */
+}
+.why-check{
+  width: 14px;
+  height: 14px;
+  margin-top: 4px; /* выравниваем по baseline заголовка */
+  flex-shrink: 0;
+}
+.testimonials-subtitle,
+.section-subtitle{
+  font-size: 16px;
+}
+.testimonial-card{
+  padding: 20px 20px;
+}
+
+.testimonial-card p{
+  font-size: 14px;
+}
+
+.stars{
+  font-size: 21px;
+}
+
+/* left info */
+.contact-info{
+  font-size: 14px;
+}
+
+.contact-ico{
+  width: 20px;
+  height: 20px;
+}
+
+.field input,
+.field textarea{
+  font-size: 14px;
+}
+/* Footer tweaks */
+.footer-contact{
+  margin-left: 12px;
+}
+.footer{
+  padding: 48px 0 0;
+}
+
+/* Бренд */
+.footer-logo{ height: 24px; width: auto; display:block; }
+
+/* 2) Services */
+.footer-services .footer-title{
+  margin-bottom: 28px;
+  font-size: 12px;
+}
+
+.footer-title{
+  font-size: 12px;
+}
+
+.footer-col-title{
+  font-size: 12px;
+}
+
+.footer-list{
+  font-size: 12px;
+}
+
+.footer-contact-body{
+  font-size: 12px;
+}
+
+.footer-bottom{
+  font-size: 12px;
+}
+/* =========================
+   Mobile Hamburger Menu
+========================= */
+
+.burger{
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.burger span{
+  width: 24px;
+  height: 2px;
+  background: var(--nav-text);
+  transition: .3s ease;
+}
+
+/* Animation */
+.burger.active span:nth-child(1){
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2){
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3){
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== Mobile menu fix (put at very end) ===== */
+@media (max-width: 760px){
+
+  /* 1) burger button should be visible */
+  .burger{ display:flex !important; }
+
+  /* 2) OVERRIDE your existing .nav{display:none} */
+  .nav{
+    display: flex !important;        /* <-- critical */
+    position: fixed;
+    top: 62px;                       /* как у тебя body padding-top в этом брейкпоинте */
+    left: 0;
+    right: 0;
+    height: calc(100vh - 62px);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    background: var(--bg);
+    transform: translateX(100%);     /* спрятано вправо */
+    transition: transform .35s ease;
+    z-index: 1200;
+  }
+
+  .nav.nav-open{
+    transform: translateX(0);        /* показываем */
+  }
+
+  .nav a{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--nav-text);
+  }
+}
+/* =========================
+   Services: tap-to-open on mobile
+========================= */
+
+/* On mobile/tablet: open card when it has .is-open (tap) */
+@media (max-width: 980px){
+  /* optional: show "clickable" feeling */
+  .service-card{ cursor: pointer; }
+
+  .service-card.is-open .service-panel{
+    height: 190px; /* same as hover */
+  }
+
+  .service-card.is-open .service-list{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition-delay: .08s;
+  }
+}
+}
