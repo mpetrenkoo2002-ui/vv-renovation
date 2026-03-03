@@ -926,7 +926,7 @@ body{
     height: 310px;           /* было 420 */
   }
   .service-card:hover .service-panel{
-    height: 190px; /* оставляем свернутым */
+    height: 220px; /* оставляем свернутым */
   }
   .service-panel{
     height: 85px;            /* было 120 */
@@ -1111,7 +1111,7 @@ body{
   .service-card{ cursor: pointer; }
 
   .service-card.is-open .service-panel{
-    height: 190px; /* same as hover */
+    height: 220px; /* same as hover */
   }
 
   .service-card.is-open .service-list{
