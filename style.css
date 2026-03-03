@@ -347,7 +347,7 @@ body{
 
 /* Hover reveal behavior */
 .service-card:hover .service-panel{
-  height: 300px;                 /* белый фон “поднимается” */
+  height: 350px;                 /* белый фон “поднимается” */
 }
 
 .service-card:hover .service-list{
