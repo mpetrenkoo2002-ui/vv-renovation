@@ -587,6 +587,14 @@ body{
   height: 28px;
   display: block;
 }
+.phone-link {
+  color: #ffffff;       /* или твой цвет */
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: #f7931e;       /* если хочешь ховер */
+}
 
 .contact-link{
   color: #fff;
