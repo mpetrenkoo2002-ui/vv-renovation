@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <link rel="canonical" href="https://vvrenovation.ca/">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home Renovation & Remodeling in Vancouver | VV Renovation</title>
@@ -10,7 +11,7 @@
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "name": "VV Renovation",
-  "url": "https://vvrenovation.ca",
+  "url": "https://www.vvrenovation.ca",
   "telephone": "+1-778-266-7999",
   "address": {
     "@type": "PostalAddress",
@@ -55,15 +56,32 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="VV Renovation Home">
+       <a class="brand" href="index.html">
         <img class="brand-logo" src="logo.png" alt="VV Renovation logo">
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
+  <a href="index.html#home">Home</a>
+
+  <div class="nav-dropdown">
+    <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+      <span>Services</span>
+      <span class="nav-arrow"></span>
+    </button>
+
+    <div class="nav-dropdown-menu">
+      <a href="accent-walls.html">Accent Walls</a>
+      <a href="tile-stone.html">Tile &amp; Stone</a>
+      <a href="framing.html">Framing</a>
+      <a href="drywall-finishing.html">Drywall Finishing</a>
+      <a href="flooring.html">Flooring</a>
+      <a href="painting.html">Painting</a>
+    </div>
+  </div>
+
+  <a href="#contact">Contact</a>
+</nav>
+
       <button class="burger" aria-label="Open menu">
         <span></span>
         <span></span>
@@ -75,7 +93,7 @@
   <!-- Hero -->
   <main>
     <section class="hero" id="home" aria-label="Hero">
-        <img src="hero.png" class="hero-img" alt="person">
+        <img src="hero.webp" class="hero-img" alt="person">
       <div class="container">
         <div class="hero-inner">
           <h1>
@@ -117,12 +135,14 @@
       <!-- Card 1 -->
        <article class="service-card">
         <div class="service-media">
-          <img class="service-photo" src="accent.jpeg" alt="Accent wall & decoration ideas">
+          <img class="service-photo" src="accent.webp" alt="Accent wall & decoration ideas">
         </div>
 
         <div class="service-panel">
           <img class="service-icon" src="accent-walls.svg" alt="">
-          <h3 class="service-heading">Accent Wall &amp;<br>Decoration Ideas</h3>
+          <h3 class="service-heading">
+  <a href="accent-walls.html">Accent Wall &amp;<br>Decoration Ideas</a>
+</h3>
 
           <ul class="service-list">
             <li>Accent walls</li>
@@ -143,7 +163,7 @@
 
         <div class="service-panel">
           <img class="service-icon" src="tile.svg" alt="">
-          <h3 class="service-heading">Tile &amp; Stone</h3>
+          <h3 class="service-heading"><a href="tile-stone.html">Tile &amp;<br>Stone</a></h3>
 
           <ul class="service-list">
             <li>Bathroom</li>
@@ -158,12 +178,12 @@
       <!-- Card 3 -->
       <article class="service-card">
         <div class="service-media">
-          <img class="service-photo" src="framing.jpeg" alt="Framing">
+          <img class="service-photo" src="framing.webp" alt="Framing">
         </div>
 
         <div class="service-panel">
           <img class="service-icon" src="framing.svg" alt="">
-          <h3 class="service-heading">Framing</h3>
+          <h3 class="service-heading"><a href="framing.html">Framing</a></h3>
 
           <ul class="service-list">
             <li>Steel stud &amp; wood framing</li>
@@ -181,12 +201,11 @@
 
         <div class="service-panel">
           <img class="service-icon" src="drywall.svg" alt="Painting and finishing">
-          <h3 class="service-heading">Drywall Finishing</h3>
+          <h3 class="service-heading"><a href="drywall.html">Drywall Finishing</a></h3>
 
           <ul class="service-list">
             <li>Drywall</li>
             <li>Taping &amp; mudding</li>
-            <li>Accent walls</li>
             <li>Drywall level 5</li>
             <li>And more...</li>
           </ul>
@@ -196,12 +215,12 @@
       <!-- Card 5 -->
        <article class="service-card">
         <div class="service-media">
-          <img class="service-photo" src="flooring.jpg" alt="Framing and structural work">
+          <img class="service-photo" src="self-leveling.png" alt="Framing and structural work">
         </div>
 
         <div class="service-panel">
           <img class="service-icon" src="flooring.svg" alt="">
-          <h3 class="service-heading">Flooring</h3>
+          <h3 class="service-heading"><a href="flooring.html">Flooring</a></h3>
 
           <ul class="service-list">
             <li>Self leveling</li>
@@ -218,12 +237,12 @@
       <!-- Card 6 -->
       <article class="service-card">
         <div class="service-media">
-          <img class="service-photo" src="painting.jpeg" alt="Finishing and tile work">
+          <img class="service-photo" src="painting.webp" alt="Finishing and tile work">
         </div>
 
         <div class="service-panel">
           <img class="service-icon" src="paint.svg" alt="Painting and finishing">
-          <h3 class="service-heading">Painting</h3>
+          <h3 class="service-heading"><a href="painting.html">Painting</a></h3>
 
           <ul class="service-list">
             <li>Commercial painting</li>
@@ -234,16 +253,16 @@
     </div>
 
     <div class="services-cta">
-      <a class="btn btn-primary" href="#contact">See More</a>
+      <a class="btn btn-primary" href="#contact">Get Free Estimate</a>
     </div>
   </div>
-</section><section class="why">
+</section>
+<section class="why">
   <div class="container">
     <h2 class="why-title">Why Should You Choose Us</h2>
 
     <p class="why-subtitle">
-      VV renovation company partners closely with engineers to deliver precise and efficient layout services. 
-      Proudly serving the Greater Vancouver Area.
+      VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area.
     </p>
 
     <div class="why-grid">
@@ -304,7 +323,7 @@
     <h2 class="section-title">Client Testimonials</h2>
 
     <p class="section-subtitle">
-      VV renovation company partners closely with engineers to deliver precise and efficient layout services.
+      What our clients say about working with us
     </p>
 
     <div class="testimonials-grid">
@@ -340,28 +359,28 @@
 
     <div class="work-grid">
 
-  <a href="work-1.png" target="_blank" rel="noopener">
-    <img src="work-1.png" alt="Project 1" class="work-item">
+  <a href="work-1.webp" target="_blank" rel="noopener">
+    <img src="work-1.webp" alt="Project 1" class="work-item">
   </a>
 
-  <a href="work-2.png" target="_blank" rel="noopener">
-    <img src="work-2.png" alt="Project 2" class="work-item">
+  <a href="work-2.webp" target="_blank" rel="noopener">
+    <img src="work-2.webp" alt="Project 2" class="work-item">
   </a>
 
-  <a href="work-3.png" target="_blank" rel="noopener">
-    <img src="work-3.png" alt="Project 3" class="work-item">
+  <a href="work-3.webp" target="_blank" rel="noopener">
+    <img src="work-3.webp" alt="Project 3" class="work-item">
   </a>
 
-  <a href="work-4.png" target="_blank" rel="noopener">
-    <img src="work-4.png" alt="Project 4" class="work-item">
+  <a href="work-4.webp" target="_blank" rel="noopener">
+    <img src="work-4.webp" alt="Project 4" class="work-item">
   </a>
 
-  <a href="work-5.png" target="_blank" rel="noopener">
-    <img src="work-5.png" alt="Project 5" class="work-item">
+  <a href="work-accent-wall.jpeg" target="_blank" rel="noopener">
+    <img src="work-accent-wall.jpeg" alt="Project 5" class="work-item">
   </a>
 
-  <a href="work-6.png" target="_blank" rel="noopener">
-    <img src="work-6.png" alt="Project 6" class="work-item">
+  <a href="work-6.webp" target="_blank" rel="noopener">
+    <img src="work-6.webp" alt="Project 6" class="work-item">
   </a>
 
 </div>
@@ -374,6 +393,28 @@
         See More on Facebook
       </a>
     </div>
+
+<section class="referral-hero">
+  <div class="referral-overlay"></div>
+
+  <div class="container referral-content">
+
+    <h2 class="referral-title">
+      Refer a Friend & Get <span class="accent">$500*</span>
+    </h2>
+
+    <p class="referral-subtitle">
+      Know someone planning a renovation? Get rewarded when their project is completed.
+    </p>
+
+    <a href="#contact" class="btn btn-primary referral-btn">
+      Get Started
+    </a>
+    <a href="#contact" class="referral-scroll" aria-label="Scroll to contact section">
+  <span class="referral-scroll-arrow"></span>
+</a>
+  </div>
+</section>
 
   </div>
 </section>
@@ -440,61 +481,85 @@
     </div>
   </div>
 </section>
-<footer class="footer">
-  <div class="container footer-grid">
 
-    <!-- Brand -->
-    <div class="footer-brand">
-      <img class="footer-logo" src="logo-white.png" alt="VV renovation">
-    </div>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
 
-    <!-- Services -->
-    <div class="footer-services">
-      <div class="footer-title">Services:</div>
+      <div class="footer-brand">
+        <img class="footer-logo" src="logo-white.png" alt="VV renovation">
+      </div>
 
-      <div class="footer-services-grid">
-        <div class="footer-col">
-          <div class="footer-col-title">Framing &amp; Structural<br>Work</div>
-          <ul class="footer-list">
-            <li>Layout planning</li>
-            <li>Wood framing</li>
-            <li>Steel stud installation</li>
-            <li>Door installation</li>
-            <li>Demolition</li>
-          </ul>
-        </div>
+      <div class="footer-services">
+        <div class="footer-title">Services:</div>
 
-        <div class="footer-col">
-          <div class="footer-col-title">Flooring &amp; Drywall</div>
-          <ul class="footer-list">
-            <li>Self-leveling floors</li>
-            <li>Micro cement installation</li>
-            <li>Hardwood &amp; laminate flooring</li>
-            <li>Engineered hardwood</li>
-            <li>Taping &amp; mudding</li>
-          </ul>
-        </div>
+        <div class="footer-services-grid">
+          <div class="footer-col">
+            <div class="footer-col-title">Accent Wall &amp; Decoration Ideas</div>
+            <ul class="footer-list">
+              <li><a href="accent-walls.html">Accent walls</a></li>
+              <li><a href="accent-walls.html">Micro cement</a></li>
+              <li><a href="accent-walls.html">Marble</a></li>
+              <li><a href="accent-walls.html">Stucco</a></li>
+              <li><a href="accent-walls.html">Texture</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-col">
-          <div class="footer-col-title">Finishing &amp; Tile Work</div>
-          <ul class="footer-list">
-            <li>Baseboard &amp; casing installation</li>
-            <li>Venetian plaster</li>
-            <li>Accent walls</li>
-            <li>Painting &amp; decorative painting</li>
-            <li>Tile backsplashes &amp; countertops</li>
-          </ul>
+          <div class="footer-col">
+            <div class="footer-col-title">Tile &amp; Stone</div>
+            <ul class="footer-list">
+              <li><a href="tile-stone.html">Bathroom</a></li>
+              <li><a href="tile-stone.html">Backsplash</a></li>
+              <li><a href="tile-stone.html">Commercial</a></li>
+              <li><a href="tile-stone.html">Kitchen countertop</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Framing</div>
+            <ul class="footer-list">
+              <li><a href="framing.html">Steel stud &amp; wood framing</a></li>
+              <li><a href="framing.html">Finish carpentry</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Drywall Finishing</div>
+            <ul class="footer-list">
+              <li><a href="drywall-finishing.html">Drywall</a></li>
+              <li><a href="drywall-finishing.html">Taping &amp; mudding</a></li>
+              <li><a href="drywall-finishing.html">Drywall level 5</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Flooring</div>
+            <ul class="footer-list">
+              <li><a href="flooring.html">Self leveling</a></li>
+              <li><a href="flooring.html">Micro cement floor</a></li>
+              <li><a href="flooring.html">Hardwood</a></li>
+              <li><a href="flooring.html">Engineered wood</a></li>
+              <li><a href="flooring.html">Laminate</a></li>
+              <li><a href="flooring.html">Vinyl</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Painting</div>
+            <ul class="footer-list">
+              <li><a href="painting.html">Commercial painting</a></li>
+              <li><a href="painting.html">Residential painting</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Contact -->
     <div class="footer-contact">
       <div class="footer-title">Contact Us:</div>
 
       <div class="footer-contact-body">
-        <a class="footer-link" href="tel:+17782667999">778-266-7999</a><br>
-        <a class="footer-link" href="tel:+16478348017">647-834-8017</a><br>
+        <a class="footer-link" href="tel:+17782667999">778-266-7999</a>
+        <a class="footer-link" href="tel:+16478348017">647-834-8017</a>
         <a class="footer-link" href="mailto:vvrenovation.ca@gmail.com">vvrenovation.ca@gmail.com</a>
 
         <a class="footer-social" href="https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi" target="_blank" rel="noopener">
@@ -513,58 +578,61 @@
 </main>
 </body>
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav');
+  const servicesDropdown = document.querySelector('.nav-dropdown');
+  const servicesToggle = document.querySelector('.nav-dropdown-toggle');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    nav.classList.toggle('nav-open');
-  });
-  // Close menu when a nav link is clicked (mobile UX)
-  nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('active');
-    nav.classList.remove('nav-open');
-  });
-});
-document.addEventListener('click', (e) => {
-  const clickInsideNav = nav.contains(e.target);
-  const clickOnBurger = burger.contains(e.target);
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      nav.classList.toggle('nav-open');
+    });
 
-  if (!clickInsideNav && !clickOnBurger) {
-    burger.classList.remove('active');
-    nav.classList.remove('nav-open');
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        nav.classList.remove('nav-open');
+
+        if (servicesDropdown) {
+          servicesDropdown.classList.remove('open');
+        }
+        if (servicesToggle) {
+          servicesToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      const clickInsideNav = nav.contains(e.target);
+      const clickOnBurger = burger.contains(e.target);
+
+      if (!clickInsideNav && !clickOnBurger) {
+        burger.classList.remove('active');
+        nav.classList.remove('nav-open');
+
+        if (servicesDropdown) {
+          servicesDropdown.classList.remove('open');
+        }
+        if (servicesToggle) {
+          servicesToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  }
+
+  if (servicesDropdown && servicesToggle) {
+    servicesToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 760) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isOpen = servicesDropdown.classList.toggle('open');
+        servicesToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      }
+    });
   }
 });
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = Array.from(document.querySelectorAll('.service-card'));
-    if (!cards.length) return;
-
-    const mq = window.matchMedia('(max-width: 980px)');
-
-    function bindTapHandlers() {
-      // only on mobile/tablet
-      if (!mq.matches) {
-        // cleanup state when returning to desktop
-        cards.forEach(c => c.classList.remove('is-open'));
-        return;
-      }
-
-      cards.forEach(card => {
-        // prevent double-binding
-        if (card.dataset.tapBound === '1') return;
-        card.dataset.tapBound = '1';
-
-        card.addEventListener('click', () => {
-          // accordion behavior: close others
-          cards.forEach(c => { if (c !== card) c.classList.remove('is-open'); });
-          card.classList.toggle('is-open');
-        });
-      });
-    }
-
-    bindTapHandlers();
-    mq.addEventListener?.('change', bindTapHandlers);
-  });
 </script>
 </html>
