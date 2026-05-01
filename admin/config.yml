@@ -9,11 +9,76 @@ collections:
   - name: "home"
     label: "Homepage"
     files:
-      - name: "hero"
-        label: "Hero Section"
+      - name: "homepage"
+        label: "Homepage Content"
         file: "data/home.json"
         fields:
-          - { label: "Hero Title Line 1", name: "line1", widget: "string" }
-          - { label: "Hero Title Line 2", name: "line2", widget: "string" }
-          - { label: "Hero Accent", name: "accent", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Line 1", name: "line1", widget: "string" }
+              - { label: "Line 2", name: "line2", widget: "string" }
+              - { label: "Accent Line", name: "accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Primary Button Text", name: "primaryButtonText", widget: "string" }
+              - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+              - { label: "Secondary Button Text", name: "secondaryButtonText", widget: "string" }
+              - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string" }
+
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Icon", name: "icon", widget: "image", required: false }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+
+          - label: "Why Choose Us"
+            name: "why"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Our Work"
+            name: "work"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Reviews"
+                name: "reviews"
+                widget: "list"
+                fields:
+                  - { label: "Text", name: "text", widget: "text" }

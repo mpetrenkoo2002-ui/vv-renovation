@@ -1,6 +1,93 @@
 {
-  "line1": "VV Renovation",
-  "line2": "House Renovation",
-  "accent": "Experts in Vancouver",
-  "subtitle": "Precision layout, framing, drywall, flooring and finishing work. Reliable service. Clean results. Honest pricing."
+  "hero": {
+    "line1": "VV Renovation",
+    "line2": "House Renovation",
+    "accent": "Experts in Vancouver",
+    "subtitle": "Precision layout, framing, drywall, flooring and finishing work. Reliable service. Clean results. Honest pricing.",
+    "primaryButtonText": "Call Us",
+    "primaryButtonLink": "tel:+17782667999",
+    "secondaryButtonText": "Get Free Quote",
+    "secondaryButtonLink": "#contact"
+  },
+  "services": {
+    "title": "Our Home Renovation Services",
+    "cards": [
+      {
+        "title": "Accent Wall & Decoration Ideas",
+        "link": "accent-walls.html",
+        "image": "accent.webp",
+        "icon": "accent-walls.svg",
+        "items": ["Accent walls", "Micro cement", "Marble", "Stucco", "Texture", "And more..."]
+      },
+      {
+        "title": "Tile & Stone",
+        "link": "tile-stone.html",
+        "image": "tile.jpeg",
+        "icon": "tile.svg",
+        "items": ["Bathroom", "Backsplash", "Commercial", "Kitchen countertop", "And more..."]
+      },
+      {
+        "title": "Framing",
+        "link": "framing.html",
+        "image": "framing.webp",
+        "icon": "framing.svg",
+        "items": ["Steel stud & wood framing", "Finish carpentry", "And more..."]
+      },
+      {
+        "title": "Drywall Finishing",
+        "link": "drywall-finishing.html",
+        "image": "drywall.jpeg",
+        "icon": "drywall.svg",
+        "items": ["Drywall", "Taping & mudding", "Drywall level 5", "And more..."]
+      },
+      {
+        "title": "Flooring",
+        "link": "flooring.html",
+        "image": "self-leveling.png",
+        "icon": "flooring.svg",
+        "items": ["Self leveling", "Micro cement floor", "Hardwood", "Engineered wood", "Laminate", "Vinyl"]
+      },
+      {
+        "title": "Painting",
+        "link": "painting.html",
+        "image": "painting.webp",
+        "icon": "paint.svg",
+        "items": ["Commercial painting", "Residential painting"]
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area.",
+    "cards": [
+      { "title": "Licensed & Insured", "text": "Fully licensed and insured for your peace of mind." },
+      { "title": "Detail-Oriented Execution", "text": "We focus on precision and finishing quality." },
+      { "title": "Clean & Organized Worksites", "text": "We maintain tidy worksites and clean up thoroughly." },
+      { "title": "On-Time Project Delivery", "text": "We stick to schedules and meet deadlines." },
+      { "title": "Experienced Craftsmanship", "text": "Skilled workmanship backed by years of experience." },
+      { "title": "Clear Communication", "text": "We keep you informed at every stage of the project — no surprises." }
+    ]
+  },
+  "work": {
+    "title": "Our Work",
+    "images": [
+      { "image": "work-1.webp", "alt": "Project 1" },
+      { "image": "work-2.webp", "alt": "Project 2" },
+      { "image": "work-3.webp", "alt": "Project 3" },
+      { "image": "work-4.webp", "alt": "Project 4" },
+      { "image": "work-accent-wall.jpeg", "alt": "Project 5" },
+      { "image": "work-6.webp", "alt": "Project 6" }
+    ],
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What our clients say about working with us",
+    "reviews": [
+      { "text": "VV Renovation did an outstanding job on our kitchen remodel. They were professional, always on time, and kept us informed throughout the entire project." },
+      { "text": "We had a fantastic experience renovating our bathroom with VV Renovation. The team was meticulous, friendly, and the work was completed ahead of schedule." },
+      { "text": "Highly recommend VV Renovation! Excellent craftsmanship, transparent pricing, and they delivered exactly what we envisioned for our home." }
+    ]
+  }
 }
