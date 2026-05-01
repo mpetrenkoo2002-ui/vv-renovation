@@ -31,7 +31,7 @@ exports.handler = async () => {
 
     
    const reviews = (result.reviews || [])
-  .slice(0, 6)
+  .slice(0, 3)
   .map(r => ({
     author : r.author_name,
     avatar : r.profile_photo_url,
