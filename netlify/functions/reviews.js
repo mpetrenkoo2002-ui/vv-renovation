@@ -29,17 +29,16 @@ exports.handler = async () => {
 
     const result = json.result;
 
-    // Only keep 5-star reviews with actual text, max 6
-    const reviews = (result.reviews || [])
-      .filter(r => r.rating === 5 && r.text && r.text.trim().length > 30)
-      .slice(0, 6)
-      .map(r => ({
-        author : r.author_name,
-        avatar : r.profile_photo_url,
-        text   : r.text,
-        rating : r.rating,
-        time   : r.relative_time_description,
-      }));
+    
+   const reviews = (result.reviews || [])
+  .slice(0, 6)
+  .map(r => ({
+    author : r.author_name,
+    avatar : r.profile_photo_url,
+    text   : r.text || "",
+    rating : r.rating,
+    time   : r.relative_time_description,
+  }));
 
     const payload = {
       rating      : result.rating,

@@ -391,7 +391,7 @@
           '<img src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png" alt="Google" class="google-logo">' +
         '</div>' +
         '<div class="stars">' + renderStars(r.rating) + '</div>' +
-        '<p>' + r.text.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+        '<p>' + (r.text || 'No written review.') + '</p>'
         '</article>';
     }).join('');
   }
