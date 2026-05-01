@@ -9,8 +9,9 @@ collections:
   - name: "home"
     label: "Homepage"
     files:
-      - file: "data/home.json"
+      - name: "hero"
         label: "Hero Section"
+        file: "data/home.json"
         fields:
           - { label: "Hero Title Line 1", name: "line1", widget: "string" }
           - { label: "Hero Title Line 2", name: "line2", widget: "string" }
