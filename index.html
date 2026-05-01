@@ -96,11 +96,8 @@
         <img src="hero.webp" class="hero-img" alt="person">
       <div class="container">
         <div class="hero-inner">
-          <h1>
-            VV Renovation<br>
-            House Renovation<br>
-            Experts in <span class="accent">Vancouver</span>
-          </h1>
+          <h1 id="hero-title"></h1>
+<p id="hero-subtitle"></p>
 
 
           <p>
@@ -576,6 +573,18 @@
   </div>
 </footer>
 </main>
+<script>
+fetch('/data/home.json')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('hero-title').innerHTML =
+      data.line1 + "<br>" +
+      data.line2 + "<br>" +
+      '<span class="accent">' + data.accent + '</span>';
+
+    document.getElementById('hero-subtitle').innerText = data.subtitle;
+  });
+</script>
 </body>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
