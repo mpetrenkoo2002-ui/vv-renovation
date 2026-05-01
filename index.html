@@ -376,24 +376,32 @@
       return;
     }
 
-    grid.innerHTML = data.reviews.map(function (r) {
-      var avatar = r.avatar
-        ? '<img src="' + r.avatar + '" alt="' + r.author + '" class="review-avatar" loading="lazy">'
-        : '<div class="review-avatar review-avatar-placeholder">' + r.author.charAt(0) + '</div>';
+   grid.innerHTML = data.reviews.map(function (r) {
+  var safeAuthor = (r.author || 'Google user').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  var safeText = r.text
+    ? r.text.replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    : 'No written review.';
 
-      return '<article class="testimonial-card">' +
-        '<div class="review-header">' +
-          avatar +
-          '<div class="review-meta">' +
-            '<span class="review-author">' + r.author + '</span>' +
-            '<span class="review-time">' + r.time + '</span>' +
-          '</div>' +
-          '<img src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png" alt="Google" class="google-logo">' +
-        '</div>' +
-        '<div class="stars">' + renderStars(r.rating) + '</div>' +
-        '<p>' + (r.text || 'No written review.') + '</p>'
-        '</article>';
-    }).join('');
+  var avatar = r.avatar
+    ? '<img src="' + r.avatar + '" alt="' + safeAuthor + '" class="review-avatar" loading="lazy">'
+    : '<div class="review-avatar review-avatar-placeholder">' + safeAuthor.charAt(0) + '</div>';
+
+  return `
+    <article class="testimonial-card">
+      <div class="review-header">
+        ${avatar}
+        <div class="review-meta">
+          <span class="review-author">${safeAuthor}</span>
+          <span class="review-time">${r.time || ''}</span>
+        </div>
+        <img src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png" alt="Google" class="google-logo">
+      </div>
+
+      <div class="stars">${renderStars(r.rating || 5)}</div>
+      <p>${safeText}</p>
+    </article>
+  `;
+}).join('');
   }
 
   fetch('/.netlify/functions/reviews')
