@@ -79,15 +79,6 @@
       { "image": "work-6.webp", "alt": "Project 6" }
     ],
     "buttonText": "See More on Facebook",
-    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi"
-  },
-  "testimonials": {
-    "title": "Client Testimonials",
-    "subtitle": "What our clients say about working with us",
-    "reviews": [
-      { "text": "VV Renovation did an outstanding job on our kitchen remodel. They were professional, always on time, and kept us informed throughout the entire project." },
-      { "text": "We had a fantastic experience renovating our bathroom with VV Renovation. The team was meticulous, friendly, and the work was completed ahead of schedule." },
-      { "text": "Highly recommend VV Renovation! Excellent craftsmanship, transparent pricing, and they delivered exactly what we envisioned for our home." }
-    ]
-  }
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi"}
+  
 }
