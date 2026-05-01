@@ -311,40 +311,100 @@
     </div>
   </div>
 </section>
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
   <div class="container">
-    <h2 class="section-title">Client Testimonials</h2>
+    <h2 class="section-title">Google Reviews</h2>
 
-    <p class="section-subtitle">
+    <p class="section-subtitle" id="reviews-summary">
       What our clients say about working with us
     </p>
 
-    <div class="testimonials-grid">
-
-      <article class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>
-          “VV Renovation did an outstanding job on our kitchen remodel. They were professional, always on time, and kept us informed throughout the entire project.”
-        </p>
+    <div class="testimonials-grid" id="reviews-grid">
+      <article class="testimonial-card testimonial-skeleton">
+        <div class="skeleton-line skeleton-short"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line skeleton-medium"></div>
       </article>
-
-      <article class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>
-          “We had a fantastic experience renovating our bathroom with VV Renovation. The team was meticulous, friendly, and the work was completed ahead of schedule.”
-        </p>
+      <article class="testimonial-card testimonial-skeleton">
+        <div class="skeleton-line skeleton-short"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line skeleton-medium"></div>
       </article>
-
-      <article class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>
-          “Highly recommend VV Renovation! Excellent craftsmanship, transparent pricing, and they delivered exactly what we envisioned for our home.”
-        </p>
+      <article class="testimonial-card testimonial-skeleton">
+        <div class="skeleton-line skeleton-short"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line skeleton-medium"></div>
       </article>
+    </div>
 
+    <div style="text-align:center; margin-top: 32px;">
+      <a
+        class="btn btn-primary"
+        href="https://www.google.com/maps/place/?q=place_id:ChIJg4fX0_wLhlQRbJ5qrb3lf-E"
+        target="_blank"
+        rel="noopener"
+      >
+        See All Reviews on Google
+      </a>
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  function renderStars(n) {
+    return '★'.repeat(n) + '☆'.repeat(5 - n);
+  }
+
+  function renderReviews(data) {
+    var grid    = document.getElementById('reviews-grid');
+    var summary = document.getElementById('reviews-summary');
+
+    if (data.rating && data.total) {
+      summary.innerHTML =
+        '<span style="color:var(--accent);font-weight:700;font-size:1.15em;">' +
+        renderStars(Math.round(data.rating)) + '</span> ' +
+        '<strong>' + data.rating.toFixed(1) + '</strong> out of 5 &nbsp;&middot;&nbsp; ' +
+        data.total + ' reviews on Google';
+    }
+
+    if (!data.reviews || data.reviews.length === 0) {
+      grid.innerHTML = '<p style="text-align:center;color:#8A95A5;">No reviews to display yet.</p>';
+      return;
+    }
+
+    grid.innerHTML = data.reviews.map(function (r) {
+      var avatar = r.avatar
+        ? '<img src="' + r.avatar + '" alt="' + r.author + '" class="review-avatar" loading="lazy">'
+        : '<div class="review-avatar review-avatar-placeholder">' + r.author.charAt(0) + '</div>';
+
+      return '<article class="testimonial-card">' +
+        '<div class="review-header">' +
+          avatar +
+          '<div class="review-meta">' +
+            '<span class="review-author">' + r.author + '</span>' +
+            '<span class="review-time">' + r.time + '</span>' +
+          '</div>' +
+          '<img src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png" alt="Google" class="google-logo">' +
+        '</div>' +
+        '<div class="stars">' + renderStars(r.rating) + '</div>' +
+        '<p>' + r.text.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+        '</article>';
+    }).join('');
+  }
+
+  fetch('/.netlify/functions/reviews')
+    .then(function (res) { return res.json(); })
+    .then(renderReviews)
+    .catch(function () {
+      document.getElementById('reviews-grid').innerHTML =
+        '<p style="text-align:center;color:#8A95A5;">Unable to load reviews right now.</p>';
+    });
+})();
+</script>
 <section class="work" id="work">
   <div class="container">
 
