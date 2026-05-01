@@ -33,8 +33,12 @@ body{
   background: var(--bg);
   color: var(--text);
 }
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+/* Force hero heading font after Decap content injection */
+.hero h1,
+.hero h1 span,
+.hero h1 .accent {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
 }
 
 /* Layout */
