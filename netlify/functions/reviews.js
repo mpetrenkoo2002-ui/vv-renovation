@@ -1,5 +1,5 @@
 const PLACE_ID = "ChIJg4fX0_wLhlQRbJ5qrb3lf-E";
-const API_KEY  = "AIzaSyB24X4UEhUgt3ZxQrV9kNiv0JKXwoAetIA";
+const API_KEY = process.env.GOOGLE_PLACES_KEY;
 
 // Cache reviews in memory for 1 hour so you don't burn API calls
 let cache = { data: null, ts: 0 };
