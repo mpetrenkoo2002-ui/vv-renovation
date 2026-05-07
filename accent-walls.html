@@ -594,6 +594,24 @@ document.addEventListener('DOMContentLoaded', () => {
           servicesToggle.setAttribute('aria-expanded', 'false');
         }
       });
+      
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (!target) return;
+
+    e.preventDefault();
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+
+    history.pushState(null, '', targetId);
+  });
+});
     });
 
     document.addEventListener('click', (e) => {

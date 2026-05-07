@@ -63,6 +63,9 @@ body{
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
+section[id] {
+  scroll-margin-top: 100px;
+}
 
 .header-inner{
   padding: 24px 0;               /* Figma-like vertical padding */
