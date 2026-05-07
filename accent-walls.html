@@ -568,7 +568,6 @@ content="Accent wall installation and decorative finishes in Vancouver. Microcem
   </div>
 </footer>
 </main>
-</body>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
@@ -576,6 +575,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const servicesDropdown = document.querySelector('.nav-dropdown');
   const servicesToggle = document.querySelector('.nav-dropdown-toggle');
 
+  // Anchor smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+
+      if (!target) return;
+
+      e.preventDefault();
+
+      const headerOffset = 100;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+
+      history.pushState(null, '', targetId);
+    });
+  });
+
+  // Burger menu
   if (burger && nav) {
     burger.addEventListener('click', () => {
       burger.classList.toggle('active');
@@ -590,28 +613,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (servicesDropdown) {
           servicesDropdown.classList.remove('open');
         }
+
         if (servicesToggle) {
           servicesToggle.setAttribute('aria-expanded', 'false');
         }
       });
-      
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    const target = document.querySelector(targetId);
-
-    if (!target) return;
-
-    e.preventDefault();
-
-    target.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-
-    history.pushState(null, '', targetId);
-  });
-});
     });
 
     document.addEventListener('click', (e) => {
@@ -625,6 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (servicesDropdown) {
           servicesDropdown.classList.remove('open');
         }
+
         if (servicesToggle) {
           servicesToggle.setAttribute('aria-expanded', 'false');
         }
@@ -632,6 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Mobile services dropdown
   if (servicesDropdown && servicesToggle) {
     servicesToggle.addEventListener('click', (e) => {
       if (window.innerWidth <= 760) {
@@ -643,24 +651,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
-// FAQ toggle
-const framingFaqItems = document.querySelectorAll('.framing-faq-item');
 
-framingFaqItems.forEach((item) => {
-  const button = item.querySelector('.framing-faq-question');
+  // FAQ toggle
+  const framingFaqItems = document.querySelectorAll('.framing-faq-item');
 
-  button.addEventListener('click', () => {
-    const isActive = item.classList.contains('active');
+  framingFaqItems.forEach((item) => {
+    const button = item.querySelector('.framing-faq-question');
 
-    framingFaqItems.forEach((faqItem) => {
-      faqItem.classList.remove('active');
+    button.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      framingFaqItems.forEach((faqItem) => {
+        faqItem.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
     });
-
-    if (!isActive) {
-      item.classList.add('active');
-    }
   });
 });
 </script>
+</body>
+
 </html>
