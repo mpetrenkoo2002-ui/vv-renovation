@@ -47,7 +47,7 @@ content="Accent wall installation and decorative finishes in Vancouver. Microcem
       <a href="painting.html">Painting</a>
     </div>
   </div>
-<a href="#service-work">Our Work</a>
+<a href="#work" data-scroll="work">Our Work</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -277,7 +277,7 @@ content="Accent wall installation and decorative finishes in Vancouver. Microcem
   </div>
 </section>
 
-<section class="work service-work" id="service-work">
+<section class="work service-work" id="work">
   <div class="container">
 
     <h2 class="section-title">Our Work</h2>
@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const servicesDropdown = document.querySelector('.nav-dropdown');
   const servicesToggle = document.querySelector('.nav-dropdown-toggle');
 
-  // Anchor smooth scroll — works even when hash is already in URL
+  // Anchor smooth scroll
   function scrollToAnchor(targetId) {
     const target = document.querySelector(targetId);
     if (!target) return;
@@ -586,11 +586,17 @@ document.addEventListener('DOMContentLoaded', () => {
     history.pushState(null, '', targetId);
   }
 
+  // Use mousedown so browser never has a chance to intercept same-hash clicks
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('mousedown', function (e) {
       e.preventDefault();
       scrollToAnchor(this.getAttribute('href'));
     });
+    // touchstart for mobile
+    anchor.addEventListener('touchstart', function (e) {
+      e.preventDefault();
+      scrollToAnchor(this.getAttribute('href'));
+    }, { passive: false });
   });
 
   // If page loaded with a hash in the URL, scroll to it on load
