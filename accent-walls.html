@@ -18,6 +18,21 @@ content="Accent wall installation and decorative finishes in Vancouver. Microcem
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
 
+<style>
+.nav-scroll-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--nav-text);
+}
+.nav-scroll-btn:hover {
+  opacity: 0.75;
+}
+</style>
 </head>
 
 <body>
@@ -47,7 +62,7 @@ content="Accent wall installation and decorative finishes in Vancouver. Microcem
       <a href="painting.html">Painting</a>
     </div>
   </div>
-<a href="#work" data-scroll="work">Our Work</a>
+<button onclick="document.getElementById('work').scrollIntoView({behavior:'smooth',block:'start'});window.scrollBy(0,-100);" class="nav-scroll-btn">Our Work</button>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -576,33 +591,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const servicesToggle = document.querySelector('.nav-dropdown-toggle');
 
   // Anchor smooth scroll
-  function scrollToAnchor(targetId) {
-    const target = document.querySelector(targetId);
-    if (!target) return;
-    const headerOffset = 100;
-    const targetPosition =
-      target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-    history.pushState(null, '', targetId);
-  }
-
-  // Use mousedown so browser never has a chance to intercept same-hash clicks
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('mousedown', function (e) {
-      e.preventDefault();
-      scrollToAnchor(this.getAttribute('href'));
-    });
-    // touchstart for mobile
-    anchor.addEventListener('touchstart', function (e) {
-      e.preventDefault();
-      scrollToAnchor(this.getAttribute('href'));
-    }, { passive: false });
-  });
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
 
-  // If page loaded with a hash in the URL, scroll to it on load
-  if (window.location.hash) {
-    setTimeout(() => scrollToAnchor(window.location.hash), 100);
-  }
+      if (!target) return;
+
+      e.preventDefault();
+
+      const headerOffset = 100;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+
+      history.pushState(null, '', targetId);
+    });
+  });
 
   // Burger menu
   if (burger && nav) {
