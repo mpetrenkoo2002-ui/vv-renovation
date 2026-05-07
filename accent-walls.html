@@ -575,28 +575,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const servicesDropdown = document.querySelector('.nav-dropdown');
   const servicesToggle = document.querySelector('.nav-dropdown-toggle');
 
-  // Anchor smooth scroll
+  // Anchor smooth scroll — works even when hash is already in URL
+  function scrollToAnchor(targetId) {
+    const target = document.querySelector(targetId);
+    if (!target) return;
+    const headerOffset = 100;
+    const targetPosition =
+      target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+    history.pushState(null, '', targetId);
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      const target = document.querySelector(targetId);
-
-      if (!target) return;
-
       e.preventDefault();
-
-      const headerOffset = 100;
-      const targetPosition =
-        target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-
-      history.pushState(null, '', targetId);
+      scrollToAnchor(this.getAttribute('href'));
     });
   });
+
+  // If page loaded with a hash in the URL, scroll to it on load
+  if (window.location.hash) {
+    setTimeout(() => scrollToAnchor(window.location.hash), 100);
+  }
 
   // Burger menu
   if (burger && nav) {
