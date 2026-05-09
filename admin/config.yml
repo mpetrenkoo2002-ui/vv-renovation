@@ -13,11 +13,11 @@ collections:
         label: "Homepage Content"
         file: "data/home.json"
         fields:
-          - label: "Hero"
+            - label: "Hero"
             name: "hero"
             widget: "object"
             fields:
-            - { label: "Hero Background Image", name: "backgroundImage", widget: "image", required: false }
+              - { label: "Hero Background Image", name: "backgroundImage", widget: "image", required: false }
               - { label: "Line 1", name: "line1", widget: "string" }
               - { label: "Line 2", name: "line2", widget: "string" }
               - { label: "Accent Line", name: "accent", widget: "string" }
