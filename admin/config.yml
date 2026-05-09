@@ -13,7 +13,7 @@ collections:
         label: "Homepage Content"
         file: "data/home.json"
         fields:
-            - label: "Hero"
+          - label: "Hero"
             name: "hero"
             widget: "object"
             fields:
