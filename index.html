@@ -637,18 +637,7 @@
   </div>
 </footer>
 </main>
-<script>
-fetch('/data/home.json')
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById('hero-title').innerHTML =
-      data.line1 + "<br>" +
-      data.line2 + "<br>" +
-      '<span class="accent">' + data.accent + '</span>';
 
-    document.getElementById('hero-subtitle').innerText = data.subtitle;
-  });
-</script>
 </body>
 <script src="js/home-content.js"></script>
 <script>

@@ -10,6 +10,10 @@ fetch("/data/home.json")
   .then((res) => res.json())
   .then((data) => {
     const hero = data.hero;
+    const heroImg = document.querySelector(".hero-img");
+if (heroImg && hero.backgroundImage) {
+  heroImg.src = hero.backgroundImage;
+}
     document.querySelector(".hero h1").innerHTML =
       `${esc(hero.line1)}<br>${esc(hero.line2)}<br><span class="accent">${esc(hero.accent)}</span>`;
     document.querySelector(".hero p").textContent = hero.subtitle;
@@ -48,17 +52,6 @@ fetch("/data/home.json")
       </div>
     `).join("");
 
-    const testimonials = document.querySelector(".testimonials");
-    if (testimonials) {
-      testimonials.querySelector(".section-title").textContent = data.testimonials.title;
-      testimonials.querySelector(".section-subtitle").textContent = data.testimonials.subtitle;
-      testimonials.querySelector(".testimonials-grid").innerHTML = data.testimonials.reviews.map(review => `
-        <article class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>“${esc(review.text)}”</p>
-        </article>
-      `).join("");
-    }
 
     const work = document.querySelector(".work");
     work.querySelector(".section-title").textContent = data.work.title;
