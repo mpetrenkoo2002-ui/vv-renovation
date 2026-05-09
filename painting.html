@@ -291,7 +291,7 @@
   </section>
 
   <!-- Work -->
-  <section class="work">
+  <section class="work" id="work">
     <div class="container">
 
       <h2 class="section-title">Our Work</h2>
@@ -599,8 +599,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.nav');
   const servicesDropdown = document.querySelector('.nav-dropdown');
   const servicesToggle = document.querySelector('.nav-dropdown-toggle');
-  const faqItems = document.querySelectorAll('.framing-faq-item');
 
+  // Smooth scroll helper
+  function scrollToEl(el) {
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.pageYOffset - 100;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  // Anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      scrollToEl(target);
+      history.pushState(null, '', this.getAttribute('href'));
+    });
+  });
+
+  // data-scroll-to buttons (no inline onclick needed)
+  document.querySelectorAll('[data-scroll-to]').forEach(btn => {
+    btn.addEventListener('click', function () {
+      scrollToEl(document.getElementById(this.dataset.scrollTo));
+    });
+  });
+
+  // Burger menu
   if (burger && nav) {
     burger.addEventListener('click', () => {
       burger.classList.toggle('active');
@@ -615,6 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (servicesDropdown) {
           servicesDropdown.classList.remove('open');
         }
+
         if (servicesToggle) {
           servicesToggle.setAttribute('aria-expanded', 'false');
         }
@@ -632,6 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (servicesDropdown) {
           servicesDropdown.classList.remove('open');
         }
+
         if (servicesToggle) {
           servicesToggle.setAttribute('aria-expanded', 'false');
         }
@@ -639,6 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Mobile services dropdown
   if (servicesDropdown && servicesToggle) {
     servicesToggle.addEventListener('click', (e) => {
       if (window.innerWidth <= 760) {
@@ -651,11 +679,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  faqItems.forEach(item => {
+  // FAQ toggle
+  const framingFaqItems = document.querySelectorAll('.framing-faq-item');
+
+  framingFaqItems.forEach((item) => {
     const button = item.querySelector('.framing-faq-question');
 
     button.addEventListener('click', () => {
-      item.classList.toggle('active');
+      const isActive = item.classList.contains('active');
+
+      framingFaqItems.forEach((faqItem) => {
+        faqItem.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
     });
   });
 });
