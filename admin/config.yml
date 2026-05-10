@@ -71,7 +71,8 @@ collections:
                   - { label: "Alt Text", name: "alt", widget: "string" }
               - { label: "Button Text", name: "buttonText", widget: "string" }
               - { label: "Button Link", name: "buttonLink", widget: "string" }
-                - name: "service_pages"
+
+  - name: "service_pages"
     label: "Service Pages"
     files:
       - name: "accent_walls"
