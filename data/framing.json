@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Framing Services | VV Renovation",
+    "description": "Professional framing services in Vancouver. Steel stud framing, wood framing and finish carpentry for residential and commercial interiors. Free estimate."
+  },
+  "hero": {
+    "backgroundImage": "framing-hero.webp",
+    "title": "Framing Services in Vancouver",
+    "subtitle": "Strong, accurate and reliable framing for residential and commercial renovation projects.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "scrollTarget": "framing-intro"
+  },
+  "intro": {
+    "anchorId": "framing-intro",
+    "title": "Framing Services",
+    "mainText": "Good framing is the foundation of a clean, durable and well-built interior. VV Renovation provides precise framing work for partitions, ceilings, renovation layouts and finish carpentry with attention to structure, alignment and long-term reliability.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver clean, reliable and professional framing services.",
+    "mediaType": "image",
+    "media": "framing.webp",
+    "mediaAlt": "Framing work by VV Renovation"
+  },
+  "types": {
+    "title": "Types of Framing We Offer",
+    "cards": [
+      {
+        "title": "Steel Stud Framing",
+        "text": "Precise steel stud framing for commercial and residential interiors, including partitions, bulkheads and layout changes."
+      },
+      {
+        "title": "Wood Framing",
+        "text": "Strong and accurate wood framing for renovations, new interior structures and custom construction details."
+      },
+      {
+        "title": "Interior Partition Walls",
+        "text": "Clean framing for new room layouts, basement divisions, office partitions and functional interior reconfiguration."
+      },
+      {
+        "title": "Ceiling & Bulkhead Framing",
+        "text": "Framing for dropped ceilings, soffits and bulkheads with careful alignment and preparation for finishing work."
+      },
+      {
+        "title": "Finish Carpentry",
+        "text": "Detail-oriented finish carpentry that completes the space with clean lines, accurate fitting and a refined final look."
+      },
+      {
+        "title": "Renovation Framing",
+        "text": "Reliable framing solutions for remodels, additions and interior upgrades that need solid structure and clean execution."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We review your plans, discuss the scope of work and recommend the right framing approach for your project."
+      },
+      {
+        "title": "Layout Planning",
+        "text": "We measure the space carefully, mark the layout and prepare the structure for accurate and efficient installation."
+      },
+      {
+        "title": "Framing Installation",
+        "text": "Our team completes the framing with attention to straight lines, structural integrity and clean execution."
+      },
+      {
+        "title": "Final Review",
+        "text": "We inspect the completed framing, refine important details and leave the site ready for the next stage of renovation."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV renovation company delivers accurate, dependable framing with clean workmanship. Proudly serving the Greater Vancouver Area.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Accurate Layouts",
+        "text": "We focus on straight lines, proper alignment and framing that supports clean finishing."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We maintain tidy worksites and work efficiently through each phase of the project."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We respect project timelines and coordinate framing so the next trades can move forward smoothly."
+      },
+      {
+        "title": "Residential & Commercial",
+        "text": "We provide framing for homes, apartments, offices and commercial interiors."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed from planning to completion so the process stays simple and predictable."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Work",
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
+    "images": [
+      {
+        "image": "work-1.webp",
+        "alt": "Project 1"
+      },
+      {
+        "image": "work-2.webp",
+        "alt": "Project 2"
+      },
+      {
+        "image": "work-3.webp",
+        "alt": "Project 3"
+      },
+      {
+        "image": "work-4.webp",
+        "alt": "Project 4"
+      },
+      {
+        "image": "work-accent-wall.jpeg",
+        "alt": "Project 5"
+      },
+      {
+        "image": "work-6.webp",
+        "alt": "Project 6"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Framing FAQ",
+    "items": [
+      {
+        "question": "What types of framing do you offer?",
+        "answer": "We provide wood framing, steel stud framing and custom structural framing for residential and commercial projects across the Greater Vancouver Area."
+      },
+      {
+        "question": "Do you handle both small and large projects?",
+        "answer": "Yes, we work on everything from small renovations and basement framing to full-scale residential builds and commercial spaces."
+      },
+      {
+        "question": "How long does framing usually take?",
+        "answer": "The timeline depends on the size and complexity of the project. Most residential framing jobs are completed within a few days to a couple of weeks."
+      },
+      {
+        "question": "Do you follow building codes and regulations?",
+        "answer": "Yes, all framing work is completed according to local building codes and industry standards to ensure safety, accuracy and durability."
+      }
+    ]
+  }
+}

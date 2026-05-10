@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Painting Services in Vancouver | VV Renovation",
+    "description": "Professional residential and commercial painting services in Vancouver. Interior and exterior painting, wall preparation and clean finishing. Free estimate."
+  },
+  "hero": {
+    "backgroundImage": "painting-hero.webp",
+    "title": "Painting Services in Vancouver",
+    "subtitle": "Clean, precise residential and commercial painting for interiors that look fresh, modern, and professionally finished.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "scrollTarget": "painting-intro"
+  },
+  "intro": {
+    "anchorId": "painting-intro",
+    "title": "Residential & Commercial Painting",
+    "mainText": "A quality paint job does more than change a color — it refreshes the entire feel of a space. VV Renovation provides clean, detail-focused painting services for homes, offices, commercial interiors, and renovation projects.",
+    "secondaryText": "We work with homeowners, builders, designers, and property managers across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver smooth finishes, consistent color, and professional results from preparation to final coat.",
+    "mediaType": "image",
+    "media": "painting.webp",
+    "mediaAlt": "Professional painting work by VV Renovation"
+  },
+  "types": {
+    "title": "Painting Services We Offer",
+    "cards": [
+      {
+        "title": "Interior Painting",
+        "text": "Walls, ceilings, trim, and other interior surfaces painted with clean lines and a smooth professional finish."
+      },
+      {
+        "title": "Commercial Painting",
+        "text": "Reliable painting services for offices, retail spaces, and other commercial properties that need a polished appearance."
+      },
+      {
+        "title": "Residential Painting",
+        "text": "Refresh bedrooms, living rooms, kitchens, hallways, and full homes with durable, high-quality paint application."
+      },
+      {
+        "title": "Surface Preparation & Touch-Ups",
+        "text": "Proper prep work including patching, sanding, priming, and touch-ups to ensure a longer-lasting final result."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We review your space, discuss your goals, help with color direction if needed, and prepare a clear estimate for the project."
+      },
+      {
+        "title": "Preparation",
+        "text": "We protect surrounding areas and prepare surfaces through patching, sanding, caulking, and priming where required."
+      },
+      {
+        "title": "Painting",
+        "text": "Our team applies paint carefully and evenly for solid coverage, crisp edges, and a consistent professional finish."
+      },
+      {
+        "title": "Final Review",
+        "text": "We complete touch-ups, clean the workspace, and make sure everything looks finished, fresh, and ready to enjoy."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV renovation company partners closely with engineers to deliver precise and efficient layout services. Proudly serving the Greater Vancouver Area.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Clean Paint Lines",
+        "text": "We focus on neat edges, even coverage, and a finish that looks professionally done."
+      },
+      {
+        "title": "Proper Surface Prep",
+        "text": "Good results start before the first coat, which is why preparation is part of our process."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We protect surfaces, work carefully, and leave the site clean after the job is complete."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We respect schedules and work efficiently to keep your project moving forward."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed throughout the project so expectations stay clear from start to finish."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Work",
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
+    "images": [
+      {
+        "image": "work-1.webp",
+        "alt": "Painting project 1"
+      },
+      {
+        "image": "work-3.webp",
+        "alt": "Painting project 2"
+      },
+      {
+        "image": "work-4.webp",
+        "alt": "Painting project 3"
+      },
+      {
+        "image": "work-5.webp",
+        "alt": "Painting project 4"
+      },
+      {
+        "image": "work-6.webp",
+        "alt": "Painting project 5"
+      },
+      {
+        "image": "work-accent-wall.jpeg",
+        "alt": "Painting service preview"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Painting FAQ",
+    "items": [
+      {
+        "question": "Do you provide residential and commercial painting?",
+        "answer": "Yes, we provide both residential and commercial painting services across the Greater Vancouver Area."
+      },
+      {
+        "question": "Do you prepare the walls before painting?",
+        "answer": "Absolutely. Surface preparation is a key part of the job and may include patching, sanding, caulking, priming, and protecting nearby areas."
+      },
+      {
+        "question": "Can you help with color selection?",
+        "answer": "Yes, we can help guide you toward color choices that fit the lighting, function, and style of your space."
+      },
+      {
+        "question": "How long does a painting project take?",
+        "answer": "Timelines depend on the size of the space, condition of the surfaces, and scope of prep work, but many projects are completed within a few days."
+      },
+      {
+        "question": "Do you keep the site clean during the job?",
+        "answer": "Yes, we work carefully, protect surrounding surfaces, and clean up after the project so the space feels finished and ready."
+      },
+      {
+        "question": "Do you serve all of Greater Vancouver?",
+        "answer": "Yes, we provide painting services in Vancouver, Burnaby, Richmond, Surrey, and surrounding areas throughout the Greater Vancouver Area."
+      }
+    ]
+  }
+}

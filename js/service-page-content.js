@@ -13,29 +13,25 @@ function setText(selector, value) {
   }
 }
 
-function setHref(selector, value) {
-  const el = document.querySelector(selector);
-  if (el && value) {
-    el.href = value;
-  }
-}
-
 function renderIntroMedia(intro) {
-  const mediaWrap = document.querySelector(".intro-video");
-  if (!mediaWrap || !intro.media) return;
+  const mediaWrap = document.querySelector(".intro-video, .intro-image");
+  if (!mediaWrap || !intro || !intro.media) return;
 
-  if (intro.mediaType === "image") {
+  mediaWrap.classList.remove("intro-video", "intro-image");
+
+  if (intro.mediaType === "video") {
+    mediaWrap.classList.add("intro-video");
     mediaWrap.innerHTML = `
-      <img src="${esc(intro.media)}" alt="${esc(intro.mediaAlt || intro.title)}">
+      <video autoplay muted loop playsinline>
+        <source src="${esc(intro.media)}" type="video/mp4">
+      </video>
     `;
-    mediaWrap.classList.add("intro-image");
     return;
   }
 
+  mediaWrap.classList.add("intro-image");
   mediaWrap.innerHTML = `
-    <video autoplay muted loop playsinline>
-      <source src="${esc(intro.media)}" type="video/mp4">
-    </video>
+    <img src="${esc(intro.media)}" alt="${esc(intro.mediaAlt || intro.title || "")}">
   `;
 }
 
@@ -145,7 +141,10 @@ function renderFaq(faq) {
     </div>
   `).join("");
 
-  // Re-bind FAQ click behavior after rendering new FAQ items
+  bindFaq();
+}
+
+function bindFaq() {
   const faqItems = document.querySelectorAll(".framing-faq-item");
 
   faqItems.forEach((item) => {
@@ -171,11 +170,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!page) {
     console.warn("No data-page attribute found on body.");
+    bindFaq();
     return;
   }
 
   fetch(`/data/${page}.json`)
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) throw new Error(`Failed to load /data/${page}.json`);
+      return res.json();
+    })
     .then((data) => {
       if (data.seo) {
         if (data.seo.title) document.title = data.seo.title;
@@ -200,6 +203,11 @@ document.addEventListener("DOMContentLoaded", () => {
           heroBtn.textContent = data.hero.buttonText || "Get Free Estimate";
           heroBtn.href = data.hero.buttonLink || "#contact";
         }
+
+        const scroll = document.querySelector(".service-hero-scroll");
+        if (scroll && data.hero.scrollTarget) {
+          scroll.href = `#${data.hero.scrollTarget}`;
+        }
       }
 
       if (data.intro) {
@@ -222,5 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => {
       console.error("Service page content loading error:", error);
+      bindFaq();
     });
 });

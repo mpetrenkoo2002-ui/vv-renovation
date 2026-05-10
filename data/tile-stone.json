@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Tile & Stone Installation | VV Renovation",
+    "description": "Tile and stone installation in Vancouver for bathrooms, kitchens, backsplashes, floors and custom stone finishes. Free estimate."
+  },
+  "hero": {
+    "backgroundImage": "kitchen-backsplash.jpg",
+    "title": "Tile & Stone Installation in Vancouver",
+    "subtitle": "Professional tile and stone installation for bathrooms, kitchens, backsplashes, floors and custom interior finishes.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "scrollTarget": "tile-intro"
+  },
+  "intro": {
+    "anchorId": "tile-intro",
+    "title": "Tile & Stone Services",
+    "mainText": "Tile and stone are some of the most durable and visually impactful finishes for modern interiors. VV Renovation installs tile and stone surfaces with precision, creating clean, long-lasting results for residential and commercial spaces.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver high-quality tile and stone installation tailored to each project.",
+    "mediaType": "image",
+    "media": "intro-tile.jpg",
+    "mediaAlt": "Tile and Stone Installation"
+  },
+  "types": {
+    "title": "Types of Tile & Stone Work We Install",
+    "cards": [
+      {
+        "title": "Bathroom",
+        "text": "Tile and stone installation for showers, bathroom walls, floors and full bathroom finishes."
+      },
+      {
+        "title": "Backsplash",
+        "text": "Clean and stylish backsplash installation for kitchens and interior spaces."
+      },
+      {
+        "title": "Commercial",
+        "text": "Durable tile and stone solutions for commercial interiors and business spaces."
+      },
+      {
+        "title": "Kitchen Countertop",
+        "text": "Professional installation for kitchen countertops and surrounding stone finishes."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We discuss your project, materials, layout, design goals and recommend the right tile or stone solution."
+      },
+      {
+        "title": "Surface Preparation",
+        "text": "Our team prepares the substrate carefully to ensure proper leveling, adhesion and long-term durability."
+      },
+      {
+        "title": "Installation",
+        "text": "We install tile or stone with precision, paying close attention to alignment, spacing, cuts and finishing details."
+      },
+      {
+        "title": "Grouting & Final Finishing",
+        "text": "We complete grouting, sealing where required, and leave the finished space clean, polished and ready to use."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV renovation company delivers clean, detail-focused tile and stone work with reliable service. Proudly serving the Greater Vancouver Area.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Precision Installation",
+        "text": "We focus on clean lines, accurate layouts and strong finishing quality."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We maintain tidy worksites and clean up thoroughly after the job."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We respect schedules and work efficiently to keep your project moving."
+      },
+      {
+        "title": "Experienced Craftsmanship",
+        "text": "Skilled workmanship backed by hands-on renovation experience."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed throughout the project so you always know what to expect."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Work",
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
+    "images": [
+      {
+        "image": "tile-work-1.jpg",
+        "alt": "Tile and stone project 1"
+      },
+      {
+        "image": "tile-work-2.jpg",
+        "alt": "Tile and stone project 2"
+      },
+      {
+        "image": "tile-work-3.jpg",
+        "alt": "Tile and stone project 3"
+      },
+      {
+        "image": "tile-work-4.png",
+        "alt": "Tile and stone project 4"
+      },
+      {
+        "image": "tile.jpeg",
+        "alt": "Tile and stone project 5"
+      },
+      {
+        "image": "work-6.webp",
+        "alt": "Tile and stone project 6"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Tile & Stone FAQ",
+    "items": [
+      {
+        "question": "What tile and stone services do you provide?",
+        "answer": "We install tile and stone for bathrooms, kitchens, backsplashes, floors, and custom interior finishes for residential and commercial spaces."
+      },
+      {
+        "question": "Do you install tile in bathrooms and showers?",
+        "answer": "Yes, we specialize in bathroom tile installation including showers, walls, floors, and full bathroom finishes."
+      },
+      {
+        "question": "How long does tile installation take?",
+        "answer": "The timeline depends on the size and complexity of the project. Most tile installations take a few days, including preparation, installation, and finishing."
+      },
+      {
+        "question": "Do you prepare surfaces before installing tile?",
+        "answer": "Yes, we properly prepare and level surfaces to ensure strong adhesion, durability, and a clean, professional finish."
+      },
+      {
+        "question": "Do you work with custom layouts and designs?",
+        "answer": "Absolutely. We work with custom layouts, patterns, and design ideas to create unique and visually appealing tile and stone finishes."
+      },
+      {
+        "question": "Do you provide services across the Greater Vancouver Area?",
+        "answer": "Yes, we provide tile and stone installation services across Vancouver, Burnaby, Richmond, Surrey and surrounding areas."
+      }
+    ]
+  }
+}

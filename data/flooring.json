@@ -1,0 +1,165 @@
+{
+  "seo": {
+    "title": "Flooring Installation | VV Renovation",
+    "description": "Professional flooring installation in Vancouver. Hardwood, engineered wood, laminate, vinyl, self leveling and microcement floor solutions. Free estimate."
+  },
+  "hero": {
+    "backgroundImage": "flooring-hero.webp",
+    "title": "Flooring Installation in Vancouver",
+    "subtitle": "Durable and professional flooring solutions for residential and commercial interiors.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "scrollTarget": "flooring-intro"
+  },
+  "intro": {
+    "anchorId": "flooring-intro",
+    "title": "Flooring Services",
+    "mainText": "Quality flooring changes the entire feel of a space. VV Renovation installs flooring with attention to preparation, leveling, clean layout and long-lasting results for homes and commercial interiors.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver clean, reliable and professional flooring installation.",
+    "mediaType": "video",
+    "media": "self-leveling.mp4",
+    "mediaAlt": "Flooring Services"
+  },
+  "types": {
+    "title": "Types of Flooring We Install",
+    "cards": [
+      {
+        "title": "Self Leveling",
+        "text": "Smooth and even surface preparation for high-quality flooring installation and long-term durability."
+      },
+      {
+        "title": "Micro Cement Floor",
+        "text": "Seamless and modern flooring with a clean look that works beautifully in contemporary interiors."
+      },
+      {
+        "title": "Hardwood",
+        "text": "Classic hardwood flooring installation that adds warmth, value and timeless character to your space."
+      },
+      {
+        "title": "Engineered Wood",
+        "text": "Durable engineered wood flooring with the natural look of wood and reliable everyday performance."
+      },
+      {
+        "title": "Laminate",
+        "text": "Cost-effective laminate flooring that offers durability, easy maintenance and a clean finished look."
+      },
+      {
+        "title": "Vinyl",
+        "text": "Practical and versatile vinyl flooring installation for residential and commercial environments."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We discuss your flooring needs, material options, project goals and recommend the right solution for your space."
+      },
+      {
+        "title": "Surface Preparation",
+        "text": "We inspect and prepare the subfloor, including leveling and correction where needed for a solid foundation."
+      },
+      {
+        "title": "Installation",
+        "text": "Our team installs the flooring with precision, clean alignment and attention to detail throughout the project."
+      },
+      {
+        "title": "Final Finishing",
+        "text": "We complete the finishing touches, inspect the result and leave the space clean and ready to enjoy."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV renovation company delivers detail-focused flooring installation with reliable workmanship. Proudly serving the Greater Vancouver Area.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Precision Workmanship",
+        "text": "We focus on clean installation, proper prep and long-lasting finished results."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We maintain tidy worksites and clean up thoroughly after the job."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We work efficiently and respect your time and project schedule."
+      },
+      {
+        "title": "Residential & Commercial",
+        "text": "We install flooring for homes, apartments, offices and commercial spaces."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed through every stage so the process stays simple and predictable."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Work",
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
+    "images": [
+      {
+        "image": "flooring-work-1.jpg",
+        "alt": "Flooring project 1"
+      },
+      {
+        "image": "flooring-work-2.jpg",
+        "alt": "Flooring project 2"
+      },
+      {
+        "image": "work-3.webp",
+        "alt": "Flooring project 3"
+      },
+      {
+        "image": "work-4.webp",
+        "alt": "Flooring project 4"
+      },
+      {
+        "image": "work-5.webp",
+        "alt": "Flooring project 5"
+      },
+      {
+        "image": "work-6.webp",
+        "alt": "Flooring project 6"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Flooring FAQ",
+    "items": [
+      {
+        "question": "What types of flooring do you install?",
+        "answer": "We install hardwood, engineered wood, laminate, vinyl, microcement flooring, and provide self-leveling for proper surface preparation."
+      },
+      {
+        "question": "Do you prepare the subfloor before installation?",
+        "answer": "Yes, proper surface preparation is essential. We inspect, repair, and level the subfloor to ensure durability and a clean, long-lasting result."
+      },
+      {
+        "question": "How long does flooring installation take?",
+        "answer": "The timeline depends on the size of the area and the type of flooring. Most residential flooring projects take between 1 and 5 days."
+      },
+      {
+        "question": "Which flooring option is best for my space?",
+        "answer": "It depends on your budget, lifestyle, and design preferences. We help you choose the right material based on durability, maintenance, and overall look."
+      },
+      {
+        "question": "Is flooring installation suitable for commercial spaces?",
+        "answer": "Yes, we install flooring for both residential and commercial interiors, including offices, retail spaces, and rental properties."
+      },
+      {
+        "question": "Do you work across the Greater Vancouver Area?",
+        "answer": "Yes, we provide flooring installation services across Vancouver, Burnaby, Richmond, Surrey and surrounding areas."
+      }
+    ]
+  }
+}
