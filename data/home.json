@@ -1,13 +1,14 @@
 {
   "hero": {
-    "line1": "VV Renovation",
-    "line2": "House Renovation",
-    "accent": "Experts in Vancouver",
-    "subtitle": "Precision layout, framing, drywall, flooring and finishing work. Reliable service. Clean results. Honest pricing.",
+    "secondaryButtonLink": "#contact",
     "primaryButtonText": "Call Us",
+    "accent": "Experts in Vancouver",
+    "backgroundImage": "/images/uploads/1105_anterior_and_posterior_views_of_muscles2-1024x631.jpg",
     "primaryButtonLink": "tel:+17782667999",
     "secondaryButtonText": "Get Free Quote",
-    "secondaryButtonLink": "#contact"
+    "subtitle": "Precision layout, framing, drywall, flooring and finishing work. Reliable service. Clean results. Honest pricing.",
+    "line1": "VV Renovation",
+    "line2": "House Renovation"
   },
   "services": {
     "title": "Our Home Renovation Services",
