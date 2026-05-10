@@ -86,6 +86,13 @@
           "Commercial painting",
           "Residential painting"
         ]
+      },
+      {
+        "title": "Robust",
+        "items": [
+          "Cement"
+        ],
+        "image": "/images/uploads/create-scene.png"
       }
     ]
   },
@@ -145,6 +152,10 @@
       {
         "image": "work-6.webp",
         "alt": "Project 6"
+      },
+      {
+        "image": "/images/uploads/hero.webp",
+        "alt": "project 33"
       }
     ],
     "buttonText": "See More on Facebook",
