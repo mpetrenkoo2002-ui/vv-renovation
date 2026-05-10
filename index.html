@@ -637,25 +637,16 @@
   </div>
 </footer>
 </main>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      const hash = window.location.hash;
+  const hash = window.location.hash;
 
-      if (!user && hash.includes("invite_token")) {
-        window.netlifyIdentity.open("signup");
-      }
-
-      if (!user && hash.includes("recovery_token")) {
-        window.netlifyIdentity.open("login");
-      }
-    });
-
-    window.netlifyIdentity.on("login", () => {
-      document.location.href = "/admin/";
-    });
+  if (
+    hash.includes("invite_token") ||
+    hash.includes("confirmation_token") ||
+    hash.includes("recovery_token")
+  ) {
+    window.location.href = "/admin/" + hash;
   }
 </script>
 
