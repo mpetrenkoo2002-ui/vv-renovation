@@ -1,0 +1,156 @@
+{
+  "seo": {
+    "title": "Accent Walls & Decorative Finishes | VV Renovation",
+    "description": "Accent wall installation and decorative finishes in Vancouver. Microcement, marble, stucco and textured feature walls for modern interiors. Free estimate."
+  },
+  "hero": {
+    "backgroundImage": "accent.webp",
+    "title": "Accent Wall Installation in Vancouver",
+    "subtitle": "Custom microcement, marble, stucco and textured feature walls designed to transform modern interiors.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact"
+  },
+  "intro": {
+    "anchorId": "accent-intro",
+    "title": "Accent Walls & Decorative Finishes",
+    "mainText": "Accent walls are one of the most effective ways to transform a space without a full renovation. VV Renovation specializes in decorative feature walls including microcement, marble finishes, stucco textures, and modern wall designs.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to create unique interior spaces that elevate modern homes and commercial interiors.",
+    "mediaType": "video",
+    "media": "accent-walls.mp4",
+    "mediaAlt": "Accent wall decorative finish installation"
+  },
+  "types": {
+    "title": "Types of Accent Walls We Install",
+    "cards": [
+      {
+        "title": "Microcement Walls",
+        "text": "Modern seamless wall finishes that create a minimalist concrete look."
+      },
+      {
+        "title": "Marble Decorative Walls",
+        "text": "Luxury marble finishes that add elegance to interiors."
+      },
+      {
+        "title": "Stucco & Textured Walls",
+        "text": "Decorative textured finishes perfect for feature walls."
+      },
+      {
+        "title": "Custom Feature Walls",
+        "text": "Unique decorative wall designs tailored to your space."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We discuss your vision, style preferences, space requirements, and recommend the best decorative finish for your interior."
+      },
+      {
+        "title": "Surface Preparation",
+        "text": "Our team carefully prepares the wall surface to ensure proper adhesion, durability, and a flawless final result."
+      },
+      {
+        "title": "Material Application",
+        "text": "We apply the selected finish with precision, whether it is microcement, marble effect, stucco, or another custom texture."
+      },
+      {
+        "title": "Final Finishing",
+        "text": "We complete all final detailing and leave your space clean and polished."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Detail-Oriented Execution",
+        "text": "We focus on precision and finishing quality."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We maintain tidy worksites and clean up thoroughly."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We stick to schedules and meet deadlines."
+      },
+      {
+        "title": "Experienced Craftsmanship",
+        "text": "Skilled workmanship backed by years of experience."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed at every stage of the project — no surprises."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Accent Wall Work",
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
+    "images": [
+      {
+        "image": "work-accent-wall.jpeg",
+        "alt": "Custom marble effect accent wall decorative finish for modern interior"
+      },
+      {
+        "image": "work-1.webp",
+        "alt": "Exterior renovation work on a modern residential building in Vancouver"
+      },
+      {
+        "image": "work-3.webp",
+        "alt": "Hot tub plumbing and equipment installation for residential renovation project"
+      },
+      {
+        "image": "work-4.webp",
+        "alt": "Wall surface preparation and spray finishing during renovation work"
+      },
+      {
+        "image": "work-5.webp",
+        "alt": "Decorative wall finish preparation for accent wall renovation"
+      },
+      {
+        "image": "work-6.webp",
+        "alt": "Large format tile installation with leveling clips for renovation project"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Accent Walls FAQ",
+    "items": [
+      {
+        "question": "What types of accent walls do you install?",
+        "answer": "We install microcement walls, marble decorative finishes, stucco textures, and fully custom feature walls tailored to your interior design."
+      },
+      {
+        "question": "Are accent walls suitable for any room?",
+        "answer": "Yes, accent walls can be installed in living rooms, bedrooms, offices, commercial spaces, and feature areas where you want to create visual impact."
+      },
+      {
+        "question": "How long does accent wall installation take?",
+        "answer": "Most accent wall projects take from 1 to 5 days depending on the material, wall size, and complexity of the design."
+      },
+      {
+        "question": "Do you help with design and material selection?",
+        "answer": "Yes, we help you choose the right finish, color, and texture based on your space, lighting, and overall interior style."
+      },
+      {
+        "question": "Are decorative finishes durable?",
+        "answer": "Absolutely. We use high-quality materials and proper surface preparation to ensure long-lasting, durable and easy-to-maintain finishes."
+      },
+      {
+        "question": "Do you work across the Greater Vancouver Area?",
+        "answer": "Yes, we provide accent wall installation services across Vancouver, Burnaby, Richmond, Surrey and surrounding areas."
+      }
+    ]
+  }
+}

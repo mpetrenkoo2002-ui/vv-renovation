@@ -71,3 +71,108 @@ collections:
                   - { label: "Alt Text", name: "alt", widget: "string" }
               - { label: "Button Text", name: "buttonText", widget: "string" }
               - { label: "Button Link", name: "buttonLink", widget: "string" }
+                - name: "service_pages"
+    label: "Service Pages"
+    files:
+      - name: "accent_walls"
+        label: "Accent Walls Page"
+        file: "data/accent-walls.json"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Hero Background Image", name: "backgroundImage", widget: "image", required: false }
+              - { label: "Hero Title", name: "title", widget: "string" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Anchor ID", name: "anchorId", widget: "string", default: "accent-intro" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Main Text", name: "mainText", widget: "text" }
+              - { label: "Secondary Text", name: "secondaryText", widget: "text" }
+              - label: "Media Type"
+                name: "mediaType"
+                widget: "select"
+                options:
+                  - { label: "Video", value: "video" }
+                  - { label: "Image", value: "image" }
+              - { label: "Media File", name: "media", widget: "file", required: false }
+              - { label: "Media Alt Text", name: "mediaAlt", widget: "string", required: false }
+
+          - label: "Types"
+            name: "types"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Card Title", name: "title", widget: "string" }
+                  - { label: "Card Text", name: "text", widget: "text" }
+
+          - label: "Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Step Title", name: "title", widget: "string" }
+                  - { label: "Step Text", name: "text", widget: "text" }
+
+          - label: "Why Choose Us"
+            name: "why"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Card Title", name: "title", widget: "string" }
+                  - { label: "Card Text", name: "text", widget: "text" }
+
+          - label: "Our Work"
+            name: "work"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
