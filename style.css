@@ -1152,8 +1152,9 @@ section[id] {
 
 .service-secondary-intro-text {
   font-size: 21px;
+  font-weight: 500;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 24px;
   color: var(--nav-text);
   max-width: 680px;
   text-align: left;
