@@ -15,7 +15,7 @@
     "anchorId": "drywall-intro",
     "title": "Drywall Finishing Services",
     "mainText": "Drywall finishing is what gives walls and ceilings their clean, seamless final appearance. VV Renovation provides precise drywall installation and finishing with attention to straight lines, smooth surfaces and ready-to-paint results.",
-    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver clean, reliable and professional drywall finishing.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional drywall finishing.",
     "mediaType": "image",
     "media": "drywall.jpeg",
     "mediaAlt": "Drywall finishing work by VV Renovation"
@@ -158,7 +158,7 @@
       },
       {
         "question": "Do you provide drywall finishing across the Greater Vancouver Area?",
-        "answer": "Yes, we provide drywall finishing services across Vancouver, Burnaby, Richmond, Surrey, and surrounding areas in the Greater Vancouver Area."
+        "answer": "Yes, we provide accent wall installation services across Vancouver and surrounding areas including Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)"
       }
     ]
   }

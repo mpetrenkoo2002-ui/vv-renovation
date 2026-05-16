@@ -15,7 +15,7 @@
     "anchorId": "tile-intro",
     "title": "Tile & Stone Services",
     "mainText": "Tile and stone are some of the most durable and visually impactful finishes for modern interiors. VV Renovation installs tile and stone surfaces with precision, creating clean, long-lasting results for residential and commercial spaces.",
-    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver high-quality tile and stone installation tailored to each project.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver high-quality tile and stone installation tailored to each project.",
     "mediaType": "image",
     "media": "intro-tile.jpg",
     "mediaAlt": "Tile and Stone Installation"
@@ -150,7 +150,7 @@
       },
       {
         "question": "Do you provide services across the Greater Vancouver Area?",
-        "answer": "Yes, we provide tile and stone installation services across Vancouver, Burnaby, Richmond, Surrey and surrounding areas."
+        "answer": "Yes, we provide flooring installation services across Vancouver and surrounding areas including Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)."
       }
     ]
   }

@@ -15,7 +15,7 @@
     "anchorId": "painting-intro",
     "title": "Residential & Commercial Painting",
     "mainText": "A quality paint job does more than change a color — it refreshes the entire feel of a space. VV Renovation provides clean, detail-focused painting services for homes, offices, commercial interiors, and renovation projects.",
-    "secondaryText": "We work with homeowners, builders, designers, and property managers across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver smooth finishes, consistent color, and professional results from preparation to final coat.",
+    "secondaryText": "We work with homeowners, builders, designers, and property managers across the Greater Vancouver Area to deliver smooth finishes, consistent color, and professional results from preparation to final coat.",
     "mediaType": "image",
     "media": "painting.webp",
     "mediaAlt": "Professional painting work by VV Renovation"
@@ -150,7 +150,7 @@
       },
       {
         "question": "Do you serve all of Greater Vancouver?",
-        "answer": "Yes, we provide painting services in Vancouver, Burnaby, Richmond, Surrey, and surrounding areas throughout the Greater Vancouver Area."
+        "answer": "Yes, we provide flooring installation services across Vancouver and surrounding areas including Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)."
       }
     ]
   }

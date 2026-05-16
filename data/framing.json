@@ -15,7 +15,7 @@
     "anchorId": "framing-intro",
     "title": "Framing Services",
     "mainText": "Good framing is the foundation of a clean, durable and well-built interior. VV Renovation provides precise framing work for partitions, ceilings, renovation layouts and finish carpentry with attention to structure, alignment and long-term reliability.",
-    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver clean, reliable and professional framing services.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional framing services.",
     "mediaType": "image",
     "media": "framing.webp",
     "mediaAlt": "Framing work by VV Renovation"
@@ -151,6 +151,10 @@
       {
         "question": "Do you follow building codes and regulations?",
         "answer": "Yes, all framing work is completed according to local building codes and industry standards to ensure safety, accuracy and durability."
+      },
+       {
+        "question": "Do you work across the Greater Vancouver Area?",
+        "answer": "Yes, we provide flooring installation services across Vancouver and surrounding areas including Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)."
       }
     ]
   }

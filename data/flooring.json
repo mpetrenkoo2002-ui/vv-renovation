@@ -15,7 +15,7 @@
     "anchorId": "flooring-intro",
     "title": "Flooring Services",
     "mainText": "Quality flooring changes the entire feel of a space. VV Renovation installs flooring with attention to preparation, leveling, clean layout and long-lasting results for homes and commercial interiors.",
-    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area (Vancouver, Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)) to deliver clean, reliable and professional flooring installation.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional flooring installation.",
     "mediaType": "video",
     "media": "self-leveling.mp4",
     "mediaAlt": "Flooring Services"
@@ -158,7 +158,7 @@
       },
       {
         "question": "Do you work across the Greater Vancouver Area?",
-        "answer": "Yes, we provide flooring installation services across Vancouver, Burnaby, Richmond, Surrey and surrounding areas."
+        "answer": "Yes, we provide flooring installation services across Vancouver and surrounding areas including Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)."
       }
     ]
   }
