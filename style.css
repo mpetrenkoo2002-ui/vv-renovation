@@ -2515,3 +2515,97 @@ section[id] {
     transition-delay: .08s;
   }
 }
+/* =========================
+   Service intro: staggered two media layout
+   Added for Painting/service pages
+========================= */
+.service-intro-media{
+  width: 420px;
+  justify-self: end;
+  position: relative;
+  min-height: 420px;
+}
+
+.service-intro-media .intro-video,
+.service-intro-media .intro-image{
+  position: absolute;
+  width: 260px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.service-intro-media .intro-video:first-child,
+.service-intro-media .intro-image:first-child{
+  top: 0;
+  left: 0;
+}
+
+.service-intro-media .intro-video:nth-child(2),
+.service-intro-media .intro-image:nth-child(2){
+  top: 150px;
+  right: 0;
+}
+
+.service-intro-media video,
+.service-intro-media img{
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+@media (max-width: 980px){
+  .service-intro-media{
+    width: min(100%, 420px);
+    min-height: 410px;
+    justify-self: start;
+  }
+
+  .service-intro-media .intro-video,
+  .service-intro-media .intro-image{
+    width: 240px;
+    max-width: none;
+  }
+
+  .service-intro-media .intro-video:nth-child(2),
+  .service-intro-media .intro-image:nth-child(2){
+    top: 140px;
+  }
+}
+
+@media (max-width: 760px){
+  .service-intro-media{
+    width: min(100%, 360px);
+    min-height: 360px;
+    justify-self: center;
+  }
+
+  .service-intro-media .intro-video,
+  .service-intro-media .intro-image{
+    width: 200px;
+  }
+
+  .service-intro-media .intro-video:nth-child(2),
+  .service-intro-media .intro-image:nth-child(2){
+    top: 120px;
+  }
+}
+
+@media (max-width: 480px){
+  .service-intro-media{
+    width: 100%;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-intro-media .intro-video,
+  .service-intro-media .intro-image{
+    position: static;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
