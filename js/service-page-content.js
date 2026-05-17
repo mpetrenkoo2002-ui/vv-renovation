@@ -14,24 +14,76 @@ function setText(selector, value) {
 }
 
 function renderIntroMedia(intro) {
-  const mediaWrap = document.querySelector(".intro-video, .intro-image");
-  if (!mediaWrap || !intro || !intro.media) return;
+  if (!intro) return;
 
-  mediaWrap.classList.remove("intro-video", "intro-image");
+  let mediaContainer = document.querySelector(".service-intro-media");
 
-  if (intro.mediaType === "video") {
-    mediaWrap.classList.add("intro-video");
-    mediaWrap.innerHTML = `
-      <video autoplay muted loop playsinline>
-        <source src="${esc(intro.media)}" type="video/mp4">
-      </video>
+  // If the new two-media wrapper doesn't exist yet, create it from the old single media block
+  if (!mediaContainer) {
+    const oldMedia = document.querySelector(".intro-video, .intro-image");
+
+    if (!oldMedia) return;
+
+    mediaContainer = document.createElement("div");
+    mediaContainer.className = "service-intro-media";
+    mediaContainer.setAttribute("aria-label", "Project examples");
+
+    oldMedia.replaceWith(mediaContainer);
+  }
+
+  // New format: multiple media items
+  if (Array.isArray(intro.mediaItems) && intro.mediaItems.length > 0) {
+    mediaContainer.innerHTML = intro.mediaItems.map((item) => {
+      const type = item.type || "image";
+      const src = esc(item.src || "");
+      const alt = esc(item.alt || intro.title || "");
+
+      if (type === "video") {
+        const controls = item.controls ? "controls" : "";
+        const autoplay = item.autoplay ? "autoplay" : "";
+        const loop = item.loop ? "loop" : "";
+
+        return `
+          <div class="intro-video intro-media-card">
+            <video ${controls} ${autoplay} ${loop} muted playsinline preload="metadata" aria-label="${alt}">
+              <source src="${src}" type="video/mp4">
+            </video>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="intro-image intro-media-card">
+          <img src="${src}" alt="${alt}">
+        </div>
+      `;
+    }).join("");
+
+    return;
+  }
+
+  // Old fallback format: one media item
+  if (!intro.media) return;
+
+  const type = intro.mediaType || "image";
+  const src = esc(intro.media);
+  const alt = esc(intro.mediaAlt || intro.title || "");
+
+  if (type === "video") {
+    mediaContainer.innerHTML = `
+      <div class="intro-video intro-media-card">
+        <video autoplay muted loop playsinline preload="metadata" aria-label="${alt}">
+          <source src="${src}" type="video/mp4">
+        </video>
+      </div>
     `;
     return;
   }
 
-  mediaWrap.classList.add("intro-image");
-  mediaWrap.innerHTML = `
-    <img src="${esc(intro.media)}" alt="${esc(intro.mediaAlt || intro.title || "")}">
+  mediaContainer.innerHTML = `
+    <div class="intro-image intro-media-card">
+      <img src="${src}" alt="${alt}">
+    </div>
   `;
 }
 
