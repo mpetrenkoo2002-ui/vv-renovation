@@ -16,23 +16,23 @@
     "mainText": "Accent walls are one of the most effective ways to transform a space without a full renovation. VV Renovation specializes in decorative feature walls including microcement, marble finishes, stucco textures, and modern wall designs.",
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to create unique interior spaces that elevate modern homes and commercial interiors.",
     "mediaItems": [
-  {
-    "type": "video",
-    "src": "/images/uploads/accent-walls-1.mp4",
-    "alt": "Accent wall decorative finish installation video 1",
-    "autoplay": true,
-    "loop": true,
-    "controls": false
-  },
-  {
-    "type": "video",
-    "src": "/images/uploads/accent-walls-2.mp4",
-    "alt": "Accent wall decorative finish installation video 2",
-    "autoplay": true,
-    "loop": true,
-    "controls": false
-  }
-]
+      {
+        "type": "video",
+        "src": "/images/uploads/accent-walls-1.mp4",
+        "alt": "Accent wall decorative finish installation video 1",
+        "autoplay": true,
+        "loop": true,
+        "controls": false
+      },
+      {
+        "type": "video",
+        "src": "/images/uploads/accent-walls.mp4",
+        "alt": "Accent wall decorative finish installation video 2",
+        "autoplay": true,
+        "loop": true,
+        "controls": false
+      }
+    ]
   },
   "types": {
     "title": "Types of Accent Walls We Install",
