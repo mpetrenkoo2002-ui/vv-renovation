@@ -1145,7 +1145,7 @@ section[id] {
   font-weight: 500;
   line-height: 1.6;
   margin: 0 0 24px;
-  color: var(--nav-text);
+  color: #8A95A5;
   max-width: 680px;
   text-align: left;
 }
@@ -1155,7 +1155,7 @@ section[id] {
   font-weight: 500;
   line-height: 1.6;
   margin: 0 0 24px;
-  color: var(--nav-text);
+  color: #8A95A5;
   max-width: 680px;
   text-align: left;
 }
