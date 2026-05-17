@@ -106,14 +106,34 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Main Text", name: "mainText", widget: "text" }
               - { label: "Secondary Text", name: "secondaryText", widget: "text" }
-              - label: "Media Type"
-                name: "mediaType"
-                widget: "select"
-                options:
-                  - { label: "Video", value: "video" }
-                  - { label: "Image", value: "image" }
-              - { label: "Media File", name: "media", widget: "file", required: false }
-              - { label: "Media Alt Text", name: "mediaAlt", widget: "string", required: false }
+
+              - label: "Intro Media Items"
+                name: "mediaItems"
+                widget: "list"
+                required: false
+                summary: "{{fields.type}} — {{fields.src}}"
+                min: 1
+                max: 2
+                fields:
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    default: "video"
+                    options:
+                      - { label: "Video", value: "video" }
+                      - { label: "Image", value: "image" }
+                  - label: "Source File"
+                    name: "src"
+                    widget: "file"
+                    required: false
+                    media_library:
+                      config:
+                        multiple: false
+                  - { label: "Alt / Video Description", name: "alt", widget: "string", required: false }
+                  - { label: "Autoplay", name: "autoplay", widget: "boolean", default: true, required: false }
+                  - { label: "Loop", name: "loop", widget: "boolean", default: true, required: false }
+                  - { label: "Show Controls", name: "controls", widget: "boolean", default: false, required: false }
+
 
           - label: "Types / Service Cards"
             name: "types"
@@ -626,14 +646,34 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Main Text", name: "mainText", widget: "text" }
               - { label: "Secondary Text", name: "secondaryText", widget: "text" }
-              - label: "Media Type"
-                name: "mediaType"
-                widget: "select"
-                options:
-                  - { label: "Video", value: "video" }
-                  - { label: "Image", value: "image" }
-              - { label: "Media File", name: "media", widget: "file", required: false }
-              - { label: "Media Alt Text", name: "mediaAlt", widget: "string", required: false }
+
+              - label: "Intro Media Items"
+                name: "mediaItems"
+                widget: "list"
+                required: false
+                summary: "{{fields.type}} — {{fields.src}}"
+                min: 1
+                max: 2
+                fields:
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    default: "video"
+                    options:
+                      - { label: "Video", value: "video" }
+                      - { label: "Image", value: "image" }
+                  - label: "Source File"
+                    name: "src"
+                    widget: "file"
+                    required: false
+                    media_library:
+                      config:
+                        multiple: false
+                  - { label: "Alt / Video Description", name: "alt", widget: "string", required: false }
+                  - { label: "Autoplay", name: "autoplay", widget: "boolean", default: true, required: false }
+                  - { label: "Loop", name: "loop", widget: "boolean", default: true, required: false }
+                  - { label: "Show Controls", name: "controls", widget: "boolean", default: false, required: false }
+
 
           - label: "Types / Service Cards"
             name: "types"

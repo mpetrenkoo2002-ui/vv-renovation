@@ -17,7 +17,12 @@ function renderIntroMedia(intro) {
   if (!intro) return;
 
   let mediaContainer = document.querySelector(".service-intro-media");
+const introGrid = document.querySelector(".intro-grid");
+const hasMediaPair = Array.isArray(intro.mediaItems) && intro.mediaItems.length > 1;
 
+if (introGrid) {
+  introGrid.classList.toggle("intro-grid--media-pair", hasMediaPair);
+}
   // If the new two-media wrapper doesn't exist yet, create it from the old single media block
   if (!mediaContainer) {
     const oldMedia = document.querySelector(".intro-video, .intro-image");
