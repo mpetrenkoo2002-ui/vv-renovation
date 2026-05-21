@@ -28,6 +28,18 @@
         ]
       },
       {
+        "title": "Drywall Finishing",
+        "link": "drywall-finishing.html",
+        "image": "drywall.jpeg",
+        "icon": "drywall.svg",
+        "items": [
+          "Drywall",
+          "Taping & mudding",
+          "Drywall level 5",
+          "And more..."
+        ]
+      },
+      {
         "title": "Tile & Stone",
         "link": "tile-stone.html",
         "image": "tile.jpeg",
@@ -37,29 +49,6 @@
           "Backsplash",
           "Commercial",
           "Kitchen countertop",
-          "And more..."
-        ]
-      },
-      {
-        "title": "Framing",
-        "link": "framing.html",
-        "image": "framing.webp",
-        "icon": "framing.svg",
-        "items": [
-          "Steel stud & wood framing",
-          "Finish carpentry",
-          "And more..."
-        ]
-      },
-      {
-        "title": "Drywall Finishing",
-        "link": "drywall-finishing.html",
-        "image": "drywall.jpeg",
-        "icon": "drywall.svg",
-        "items": [
-          "Drywall",
-          "Taping & mudding",
-          "Drywall level 5",
           "And more..."
         ]
       },
@@ -85,6 +74,17 @@
         "items": [
           "Commercial painting",
           "Residential painting"
+        ]
+      },
+      {
+        "title": "Framing",
+        "link": "framing.html",
+        "image": "framing.webp",
+        "icon": "framing.svg",
+        "items": [
+          "Steel stud & wood framing",
+          "Finish carpentry",
+          "And more..."
         ]
       }
     ]
