@@ -10,6 +10,16 @@
   <meta name="description"
         content="Professional framing services in Vancouver. Steel stud framing, wood framing and finish carpentry for residential and commercial interiors. Free estimate.">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0G7MC17H0V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0G7MC17H0V');
+</script>
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -555,6 +565,31 @@
 </main>
 <script src="js/site-settings.js"></script>
 <script src="js/service-page-content.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (typeof gtag === "function") {
+        gtag("event", "phone_call_click", {
+          event_category: "contact",
+          event_label: link.getAttribute("href")
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll(".contact-form").forEach(function (form) {
+    form.addEventListener("submit", function () {
+      if (typeof gtag === "function") {
+        gtag("event", "generate_lead", {
+          event_category: "lead",
+          event_label: "free_quote_form"
+        });
+      }
+    });
+  });
+});
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
