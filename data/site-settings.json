@@ -1,0 +1,28 @@
+{
+  "servicesMenu": [
+    {
+      "label": "Accent Walls",
+      "url": "accent-walls.html"
+    },
+    {
+      "label": "Drywall Finishing",
+      "url": "drywall-finishing.html"
+    },
+    {
+      "label": "Tile & Stone",
+      "url": "tile-stone.html"
+    },
+    {
+      "label": "Flooring",
+      "url": "flooring.html"
+    },
+    {
+      "label": "Painting",
+      "url": "painting.html"
+    },
+    {
+      "label": "Framing",
+      "url": "framing.html"
+    }
+  ]
+}

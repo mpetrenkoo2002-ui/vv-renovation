@@ -72,6 +72,21 @@ collections:
               - { label: "Button Text", name: "buttonText", widget: "string" }
               - { label: "Button Link", name: "buttonLink", widget: "string" }
 
+  - name: "site_settings"
+    label: "Site Settings"
+    files:
+      - name: "navigation"
+        label: "Navigation"
+        file: "data/site-settings.json"
+        fields:
+          - label: "Services Menu"
+            name: "servicesMenu"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Service Name", name: "label", widget: "string" }
+              - { label: "Service URL", name: "url", widget: "string" }
+
   - name: "service_pages"
     label: "Service Pages"
     files:
