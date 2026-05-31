@@ -2922,7 +2922,7 @@ a.project-testimonial-google-badge:hover {
    (home + service pages)
 ================================ */
 .featured-project {
-  padding: 88px 0;
+  padding: 96px 0;
   background: #fff;
 }
 
@@ -2988,6 +2988,18 @@ a.project-testimonial-google-badge:hover {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 28px;
+}
+
+/* Featured Project - make All Projects button navy */
+.featured-project-actions .btn-outline {
+  color: var(--nav-text) !important;
+  border: 2px solid var(--nav-text) !important;
+}
+
+.featured-project-actions .btn-outline:hover {
+  background: #071c36 !important;
+  color: #fff !important;
+  border-color: #071c36 !important;
 }
 
 /* ================================
