@@ -49,7 +49,15 @@ content="Professional flooring installation in Vancouver. Hardwood, engineered w
 
         <div class="nav-dropdown-menu" data-services-menu></div>
       </div>
-<a href="#work">Our Work</a>
+<div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+          <span>Our Projects</span>
+          <span class="nav-arrow"></span>
+        </button>
+
+        <div class="nav-dropdown-menu" data-projects-menu></div>
+      </div>
+      <a href="#work">Our Work</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -432,6 +440,29 @@ content="Professional flooring installation in Vancouver. Hardwood, engineered w
   </div>
 </section>
 
+  <!-- Featured Project -->
+  <section class="featured-project" aria-label="Featured project">
+    <div class="container">
+      <div class="featured-project-inner">
+        <div class="featured-project-media">
+          <img src="yoga-owner.jpg" alt="Completed commercial yoga studio renovation in Langley by VV Renovation" loading="lazy">
+        </div>
+        <div class="featured-project-body">
+          <p class="featured-project-eyebrow">Featured Project</p>
+          <h2>Yoga Studio Renovation in Langley</h2>
+          <p>
+            See how we combined our core trades — framing, drywall, flooring, decorative wall panels and finishing —
+            on a full commercial studio build-out in Langley, BC.
+          </p>
+          <div class="featured-project-actions">
+            <a href="yoga-studio-langley.html" class="btn btn-primary">View Project</a>
+            <a href="our-projects.html" class="btn btn-outline">All Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section class="contact" id="contact" aria-label="Contact">
     <div class="container contact-grid">
@@ -506,6 +537,7 @@ content="Professional flooring installation in Vancouver. Hardwood, engineered w
 
       <div class="footer-services">
         <div class="footer-title">Services:</div>
+        <a href="services.html" class="footer-all-link">All services →</a>
 
         <div class="footer-services-grid">
           <div class="footer-col">
@@ -563,6 +595,14 @@ content="Professional flooring installation in Vancouver. Hardwood, engineered w
             <ul class="footer-list">
               <li><a href="painting.html">Commercial painting</a></li>
               <li><a href="painting.html">Residential painting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Our Projects</div>
+            <ul class="footer-list">
+              <li><a href="our-projects.html">All projects</a></li>
+              <li><a href="yoga-studio-langley.html">Yoga studio — Langley</a></li>
             </ul>
           </div>
         </div>
@@ -692,17 +732,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Mobile services dropdown
-  if (servicesDropdown && servicesToggle) {
-    servicesToggle.addEventListener('click', (e) => {
+  const navDropdowns = document.querySelectorAll('.nav-dropdown');
+  const closeAllDropdowns = () => navDropdowns.forEach((d) => {
+    d.classList.remove('open');
+    const t = d.querySelector('.nav-dropdown-toggle');
+    if (t) t.setAttribute('aria-expanded', 'false');
+  });
+
+  navDropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', (e) => {
       if (window.innerWidth <= 760) {
         e.preventDefault();
         e.stopPropagation();
-
-        const isOpen = servicesDropdown.classList.toggle('open');
-        servicesToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        const willOpen = !dropdown.classList.contains('open');
+        closeAllDropdowns();
+        if (willOpen) {
+          dropdown.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
       }
     });
-  }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) closeAllDropdowns();
+  });
 
   // FAQ toggle
   const framingFaqItems = document.querySelectorAll('.framing-faq-item');

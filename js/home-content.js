@@ -6,7 +6,7 @@ function esc(value) {
     .replaceAll('"', "&quot;");
 }
 
-fetch("/data/home.json")
+fetch("data/home.json")
   .then((res) => res.json())
   .then((data) => {
     const hero = data.hero;

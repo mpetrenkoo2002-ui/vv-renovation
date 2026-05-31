@@ -1,6 +1,10 @@
 {
   "servicesMenu": [
     {
+      "label": "All Services",
+      "url": "services.html"
+    },
+    {
       "label": "Accent Walls",
       "url": "accent-walls.html"
     },
@@ -23,6 +27,12 @@
     {
       "label": "Framing",
       "url": "framing.html"
+    }
+  ],
+  "projectsMenu": [
+    {
+      "label": "Yoga Studio — Langley",
+      "url": "yoga-studio-langley.html"
     }
   ]
 }

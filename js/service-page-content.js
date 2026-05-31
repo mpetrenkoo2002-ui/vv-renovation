@@ -231,9 +231,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch(`/data/${page}.json`)
+  fetch(`data/${page}.json`)
     .then((res) => {
-      if (!res.ok) throw new Error(`Failed to load /data/${page}.json`);
+      if (!res.ok) throw new Error(`Failed to load data/${page}.json`);
       return res.json();
     })
     .then((data) => {
