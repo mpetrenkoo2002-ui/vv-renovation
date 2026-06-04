@@ -18,7 +18,11 @@
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional drywall finishing.",
     "mediaType": "image",
     "media": "drywall.jpeg",
-    "mediaAlt": "Drywall finishing work by VV Renovation"
+    "mediaAlt": "Drywall finishing work by VV Renovation",
+    "mediaItems": [
+      { "type": "image", "src": "drywall.jpeg", "alt": "Drywall finishing work by VV Renovation" },
+      { "type": "image", "src": "drywall-work-1.jpg", "alt": "Drywall installation in progress by VV Renovation" }
+    ]
   },
   "types": {
     "title": "Types of Drywall Finishing We Offer",

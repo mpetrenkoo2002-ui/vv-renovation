@@ -18,7 +18,11 @@
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional framing services.",
     "mediaType": "image",
     "media": "framing.webp",
-    "mediaAlt": "Framing work by VV Renovation"
+    "mediaAlt": "Framing work by VV Renovation",
+    "mediaItems": [
+      { "type": "image", "src": "framing.webp", "alt": "Steel stud framing work by VV Renovation" },
+      { "type": "image", "src": "framing-hero.webp", "alt": "Framing structure inside a renovation project by VV Renovation" }
+    ]
   },
   "types": {
     "title": "Types of Framing We Offer",
