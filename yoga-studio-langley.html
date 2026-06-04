@@ -235,7 +235,7 @@
       </figure>
 
       <figure class="project-gallery-item">
-        <img src="yoga-wall.jpg" alt="Black slat decorative wall panel detail in finished yoga studio, Langley BC" loading="lazy">
+        <img src="yoga-owner1.jpg" alt="Finished yoga studio interior with mats, mirror wall and blue accent lighting, Langley BC" loading="lazy">
       </figure>
 
       <figure class="project-gallery-item">
@@ -255,13 +255,13 @@
         <div class="project-about-copy">
           <p class="project-section-eyebrow">About the Project</p>
 
-          <h2>Commercial Yoga Studio Build-Out in Langley</h2>
+          <h2 id="yoga-about-heading">Commercial Yoga Studio Build-Out in Langley</h2>
 
-          <p>
+          <p id="yoga-about-p1">
             VV Renovation helped complete a commercial yoga studio renovation in Langley, BC, turning the space into a clean, functional and polished interior for everyday studio use.
           </p>
 
-          <p>
+          <p id="yoga-about-p2">
             The project included floor preparation, yoga mat installation, decorative wall panels, storage assembly, finishing details and adjustments around the mirror wall and training areas.
           </p>
         </div>
@@ -331,8 +331,8 @@
 
     <div class="project-scope-heading">
       <p class="project-section-eyebrow">Scope, Materials & Methods</p>
-      <h2>What We Completed</h2>
-      <p>
+      <h2 id="yoga-scope-heading">What We Completed</h2>
+      <p id="yoga-scope-intro">
 This Langley yoga studio project included structural preparation, drywall and ceiling work, self-leveling, vinyl tile installation, yoga mat installation, decorative wall panels, furniture assembly and detailed finishing around mirrors, baseboards and training areas.</p>
     </div>
 
@@ -445,7 +445,7 @@ We removed the affected baseboards, cut each piece to fit the new height and rei
         <img src="yoga-shelf-after.jpg" alt="Yoga studio — storage and shelving" loading="lazy">
       </figure>
       <figure class="project-gallery-item">
-        <img src="yoga-wall.jpg" alt="Yoga studio — accent wall detail" loading="lazy">
+        <img src="yoga-outside-1.jpg" alt="Yoga 7 studio exterior and entrance after commercial renovation in Langley, BC" loading="lazy">
       </figure>
     </div>
 
@@ -455,17 +455,24 @@ We removed the affected baseboards, cut each piece to fit the new height and rei
         <div class="project-testimonial-left">
           <div class="project-testimonial-stars">★★★★★</div>
           <p class="project-testimonial-label">Owner Review</p>
-          <blockquote>
+          <blockquote id="yoga-testimonial-quote">
             We had a great experience working with this renovation company. Everything was very organized, professional, and done in a timely manner. The team worked efficiently, paid attention to details, and the final result turned out really well. We are very happy with the quality of the work and will definitely be using their services again in the future. Highly recommend!
           </blockquote>
         </div>
         <div class="project-testimonial-right">
           <div class="project-testimonial-author">
-            <div class="project-testimonial-avatar">J</div>
+            <img
+              id="yoga-testimonial-avatar"
+              class="project-testimonial-avatar project-testimonial-avatar--photo"
+              src="https://lh3.googleusercontent.com/a-/ALV-UjXUdKmUFbAJbV7rjcXR88QrOZCQV6V6IPx9mB7Cf0BA56_sjAqsSw=s128-c0x00000000-cc-rp-mo"
+              alt="Jenya — Owner, Yoga 7 Studio"
+              loading="lazy"
+              onerror="this.outerHTML='<div class=&quot;project-testimonial-avatar&quot;>J</div>'"
+            >
             <div class="project-testimonial-author-info">
-              <strong>Jenya</strong>
-              <span>Owner, Yoga 7 Studio</span>
-              <span class="project-testimonial-location">Langley, BC</span>
+              <strong id="yoga-testimonial-author">Jenya</strong>
+              <span id="yoga-testimonial-role">Owner, Yoga 7 Studio</span>
+              <span id="yoga-testimonial-location" class="project-testimonial-location">Langley, BC</span>
             </div>
           </div>
           <a
@@ -804,6 +811,7 @@ We removed the affected baseboards, cut each piece to fit the new height and rei
   </div>
 </footer>
 
+  <script src="js/yoga-studio-content.js"></script>
   <script src="js/site-settings.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {

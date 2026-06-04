@@ -86,6 +86,13 @@ collections:
             fields:
               - { label: "Service Name", name: "label", widget: "string" }
               - { label: "Service URL", name: "url", widget: "string" }
+          - label: "Projects Menu"
+            name: "projectsMenu"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Project Name", name: "label", widget: "string" }
+              - { label: "Project URL", name: "url", widget: "string" }
 
   - name: "service_pages"
     label: "Service Pages"
@@ -751,6 +758,86 @@ collections:
               - label: "Questions"
                 name: "items"
                 widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+
+  - name: "projects"
+    label: "Projects"
+    files:
+
+      - name: "our_projects"
+        label: "Our Projects Page"
+        file: "data/our-projects.json"
+        fields:
+          - label: "Page Heading"
+            name: "heading"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro Text", name: "text", widget: "text" }
+
+          - label: "Project Cards"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - { label: "Page URL", name: "url", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "Tag (e.g. Commercial)", name: "tag", widget: "string" }
+              - { label: "Short Description", name: "description", widget: "text" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Timeline", name: "timeline", widget: "string" }
+
+      - name: "yoga_studio_langley"
+        label: "Yoga Studio — Langley"
+        file: "data/yoga-studio-langley.json"
+        fields:
+
+          - label: "About the Project"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "para1", widget: "text" }
+              - { label: "Paragraph 2", name: "para2", widget: "text" }
+
+          - label: "What We Completed (Scope)"
+            name: "scope"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - label: "Scope Cards"
+                name: "cards"
+                widget: "list"
+                summary: "{{fields.number}} — {{fields.title}}"
+                fields:
+                  - { label: "Number (e.g. 01)", name: "number", widget: "string" }
+                  - { label: "Card Title", name: "title", widget: "string" }
+                  - { label: "Card Text", name: "text", widget: "text" }
+
+          - label: "Client Testimonial"
+            name: "testimonial"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Author Name", name: "author", widget: "string" }
+              - { label: "Role / Company", name: "role", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Avatar Image URL", name: "avatarUrl", widget: "string", required: false }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
                 fields:
                   - { label: "Question", name: "question", widget: "string" }
                   - { label: "Answer", name: "answer", widget: "text" }

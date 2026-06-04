@@ -1,0 +1,19 @@
+{
+  "heading": {
+    "eyebrow": "Our Projects",
+    "title": "Renovation Projects in the Greater Vancouver Area",
+    "text": "A look at completed renovation projects by VV Renovation — from commercial build-outs to detailed residential finishing. Each project combines our core trades: framing, drywall finishing, flooring, tile & stone, accent walls and painting."
+  },
+  "projects": [
+    {
+      "title": "Yoga Studio Renovation in Langley",
+      "url": "yoga-studio-langley.html",
+      "image": "yoga-owner.jpg",
+      "imageAlt": "Finished commercial yoga studio renovation with black mats and mirror wall in Langley, BC",
+      "tag": "Commercial",
+      "description": "A full commercial studio build-out: framing, drywall and ceiling work, self-leveling, vinyl tile and yoga mat installation, decorative wall panels and detailed finishing.",
+      "location": "Langley, BC",
+      "timeline": "1.5–2 Months"
+    }
+  ]
+}

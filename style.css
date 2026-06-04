@@ -1645,7 +1645,7 @@ section[id] {
 }
 
 .project-page {
-  background: var(--light);
+  background: var(--bg);
 }
 
 .project-hero {
@@ -1791,7 +1791,7 @@ section[id] {
 
 .project-gallery-section {
   padding: 104px 0 116px;
-  background: var(--light);
+  background: var(--bg);
 }
 
 .project-gallery-heading {
@@ -2430,19 +2430,12 @@ section[id] {
   font-size: 17px;
   line-height: 1.8;
   color: var(--nav-text);
-  font-style: italic;
   font-weight: 500;
   position: relative;
 }
  
 .project-testimonial-card--wide blockquote::before {
-  content: '“';
-  font-family: Georgia, serif;
-  font-size: 80px;
-  font-style: normal;
-  line-height: 0.75;
-  color: var(--accent);
-  opacity: 0.18;
+
   display: block;
   margin-bottom: 12px;
 }
@@ -2467,6 +2460,12 @@ section[id] {
   font-weight: 700;
   font-size: 20px;
   flex-shrink: 0;
+}
+
+img.project-testimonial-avatar--photo {
+  object-fit: cover;
+  background: transparent;
+  display: block;
 }
  
 .project-testimonial-author-info {
@@ -3482,15 +3481,21 @@ a.project-testimonial-google-badge:hover {
 
   .project-scope-card {
     min-height: auto;
-    padding: 26px 22px;
+    padding: 20px 18px;
   }
 
   .project-scope-number {
-    margin-bottom: 18px;
+    margin-bottom: 12px;
   }
 
   .project-scope-card h3 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .project-scope-card p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .project-challenge-highlight {
