@@ -92,10 +92,22 @@ if (introGrid) {
   `;
 }
 
+function injectEyebrow(selector, label, center) {
+  var el = document.querySelector(selector);
+  if (!el) return;
+  var existing = el.parentElement && el.parentElement.querySelector('.service-eyebrow');
+  if (existing) return; // already injected
+  var span = document.createElement('span');
+  span.className = 'service-eyebrow' + (center ? ' service-eyebrow--center' : '');
+  span.textContent = label;
+  el.parentElement.insertBefore(span, el);
+}
+
 function renderTypes(types) {
   if (!types) return;
 
   setText(".accent-types-title", types.title);
+  injectEyebrow(".accent-types-title", "Our Specialties", true);
 
   const grid = document.querySelector(".accent-types-grid");
   if (!grid || !Array.isArray(types.cards)) return;
@@ -112,6 +124,7 @@ function renderProcess(process) {
   if (!process) return;
 
   setText(".process-title", process.title);
+  injectEyebrow(".process-title", "Our Process", true);
 
   const timeline = document.querySelector(".process-timeline");
   if (timeline && Array.isArray(process.steps)) {
@@ -138,6 +151,7 @@ function renderWhy(why) {
 
   setText(".why-title", why.title);
   setText(".why-subtitle", why.subtitle);
+  injectEyebrow(".why-title", "What Sets Us Apart", true);
 
   const grid = document.querySelector(".why-grid");
   if (!grid || !Array.isArray(why.cards)) return;
@@ -160,7 +174,10 @@ function renderWork(work) {
   if (!workSection) return;
 
   const title = workSection.querySelector(".section-title");
-  if (title) title.textContent = work.title || "Our Work";
+  if (title) {
+    title.textContent = work.title || "Our Work";
+    injectEyebrow(".work .section-title", "Portfolio", true);
+  }
 
   const grid = workSection.querySelector(".work-grid");
   if (grid && Array.isArray(work.images)) {
@@ -182,6 +199,7 @@ function renderFaq(faq) {
   if (!faq) return;
 
   setText(".framing-faq-title", faq.title);
+  injectEyebrow(".framing-faq-title", "Questions & Answers", true);
 
   const list = document.querySelector(".framing-faq-list");
   if (!list || !Array.isArray(faq.items)) return;
@@ -274,6 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         setText(".service-intro-title", data.intro.title);
+        injectEyebrow(".service-intro-title", "What We Do", false);
         setText(".service-intro-text", data.intro.mainText);
         setText(".service-secondary-intro-text", data.intro.secondaryText);
         renderIntroMedia(data.intro);

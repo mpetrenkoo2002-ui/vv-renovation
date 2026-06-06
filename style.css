@@ -13,7 +13,10 @@
   --overlay-soft: rgba(13, 46, 78, .40);
 
   --white: #FFFFFF;
- 
+
+  /* Light section surface (white) — used to alternate with --bg */
+  --light: #FFFFFF;
+
   --footer-gap-left: 12px;   /* logo → services */
   --footer-gap-right: 132px;  /* services → contact */
 }
@@ -392,14 +395,14 @@ section[id] {
 /* ===== Why Section ===== */
 
 .why{
-  padding: 0px 0 96px;
-  background: var(--bg);
+  padding: 96px 0;
+  background: #fff;
   text-align: center;
 }
 
 .why-title{
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: clamp(28px, 3.5vw, 44px);
   font-weight: 700;
   color: var(--nav-text);
   margin: 0 0 24px;
@@ -421,10 +424,10 @@ section[id] {
 }
 
 .why-card{
-  background: #fff;
+  background: var(--bg);
+  border: 1px solid rgba(11, 42, 74, 0.06);
   padding: 28px;
   text-align: left;
-  box-shadow: 0 8px 20px rgba(0,0,0,.05);
 
   display: grid;
   grid-template-rows: auto 1fr; /* header + text */
@@ -471,7 +474,7 @@ section[id] {
 /* ===== Testimonials ===== */
 
 .testimonials{
-  padding: 0px 0 96px;
+  padding: 96px 0;
   background: var(--bg);
   text-align: center;
 }
@@ -1115,8 +1118,25 @@ section[id] {
   transform: rotate(45deg);
   animation: heroArrowBounce 1.6s infinite;
 }
+
+/* ===== Service page eyebrow label ===== */
+.service-eyebrow {
+  display: block;
+  margin: 0 0 14px;
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #667789;
+}
+
+.service-eyebrow--center {
+  text-align: center;
+}
+
 .service-intro {
   padding: 96px 0;
+  background: var(--bg);
 }
 
 .intro-grid {
@@ -1174,12 +1194,13 @@ section[id] {
 }
 
 .accent-types {
-  padding: 0 0 96px;
+  padding: 96px 0;
+  background: #fff;
 }
 
 .accent-types-title {
   text-align: center;
-  font-size: 40px;
+  font-size: clamp(28px, 3.5vw, 44px);
   font-family: Poppins, sans-serif;
   font-weight: 700;
   margin-bottom: 32px;
@@ -1193,9 +1214,10 @@ section[id] {
 }
 
 .accent-type-card {
-  background: #fff;
+  background: var(--bg);
+  border: 1px solid rgba(11, 42, 74, 0.06);
   padding: 30px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .accent-type-card h3 {
@@ -1215,7 +1237,7 @@ section[id] {
 }
 
 .process {
-  padding: 0 0 96px;
+  padding: 96px 0;
   background: var(--bg);
   overflow: hidden;
 }
@@ -1224,7 +1246,7 @@ section[id] {
   margin: 0 auto 48px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-size: clamp(28px, 3.5vw, 44px);
   line-height: 1.05;
   font-weight: 700;
   color: var(--nav-text);
@@ -1348,7 +1370,8 @@ section[id] {
 }
 
 .framing-faq {
-  padding: 0px 0 96px;
+  padding: 96px 0;
+  background: #fff;
 }
 
 .framing-faq .container {
@@ -1645,7 +1668,7 @@ section[id] {
 }
 
 .project-page {
-  background: var(--bg);
+  background: var(--light);
 }
 
 .project-hero {
@@ -1791,7 +1814,7 @@ section[id] {
 
 .project-gallery-section {
   padding: 104px 0 116px;
-  background: var(--bg);
+  background: var(--light);
 }
 
 .project-gallery-heading {
@@ -1801,12 +1824,13 @@ section[id] {
 }
 
 .project-section-eyebrow {
+  display: block;
   margin: 0 0 14px;
-  font-size: 0.78rem;
-  font-weight: 800;
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #667789;
 }
 
 .project-gallery-heading h2 {
@@ -1907,15 +1931,6 @@ section[id] {
   max-width: 860px;
   margin-top: 22px;
   font-size: clamp(1rem, 1.25vw, 1.18rem);
-  line-height: 1.7;
-  font-weight: 500;
-  color: #667789;
-}
-
-.project-section-eyebrow {
-  max-width: 720px;
-  margin: 20px auto 0;
-  font-size: clamp(1rem, 1.25vw, 1.15rem);
   line-height: 1.7;
   font-weight: 500;
   color: #667789;
@@ -2551,12 +2566,7 @@ a.project-testimonial-google-badge:hover {
 }
 
 .project-faq-heading .project-section-eyebrow {
-  max-width: 720px;
-  margin: 20px auto 0;
-  font-size: 17px;
-  line-height: 1.7;
-  font-weight: 500;
-  color: #667789;
+  margin: 0 0 14px;
 }
 
 /* Make sure old service FAQ title style does not interfere */
@@ -2585,10 +2595,6 @@ a.project-testimonial-google-badge:hover {
   max-width: 860px;
   margin: 0 auto 48px;
   text-align: center;
-}
-
-.project-related-heading .project-section-eyebrow {
-  color: #8A95A5;
 }
 
 .project-related-heading h2 {
