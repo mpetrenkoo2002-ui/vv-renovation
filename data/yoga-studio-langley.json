@@ -1,4 +1,31 @@
 {
+  "media": {
+    "heroBg": "yoga-owner1.jpg",
+    "gallery": [
+      { "src": "yoga-outside-1.jpg", "alt": "Finished yoga studio exterior and entrance after commercial renovation in Langley, BC" },
+      { "src": "yoga-owner.jpg",     "alt": "Black slat accent wall with brass light fixture completed during yoga studio renovation in Langley" },
+      { "src": "yoga-mats-before.jpg", "alt": "Yoga studio floor before final mat and baseboard installation, Langley commercial renovation" },
+      { "src": "yoga-mats-after.jpg",  "alt": "Finished yoga studio floor with black mats and mirror wall installed, Langley renovation" },
+      { "src": "yoga-shelf-before.jpg","alt": "Shelving and storage components being assembled during commercial yoga studio renovation in Langley" },
+      { "src": "yoga-shelf-after.jpg", "alt": "Completed storage shelving installed inside renovated yoga studio in Langley" },
+      { "src": "yoga-owner1.jpg",      "alt": "Finished yoga studio interior with mats, mirror wall and blue accent lighting, Langley BC" },
+      { "src": "yoga-mats.jpg",        "alt": "Vinyl tile and yoga mat installation detail in finished commercial studio, Langley BC" }
+    ],
+    "aboutVideo": {
+      "src": "yoga-studio-finished.mp4",
+      "poster": "yoga-mats-after.jpg",
+      "alt": "Video showcasing the finished yoga studio renovation in Langley"
+    },
+    "beforeSrc": "yoga-mats-before.jpg",
+    "beforeAlt": "Before baseboard adjustment around mirror wall and yoga mat area in Langley yoga studio renovation",
+    "afterSrc": "yoga-mats-after.jpg",
+    "afterAlt": "After baseboard adjustment around mirror wall and yoga mat area in Langley yoga studio renovation",
+    "finalGallery": [
+      { "src": "yoga-owner.jpg",      "alt": "Yoga studio — main floor and mirror view" },
+      { "src": "yoga-shelf-after.jpg","alt": "Yoga studio — storage and shelving" },
+      { "src": "yoga-outside-1.jpg",  "alt": "Yoga 7 studio exterior and entrance after commercial renovation in Langley, BC" }
+    ]
+  },
   "about": {
     "heading": "Commercial Yoga Studio Build-Out in Langley",
     "para1": "VV Renovation helped complete a commercial yoga studio renovation in Langley, BC, turning the space into a clean, functional and polished interior for everyday studio use.",

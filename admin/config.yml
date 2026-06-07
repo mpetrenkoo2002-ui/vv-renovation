@@ -869,6 +869,41 @@ collections:
         file: "data/yoga-studio-langley.json"
         fields:
 
+          - label: "Page Images"
+            name: "media"
+            widget: "object"
+            fields:
+              - { label: "Hero Background Image", name: "heroBg", widget: "image" }
+
+              - label: "Gallery (8 images)"
+                name: "gallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - label: "About Section"
+                name: "aboutVideo"
+                widget: "object"
+                fields:
+                  - { label: "Video File", name: "src", widget: "file" }
+                  - { label: "Poster / Fallback Image", name: "poster", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - { label: "Before Image", name: "beforeSrc", widget: "image" }
+              - { label: "Before Image Alt Text", name: "beforeAlt", widget: "string" }
+              - { label: "After Image", name: "afterSrc", widget: "image" }
+              - { label: "After Image Alt Text", name: "afterAlt", widget: "string" }
+
+              - label: "Final Result Gallery (3 images)"
+                name: "finalGallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
           - label: "About the Project"
             name: "about"
             widget: "object"
@@ -918,6 +953,40 @@ collections:
         label: "Luxury Home — Jericho Beach"
         file: "data/jericho-beach.json"
         fields:
+
+          - label: "Page Images"
+            name: "media"
+            widget: "object"
+            fields:
+              - { label: "Hero Background Image", name: "heroBg", widget: "image" }
+
+              - label: "Gallery (8 images)"
+                name: "gallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - label: "About Section Image"
+                name: "aboutImage"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - { label: "Before Image", name: "beforeSrc", widget: "image" }
+              - { label: "Before Image Alt Text", name: "beforeAlt", widget: "string" }
+              - { label: "After Image", name: "afterSrc", widget: "image" }
+              - { label: "After Image Alt Text", name: "afterAlt", widget: "string" }
+
+              - label: "Final Result Gallery (3 images)"
+                name: "finalGallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
 
           - label: "About the Project"
             name: "about"

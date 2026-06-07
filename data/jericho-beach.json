@@ -1,4 +1,30 @@
 {
+  "media": {
+    "heroBg": "jericho-exterior.jpg",
+    "gallery": [
+      { "src": "jericho-stairwell.jpg",    "alt": "Curved stairwell with round porthole windows masked for interior painting in a luxury Jericho Beach estate, Vancouver" },
+      { "src": "jericho-pool.jpg",          "alt": "Indoor pool room with mirrored glass wall prepared during luxury home preparation in Jericho Beach" },
+      { "src": "jericho-hallway.jpg",       "alt": "Curved board-formed concrete hallway with disc lighting in a high-end Vancouver estate" },
+      { "src": "jericho-living-work.jpg",   "alt": "Large living and pool room with masked column during interior painting in Jericho Beach" },
+      { "src": "jericho-walkway.jpg",       "alt": "Recoated exterior concrete walkway beside repainted stucco wall at a Jericho Beach estate" },
+      { "src": "jericho-wine-room.jpg",     "alt": "Wine room with built-in wood shelving and freshly painted ceiling in a luxury Vancouver home" },
+      { "src": "jericho-detail.jpg",        "alt": "Detailed caulking and finishing work around glass partition during estate preparation in Jericho Beach" },
+      { "src": "jericho-panels-outdoor.jpg","alt": "Outdoor panels refinished on the terrace overlooking the tennis court at a Jericho Beach estate" }
+    ],
+    "aboutImage": {
+      "src": "jericho-painting.jpg",
+      "alt": "Interior painting in progress in a large curved-ceiling room of a luxury Jericho Beach estate"
+    },
+    "beforeSrc": "jericho-hottub-before.jpg",
+    "beforeAlt": "Hot tub mid-assembly with panels and mechanical components exposed at a Jericho Beach estate",
+    "afterSrc": "jericho-hottub-after.jpg",
+    "afterAlt": "Assembled hot tub positioned indoors by the glass doors after preparation at a Jericho Beach estate",
+    "finalGallery": [
+      { "src": "jericho-final-gym.jpg",     "alt": "Finished home gym and living area with floor-to-ceiling glass overlooking the tennis court in a Jericho Beach estate" },
+      { "src": "jericho-final-hallway.jpg", "alt": "Finished curved white hallway with glass spiral staircase railing in a luxury Vancouver home" },
+      { "src": "jericho-final-corridor.jpg","alt": "Finished curved board-formed concrete corridor with disc lighting in a Jericho Beach estate" }
+    ]
+  },
   "about": {
     "heading": "Preparing a Luxury Jericho Beach Estate for Summer",
     "para1": "VV Renovation prepared a luxury residential estate in Jericho Beach, Vancouver, getting the multi-level home — with its curved architecture, indoor pool, home gym, wine room and tennis court — fully ready for the summer season.",

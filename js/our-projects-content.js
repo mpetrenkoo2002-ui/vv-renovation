@@ -14,7 +14,7 @@ fetch("data/our-projects.json")
     var h = data.heading;
     if (h) {
       var h1 = document.querySelector(".projects-hub-heading h1");
-      var p  = document.querySelector(".projects-hub-heading p");
+      var p  = document.querySelector(".projects-hub-intro");
       if (h1 && h.title)    h1.textContent = h.title;
       if (p  && h.text)      p.innerHTML   = h.text;
     }
