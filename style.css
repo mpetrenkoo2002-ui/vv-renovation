@@ -608,7 +608,7 @@ section[id] {
 /* ===== Our Work ===== */
 
 .work{
-  padding: 0px 0 96px;
+  padding: 96px 0;
   background: var(--bg);
   text-align: center;
 }
@@ -1684,6 +1684,10 @@ section[id] {
 
 .yoga-studio-hero {
   background-image: url("yoga-owner1.jpg");
+}
+
+.jericho-beach-hero {
+  background-image: url("jericho-exterior.jpg");
 }
 
 .project-hero {
