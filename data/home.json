@@ -1,4 +1,4 @@
-{
+﻿{
   "hero": {
     "secondaryButtonLink": "#contact",
     "primaryButtonText": "Call Us",
@@ -79,7 +79,7 @@
       {
         "title": "Framing",
         "link": "framing.html",
-        "image": "framing.webp",
+        "image": "framing.jpg",
         "icon": "framing.svg",
         "items": [
           "Steel stud & wood framing",

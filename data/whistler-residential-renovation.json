@@ -1,0 +1,107 @@
+﻿{
+  "media": {
+    "heroBg": "whistler-exterior.jpg",
+    "gallery": [
+      { "src": "whistler-demolition.jpg",          "alt": "Demolition stage with tile and marble removed exposing substrate on the sloped shower zone of a Whistler chalet" },
+      { "src": "whistler-ceiling-mechanical.jpg",  "alt": "Open ceiling with exposed wood framing, electrical wiring and HVAC ductwork during Whistler renovation" },
+      { "src": "whistler-demolition-2.jpg",        "alt": "Tile removed to expose mortar bed and cement board on an angled wall during Whistler chalet demolition" },
+      { "src": "whistler-drywall.jpg",             "alt": "New drywall installed on the sloped ceiling around a wood-framed window in a Whistler chalet" },
+      { "src": "whistler-drywall-laser.jpg",       "alt": "Drywall installation aligned with a green laser level across the angled walls of a Whistler renovation" },
+      { "src": "whistler-finishing.jpg",           "alt": "Worker applying a multi-coat skim finish to drywall joints on a sloped ceiling in Whistler" },
+      { "src": "whistler-detail.jpg",              "alt": "Detailed Level 5 finishing inspected under raking work light during Whistler chalet renovation" },
+      { "src": "whistler-demolition-detail.jpg",   "alt": "Close-up of demolished tile mortar bed over the angled wall surface in a Whistler chalet" }
+    ],
+    "aboutImage": {
+      "src": "whistler-painting.jpg",
+      "alt": "Worker rolling a finishing coat onto the sloped walls of a Whistler chalet interior renovation"
+    },
+    "beforeSrc": "whistler-before.jpg",
+    "beforeAlt": "Demolition stage of the Whistler chalet bedroom with tile and marble removed and structural substrate exposed under the sloped ceiling",
+    "afterSrc": "whistler-after.jpg",
+    "afterAlt": "Completed smooth white Level 5 walls and angled ceiling with a wood-framed window overlooking the Whistler forest",
+    "finalGallery": [
+      { "src": "whistler-after.jpg",         "alt": "Finished smooth white walls and angled ceiling with wood-framed window overlooking the Whistler forest" },
+      { "src": "whistler-final-angled.jpg",  "alt": "Smooth Level 5 finished angled walls meeting cleanly at a sharp corner in the Whistler chalet" },
+      { "src": "whistler-final-ceiling.jpg", "alt": "Finished sloped ceiling with a clean valley intersection after Level 5 drywall finishing in Whistler" }
+    ]
+  },
+  "about": {
+    "heading": "Full Interior Renovation of a Whistler Chalet",
+    "para1": "VV Renovation completed a full interior renovation inside a high-end Whistler chalet, working through a multi-stage scope that covered demolition, structural preparation, drywall and a Level 5 finish with meticulous detail work throughout.",
+    "para2": "The project began with full demolition of existing tile, stone and marble surfaces, as well as drywall removal across the bathroom and shower zone. What made the work particularly demanding was the home's architecture — sloped ceilings, complex angles and non-standard geometry that required precise cutting and careful execution at every stage. After demolition, the team completed framing, new drywall installation, multi-coat finishing and painting. The client's standard was clear from the start: every detail had to be perfect. The project moved at the pace the quality required."
+  },
+  "scope": {
+    "heading": "What We Completed",
+    "intro": "This Whistler chalet renovation moved through demolition of tile, stone and marble, drywall removal and structural exposure, ceiling and mechanical coordination, framing, new drywall installation, a full Level 5 finish and painting — all executed around sloped ceilings and complex angled geometry.",
+    "cards": [
+      {
+        "number": "01",
+        "title": "Demolition: Tile, Stone & Marble Removal",
+        "text": "Demolished existing tile, stone and marble surfaces throughout the bathroom and shower zone using saws, pry bars, sledgehammers and drywall cutting tools. The removal exposed multiple layers and revealed the full scope of structural work needed underneath."
+      },
+      {
+        "number": "02",
+        "title": "Drywall Removal & Structural Exposure",
+        "text": "Cut and removed existing drywall sections to expose the framing, ceiling structure, mechanical systems and insulation. This stage confirmed the condition of what was behind the walls and allowed the team to plan the rebuild accurately."
+      },
+      {
+        "number": "03",
+        "title": "Ceiling Work & Mechanical Coordination",
+        "text": "Worked around open ceiling sections with exposed wood framing, electrical rough-in, HVAC ductwork and insulation — coordinating the drywall rebuild around existing mechanical systems while maintaining clean transitions throughout."
+      },
+      {
+        "number": "04",
+        "title": "Framing",
+        "text": "Completed framing work to prepare the bathroom and surrounding zones for new drywall — working with the sloped ceiling geometry and angled wall lines that defined the architectural character of the chalet."
+      },
+      {
+        "number": "05",
+        "title": "Drywall Installation",
+        "text": "Installed new drywall across walls and ceilings using precise measurements, laser levels and careful cutting to follow the non-standard angles and sloped surfaces throughout the space."
+      },
+      {
+        "number": "06",
+        "title": "Drywall Finishing & Level 5",
+        "text": "Applied a full multi-coat finishing sequence up to Level 5 — the highest standard of drywall finish, leaving a completely smooth, paint-ready surface with no visible texture, tool marks or imperfections. Each coat was sanded and inspected before the next was applied."
+      },
+      {
+        "number": "07",
+        "title": "Painting",
+        "text": "Primed and painted all finished surfaces, including the sloped walls and angled ceiling sections. The painting stage revealed the full quality of the Level 5 finish underneath — a flat, clean surface throughout the renovated interior."
+      }
+    ]
+  },
+  "relatedServices": [
+    { "label": "Drywall Finishing",  "url": "drywall-finishing.html", "image": "whistler-finishing.jpg", "imageAlt": "Drywall finishing service by VV Renovation",  "icon": "drywall.svg"     },
+    { "label": "Framing",            "url": "framing.html",           "image": "framing.jpg",           "imageAlt": "Framing service by VV Renovation",           "icon": "framing.svg"     },
+    { "label": "Painting",           "url": "painting.html",          "image": "whistler-painting.jpg",  "imageAlt": "Painting service by VV Renovation",          "icon": "paint.svg"       }
+  ],
+  "faq": {
+    "items": [
+      {
+        "question": "What type of project was this?",
+        "answer": "A full interior renovation inside a residential chalet in Whistler, BC. The scope included demolition of tile, stone and marble, drywall removal, framing, new drywall installation, Level 5 finishing and painting."
+      },
+      {
+        "question": "What is Level 5 drywall finishing?",
+        "answer": "Level 5 is the highest standard of drywall finish. It involves applying a skim coat over the entire surface after taping and mudding, then sanding to a perfectly smooth result with no texture or imperfections. It is typically used in high-end residential projects or where critical lighting conditions would reveal any surface flaws."
+      },
+      {
+        "question": "Why does Level 5 finishing take longer?",
+        "answer": "Each coat must dry fully before the next is applied, and each layer requires sanding and inspection. On complex surfaces with angles and slopes, additional templating and fitting time is required. The process cannot be rushed without compromising the final result."
+      },
+      {
+        "question": "How did you handle the sloped ceilings and angled walls?",
+        "answer": "Each panel was measured and cut individually to follow the geometry of the sloped ceiling and angled wall lines. We used laser levels to maintain alignment and templated non-standard cuts before installation."
+      },
+      {
+        "question": "Do you work on renovation projects in Whistler or outside Vancouver?",
+        "answer": "Yes. VV Renovation works across the Greater Vancouver Area and on select projects in areas such as Whistler for the right scope of work."
+      },
+      {
+        "question": "How much does a renovation like this cost?",
+        "answer": "Cost depends on the extent of demolition, the square footage of drywall, the finishing level required and the complexity of the geometry involved. Contact us for a free estimate."
+      }
+    ]
+  }
+}

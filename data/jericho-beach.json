@@ -66,6 +66,12 @@
       }
     ]
   },
+  "relatedServices": [
+    { "label": "Painting",          "url": "painting.html",          "image": "jericho-painting.jpg", "imageAlt": "Painting service by VV Renovation",          "icon": "paint.svg"        },
+    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",          "imageAlt": "Accent wall service by VV Renovation",       "icon": "accent-walls.svg" },
+    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png",    "imageAlt": "Flooring service by VV Renovation",          "icon": "flooring.svg"     },
+    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",     "imageAlt": "Drywall finishing service by VV Renovation", "icon": "drywall.svg"      }
+  ],
   "faq": {
     "items": [
       {

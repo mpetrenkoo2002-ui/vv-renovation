@@ -101,6 +101,25 @@ fetch("data/jericho-beach.json")
       }
     }
 
+    // ── Related Services ─────────────────────────────────────────────────────
+    var relatedServices = data.relatedServices;
+    if (Array.isArray(relatedServices) && relatedServices.length) {
+      var relGrid = document.querySelector('.project-related-service-grid');
+      if (relGrid) {
+        relGrid.innerHTML = relatedServices.map(function(s) {
+          return '<a href="' + esc(s.url) + '" class="project-related-service-card">' +
+            '<div class="project-related-service-media">' +
+              '<img src="' + esc(s.image) + '" alt="' + esc(s.imageAlt) + '" loading="lazy">' +
+            '</div>' +
+            '<div class="project-related-service-panel">' +
+              '<img class="project-related-service-icon" src="' + esc(s.icon) + '" alt="">' +
+              '<h3>' + esc(s.label) + '</h3>' +
+            '</div>' +
+          '</a>';
+        }).join('');
+      }
+    }
+
     // ── FAQ ──────────────────────────────────────────────────────────────────
     var faq = data.faq;
     if (faq && Array.isArray(faq.items) && faq.items.length) {

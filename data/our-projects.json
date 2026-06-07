@@ -24,6 +24,16 @@
       "description": "Seasonal preparation of a high-end Vancouver estate: interior painting of curved walls and ceilings, stucco and concrete crack repair, exterior repainting, hot tub assembly and detailed handyman work.",
       "location": "Jericho Beach, Vancouver, BC",
       "timeline": "~1 Month"
+    },
+    {
+      "title": "Interior Renovation in Whistler",
+      "url": "whistler-residential-renovation.html",
+      "image": "whistler-after.jpg",
+      "imageAlt": "Finished smooth white Level 5 walls and angled ceiling with a wood-framed forest window in a renovated Whistler chalet",
+      "tag": "Residential",
+      "description": "A full chalet interior renovation: demolition of tile, stone and marble, framing, drywall, Level 5 finishing and painting — executed with precision across sloped ceilings and complex angled geometry.",
+      "location": "Whistler, BC",
+      "timeline": "Multi-stage"
     }
   ]
 }

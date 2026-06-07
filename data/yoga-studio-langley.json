@@ -1,4 +1,4 @@
-{
+﻿{
   "media": {
     "heroBg": "yoga-owner1.jpg",
     "gallery": [
@@ -74,6 +74,12 @@
     "location": "Langley, BC",
     "avatarUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXUdKmUFbAJbV7rjcXR88QrOZCQV6V6IPx9mB7Cf0BA56_sjAqsSw=s128-c0x00000000-cc-rp-mo"
   },
+  "relatedServices": [
+    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png", "imageAlt": "Flooring service by VV Renovation",          "icon": "flooring.svg"     },
+    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",  "imageAlt": "Drywall finishing service by VV Renovation", "icon": "drywall.svg"      },
+    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",       "imageAlt": "Accent wall service by VV Renovation",       "icon": "accent-walls.svg" },
+    { "label": "Framing",           "url": "framing.html",           "image": "framing.jpg",      "imageAlt": "Framing service by VV Renovation",           "icon": "framing.svg"      }
+  ],
   "faq": {
     "items": [
       {

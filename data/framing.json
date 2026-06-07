@@ -1,10 +1,10 @@
-{
+﻿{
   "seo": {
     "title": "Framing Services | VV Renovation",
     "description": "Professional framing services in Vancouver. Steel stud framing, wood framing and finish carpentry for residential and commercial interiors. Free estimate."
   },
   "hero": {
-    "backgroundImage": "framing-hero.webp",
+    "backgroundImage": "framing-hero.jpg",
     "title": "Framing Services in Vancouver",
     "subtitle": "Strong, accurate and reliable framing for residential and commercial renovation projects.",
     "buttonText": "Get Free Estimate",
@@ -17,11 +17,11 @@
     "mainText": "Good framing is the foundation of a clean, durable and well-built interior. VV Renovation provides precise framing work for partitions, ceilings, renovation layouts and finish carpentry with attention to structure, alignment and long-term reliability.",
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional framing services.",
     "mediaType": "image",
-    "media": "framing.webp",
+    "media": "framing.jpg",
     "mediaAlt": "Framing work by VV Renovation",
     "mediaItems": [
-      { "type": "image", "src": "framing.webp", "alt": "Steel stud framing work by VV Renovation" },
-      { "type": "image", "src": "framing-hero.webp", "alt": "Framing structure inside a renovation project by VV Renovation" }
+      { "type": "image", "src": "framing.jpg", "alt": "Steel stud framing work by VV Renovation" },
+      { "type": "image", "src": "framing-hero.jpg", "alt": "Framing structure inside a renovation project by VV Renovation" }
     ]
   },
   "types": {

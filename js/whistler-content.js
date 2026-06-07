@@ -6,7 +6,7 @@ function esc(v) {
     .replaceAll('"', "&quot;");
 }
 
-fetch("data/yoga-studio-langley.json")
+fetch("data/whistler-residential-renovation.json")
   .then(function(res) { return res.json(); })
   .then(function(data) {
 
@@ -15,12 +15,12 @@ fetch("data/yoga-studio-langley.json")
     if (m) {
 
       // Hero background
-      var heroEl = document.querySelector('.yoga-studio-hero');
+      var heroEl = document.querySelector('.whistler-residential-hero');
       if (heroEl && m.heroBg) {
         heroEl.style.backgroundImage = 'url("' + esc(m.heroBg) + '")';
       }
 
-      // Main gallery (8 images — first item gets large class)
+      // Main gallery (first item gets large class)
       var mainGallery = document.querySelector('.project-gallery-section .project-gallery-grid-4');
       if (mainGallery && Array.isArray(m.gallery) && m.gallery.length) {
         mainGallery.innerHTML = m.gallery.map(function(img, i) {
@@ -31,15 +31,12 @@ fetch("data/yoga-studio-langley.json")
         }).join('');
       }
 
-      // About section video
+      // About section image
       var aboutWrap = document.querySelector('.project-about-video');
-      if (aboutWrap && m.aboutVideo) {
-        var av = m.aboutVideo;
+      if (aboutWrap && m.aboutImage) {
+        var ai = m.aboutImage;
         aboutWrap.innerHTML =
-          '<video src="' + esc(av.src) + '"' +
-          (av.poster ? ' poster="' + esc(av.poster) + '"' : '') +
-          ' autoplay muted loop playsinline preload="metadata"' +
-          ' aria-label="' + esc(av.alt) + '"></video>';
+          '<img src="' + esc(ai.src) + '" alt="' + esc(ai.alt) + '" loading="lazy">';
       }
 
       // Before / After images
@@ -60,7 +57,7 @@ fetch("data/yoga-studio-langley.json")
           '</figure>';
       }
 
-      // Final result gallery (3 images — first gets --main class)
+      // Final result gallery (first gets --main class)
       var finalGallery = document.querySelector('.project-final-gallery-3');
       if (finalGallery && Array.isArray(m.finalGallery) && m.finalGallery.length) {
         finalGallery.innerHTML = m.finalGallery.map(function(img, i) {
@@ -75,9 +72,9 @@ fetch("data/yoga-studio-langley.json")
     // ── About text ───────────────────────────────────────────────────────────
     var about = data.about;
     if (about) {
-      var heading = document.getElementById("yoga-about-heading");
-      var p1      = document.getElementById("yoga-about-p1");
-      var p2      = document.getElementById("yoga-about-p2");
+      var heading = document.getElementById("whistler-about-heading");
+      var p1      = document.getElementById("whistler-about-p1");
+      var p2      = document.getElementById("whistler-about-p2");
       if (heading && about.heading) heading.textContent = about.heading;
       if (p1 && about.para1)        p1.textContent      = about.para1;
       if (p2 && about.para2)        p2.textContent      = about.para2;
@@ -86,8 +83,8 @@ fetch("data/yoga-studio-langley.json")
     // ── Scope cards ──────────────────────────────────────────────────────────
     var scope = data.scope;
     if (scope) {
-      var scopeH2    = document.getElementById("yoga-scope-heading");
-      var scopeIntro = document.getElementById("yoga-scope-intro");
+      var scopeH2    = document.getElementById("whistler-scope-heading");
+      var scopeIntro = document.getElementById("whistler-scope-intro");
       var scopeGrid  = document.querySelector(".project-scope-grid");
 
       if (scopeH2 && scope.heading)   scopeH2.textContent    = scope.heading;
@@ -101,25 +98,6 @@ fetch("data/yoga-studio-langley.json")
             '<p>' + esc(card.text) + '</p>' +
           '</article>';
         }).join("");
-      }
-    }
-
-    // ── Testimonial ──────────────────────────────────────────────────────────
-    var t = data.testimonial;
-    if (t) {
-      var quote    = document.getElementById("yoga-testimonial-quote");
-      var avatar   = document.getElementById("yoga-testimonial-avatar");
-      var author   = document.getElementById("yoga-testimonial-author");
-      var role     = document.getElementById("yoga-testimonial-role");
-      var location = document.getElementById("yoga-testimonial-location");
-
-      if (quote  && t.quote)    quote.textContent    = t.quote;
-      if (author && t.author)   author.textContent   = t.author;
-      if (role   && t.role)     role.textContent     = t.role;
-      if (location && t.location) location.textContent = t.location;
-      if (avatar && t.avatarUrl) {
-        avatar.src = t.avatarUrl;
-        avatar.alt = esc(t.author) + " — " + esc(t.role);
       }
     }
 
@@ -166,4 +144,4 @@ fetch("data/yoga-studio-langley.json")
       }
     }
   })
-  .catch(function(err) { console.error("Yoga content error:", err); });
+  .catch(function(err) { console.error("Whistler content error:", err); });

@@ -1485,7 +1485,7 @@ section[id] {
 .framing-hero {
   position: relative;
   min-height: 78vh;
-  background-image: url("framing-hero.webp");
+  background-image: url("framing-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1688,6 +1688,10 @@ section[id] {
 
 .jericho-beach-hero {
   background-image: url("jericho-exterior.jpg");
+}
+
+.whistler-residential-hero {
+  background-image: url("whistler-exterior.jpg");
 }
 
 .project-hero {
@@ -2613,8 +2617,9 @@ a.project-testimonial-google-badge:hover {
 
 .project-related-service-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 320px));
   gap: 22px;
+  justify-content: center;
 }
 
 .project-related-service-card {

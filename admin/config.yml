@@ -949,6 +949,17 @@ collections:
                   - { label: "Question", name: "question", widget: "string" }
                   - { label: "Answer", name: "answer", widget: "text" }
 
+          - label: "Related Services"
+            name: "relatedServices"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Service Name", name: "label", widget: "string" }
+              - { label: "Link URL (e.g. painting.html)", name: "url", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "Icon File (e.g. paint.svg)", name: "icon", widget: "string" }
+
       - name: "jericho_beach"
         label: "Luxury Home — Jericho Beach"
         file: "data/jericho-beach.json"
@@ -1022,3 +1033,99 @@ collections:
                 fields:
                   - { label: "Question", name: "question", widget: "string" }
                   - { label: "Answer", name: "answer", widget: "text" }
+
+          - label: "Related Services"
+            name: "relatedServices"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Service Name", name: "label", widget: "string" }
+              - { label: "Link URL (e.g. painting.html)", name: "url", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "Icon File (e.g. paint.svg)", name: "icon", widget: "string" }
+
+      - name: "whistler_residential_renovation"
+        label: "Interior Renovation — Whistler"
+        file: "data/whistler-residential-renovation.json"
+        fields:
+
+          - label: "Page Images"
+            name: "media"
+            widget: "object"
+            fields:
+              - { label: "Hero Background Image", name: "heroBg", widget: "image" }
+
+              - label: "Gallery (8 images)"
+                name: "gallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - label: "About Section Image"
+                name: "aboutImage"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - { label: "Before Image", name: "beforeSrc", widget: "image" }
+              - { label: "Before Image Alt Text", name: "beforeAlt", widget: "string" }
+              - { label: "After Image", name: "afterSrc", widget: "image" }
+              - { label: "After Image Alt Text", name: "afterAlt", widget: "string" }
+
+              - label: "Final Result Gallery (3 images)"
+                name: "finalGallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+          - label: "About the Project"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "para1", widget: "text" }
+              - { label: "Paragraph 2", name: "para2", widget: "text" }
+
+          - label: "What We Completed (Scope)"
+            name: "scope"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - label: "Scope Cards"
+                name: "cards"
+                widget: "list"
+                summary: "{{fields.number}} — {{fields.title}}"
+                fields:
+                  - { label: "Number (e.g. 01)", name: "number", widget: "string" }
+                  - { label: "Card Title", name: "title", widget: "string" }
+                  - { label: "Card Text", name: "text", widget: "text" }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+
+          - label: "Related Services"
+            name: "relatedServices"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Service Name", name: "label", widget: "string" }
+              - { label: "Link URL (e.g. painting.html)", name: "url", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "Icon File (e.g. paint.svg)", name: "icon", widget: "string" }
