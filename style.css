@@ -633,6 +633,12 @@ section[id] {
   box-shadow: 0 12px 24px rgba(0,0,0,.15);
 }
 
+/* Accent Walls portfolio: tall 9:16 portrait cards */
+body[data-page="accent-walls"] .service-work .work-item{
+  height: auto;
+  aspect-ratio: 9 / 16;
+}
+
 .work-cta{
   margin-top: 26px;
   display: flex;

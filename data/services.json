@@ -1,0 +1,69 @@
+{
+  "seo": {
+    "title": "Renovation Services in Vancouver | VV Renovation",
+    "description": "VV Renovation offers professional home renovation services in Vancouver — framing, drywall finishing, flooring, tile & stone, accent walls and painting. Free estimates."
+  },
+  "intro": {
+    "eyebrow": "Our Services",
+    "heading": "Home Renovation Services in Vancouver",
+    "text": "VV Renovation delivers clean, detail-focused renovation work for residential and commercial spaces across the Greater Vancouver Area — Vancouver, Burnaby, Surrey, Richmond, Langley, Coquitlam, North Vancouver and beyond. One contractor. Six core trades. Free estimates."
+  },
+  "cards": [
+    {
+      "title": "Accent Wall & Decoration Ideas",
+      "link": "accent-walls.html",
+      "image": "accent.webp",
+      "imageAlt": "Custom accent wall and decorative finish in a modern interior by VV Renovation",
+      "icon": "accent-walls.svg",
+      "items": ["Accent walls", "Micro cement", "Marble", "Stucco & texture", "And more..."]
+    },
+    {
+      "title": "Drywall Finishing",
+      "link": "drywall-finishing.html",
+      "image": "drywall.jpeg",
+      "imageAlt": "Smooth drywall finishing and ceiling preparation by VV Renovation",
+      "icon": "drywall.svg",
+      "items": ["Drywall installation", "Taping & mudding", "Drywall level 5", "And more..."]
+    },
+    {
+      "title": "Tile & Stone",
+      "link": "tile-stone.html",
+      "image": "tile.jpeg",
+      "imageAlt": "Large format tile and stone installation for bathroom and kitchen by VV Renovation",
+      "icon": "tile.svg",
+      "items": ["Bathroom tile", "Backsplash", "Commercial", "Kitchen countertop", "And more..."]
+    },
+    {
+      "title": "Flooring",
+      "link": "flooring.html",
+      "image": "flooring-hero.webp",
+      "imageAlt": "Self-leveling floor preparation and vinyl installation by VV Renovation",
+      "icon": "flooring.svg",
+      "items": ["Self leveling", "Hardwood & engineered wood", "Laminate & vinyl", "Micro cement floor", "And more..."]
+    },
+    {
+      "title": "Painting",
+      "link": "painting.html",
+      "image": "jericho-painting.jpg",
+      "imageAlt": "Interior painting in progress at a luxury Jericho Beach estate renovation by VV Renovation",
+      "icon": "paint.svg",
+      "items": ["Commercial painting", "Residential painting"]
+    },
+    {
+      "title": "Framing",
+      "link": "framing.html",
+      "image": "framing.jpg",
+      "imageAlt": "Steel stud framing for commercial and residential renovation by VV Renovation",
+      "icon": "framing.svg",
+      "items": ["Steel stud framing", "Wood framing", "Finish carpentry", "And more..."]
+    }
+  ],
+  "cta": {
+    "heading": "Ready to start your renovation?",
+    "text": "Tell us about your project and we'll provide a free, no-obligation estimate.",
+    "primaryButtonText": "Get Free Quote",
+    "primaryButtonLink": "index.html#contact",
+    "secondaryButtonText": "Call 778-266-7999",
+    "secondaryButtonLink": "tel:+17782667999"
+  }
+}
