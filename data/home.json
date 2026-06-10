@@ -16,7 +16,7 @@
       {
         "title": "Accent Wall & Decoration Ideas",
         "link": "accent-walls.html",
-        "image": "accent.webp",
+        "image": "/images/uploads/work-accent-wall.jpeg",
         "icon": "accent-walls.svg",
         "items": [
           "Accent walls",
@@ -30,7 +30,7 @@
       {
         "title": "Drywall Finishing",
         "link": "drywall-finishing.html",
-        "image": "drywall.jpeg",
+        "image": "/images/uploads/whistler-finishing.jpg",
         "icon": "drywall.svg",
         "items": [
           "Drywall",
@@ -55,7 +55,7 @@
       {
         "title": "Flooring",
         "link": "flooring.html",
-        "image": "self-leveling.png",
+        "image": "/images/uploads/flooring-work-1.jpg",
         "icon": "flooring.svg",
         "items": [
           "Self leveling",
@@ -127,12 +127,12 @@
         "alt": "Exterior renovation work on a modern residential building in Vancouver"
       },
       {
-        "image": "work-2.webp",
-        "alt": "Interior renovation and flooring work in a bright modern living space"
+        "image": "/images/uploads/yoga-owner.jpg",
+        "alt": "Yoga studio renovation"
       },
       {
-        "image": "work-3.webp",
-        "alt": "Hot tub plumbing and equipment installation for residential renovation project"
+        "image": "/images/uploads/whistler-demolition.jpg",
+        "alt": "demolition"
       },
       {
         "image": "work-4.webp",

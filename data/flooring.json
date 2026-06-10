@@ -20,8 +20,19 @@
     "media": "self-leveling.mp4",
     "mediaAlt": "Flooring Services",
     "mediaItems": [
-      { "type": "video", "src": "self-leveling.mp4", "alt": "Self-leveling floor preparation by VV Renovation", "autoplay": true, "loop": true, "controls": false },
-      { "type": "image", "src": "flooring.jpg", "alt": "Flooring installation by VV Renovation" }
+      {
+        "type": "video",
+        "src": "self-leveling.mp4",
+        "alt": "Self-leveling floor preparation by VV Renovation",
+        "autoplay": true,
+        "loop": true,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "/images/uploads/flooring-work-1.jpg",
+        "alt": "Flooring installation by VV Renovation"
+      }
     ]
   },
   "types": {

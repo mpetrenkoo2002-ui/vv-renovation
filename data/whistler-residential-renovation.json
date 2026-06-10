@@ -2,27 +2,60 @@
   "media": {
     "heroBg": "whistler-exterior.jpg",
     "gallery": [
-      { "src": "whistler-demolition.jpg",          "alt": "Demolition stage with tile and marble removed exposing substrate on the sloped shower zone of a Whistler chalet" },
-      { "src": "whistler-ceiling-mechanical.jpg",  "alt": "Open ceiling with exposed wood framing, electrical wiring and HVAC ductwork during Whistler renovation" },
-      { "src": "whistler-demolition-2.jpg",        "alt": "Tile removed to expose mortar bed and cement board on an angled wall during Whistler chalet demolition" },
-      { "src": "whistler-drywall.jpg",             "alt": "New drywall installed on the sloped ceiling around a wood-framed window in a Whistler chalet" },
-      { "src": "whistler-drywall-laser.jpg",       "alt": "Drywall installation aligned with a green laser level across the angled walls of a Whistler renovation" },
-      { "src": "whistler-finishing.jpg",           "alt": "Worker applying a multi-coat skim finish to drywall joints on a sloped ceiling in Whistler" },
-      { "src": "whistler-detail.jpg",              "alt": "Detailed Level 5 finishing inspected under raking work light during Whistler chalet renovation" },
-      { "src": "whistler-demolition-detail.jpg",   "alt": "Close-up of demolished tile mortar bed over the angled wall surface in a Whistler chalet" }
+      {
+        "src": "whistler-demolition.jpg",
+        "alt": "Demolition stage with tile and marble removed exposing substrate on the sloped shower zone of a Whistler chalet"
+      },
+      {
+        "src": "whistler-ceiling-mechanical.jpg",
+        "alt": "Open ceiling with exposed wood framing, electrical wiring and HVAC ductwork during Whistler renovation"
+      },
+      {
+        "src": "whistler-demolition-2.jpg",
+        "alt": "Tile removed to expose mortar bed and cement board on an angled wall during Whistler chalet demolition"
+      },
+      {
+        "src": "whistler-drywall.jpg",
+        "alt": "New drywall installed on the sloped ceiling around a wood-framed window in a Whistler chalet"
+      },
+      {
+        "src": "whistler-drywall-laser.jpg",
+        "alt": "Drywall installation aligned with a green laser level across the angled walls of a Whistler renovation"
+      },
+      {
+        "src": "whistler-finishing.jpg",
+        "alt": "Worker applying a multi-coat skim finish to drywall joints on a sloped ceiling in Whistler"
+      },
+      {
+        "src": "whistler-detail.jpg",
+        "alt": "Detailed Level 5 finishing inspected under raking work light during Whistler chalet renovation"
+      },
+      {
+        "src": "whistler-demolition-detail.jpg",
+        "alt": "Close-up of demolished tile mortar bed over the angled wall surface in a Whistler chalet"
+      }
     ],
     "aboutImage": {
       "src": "whistler-painting.jpg",
       "alt": "Worker rolling a finishing coat onto the sloped walls of a Whistler chalet interior renovation"
     },
-    "beforeSrc": "whistler-before.jpg",
+    "beforeSrc": "/images/uploads/whistler-demolition.jpg",
     "beforeAlt": "Demolition stage of the Whistler chalet bedroom with tile and marble removed and structural substrate exposed under the sloped ceiling",
     "afterSrc": "whistler-after.jpg",
     "afterAlt": "Completed smooth white Level 5 walls and angled ceiling with a wood-framed window overlooking the Whistler forest",
     "finalGallery": [
-      { "src": "whistler-after.jpg",         "alt": "Finished smooth white walls and angled ceiling with wood-framed window overlooking the Whistler forest" },
-      { "src": "whistler-final-angled.jpg",  "alt": "Smooth Level 5 finished angled walls meeting cleanly at a sharp corner in the Whistler chalet" },
-      { "src": "whistler-final-ceiling.jpg", "alt": "Finished sloped ceiling with a clean valley intersection after Level 5 drywall finishing in Whistler" }
+      {
+        "src": "whistler-after.jpg",
+        "alt": "Finished smooth white walls and angled ceiling with wood-framed window overlooking the Whistler forest"
+      },
+      {
+        "src": "whistler-final-angled.jpg",
+        "alt": "Smooth Level 5 finished angled walls meeting cleanly at a sharp corner in the Whistler chalet"
+      },
+      {
+        "src": "whistler-final-ceiling.jpg",
+        "alt": "Finished sloped ceiling with a clean valley intersection after Level 5 drywall finishing in Whistler"
+      }
     ]
   },
   "about": {
@@ -72,9 +105,27 @@
     ]
   },
   "relatedServices": [
-    { "label": "Drywall Finishing",  "url": "drywall-finishing.html", "image": "whistler-finishing.jpg", "imageAlt": "Drywall finishing service by VV Renovation",  "icon": "drywall.svg"     },
-    { "label": "Framing",            "url": "framing.html",           "image": "framing.jpg",           "imageAlt": "Framing service by VV Renovation",           "icon": "framing.svg"     },
-    { "label": "Painting",           "url": "painting.html",          "image": "whistler-painting.jpg",  "imageAlt": "Painting service by VV Renovation",          "icon": "paint.svg"       }
+    {
+      "label": "Drywall Finishing",
+      "url": "drywall-finishing.html",
+      "image": "whistler-finishing.jpg",
+      "imageAlt": "Drywall finishing service by VV Renovation",
+      "icon": "drywall.svg"
+    },
+    {
+      "label": "Framing",
+      "url": "framing.html",
+      "image": "framing.jpg",
+      "imageAlt": "Framing service by VV Renovation",
+      "icon": "framing.svg"
+    },
+    {
+      "label": "Painting",
+      "url": "painting.html",
+      "image": "whistler-painting.jpg",
+      "imageAlt": "Painting service by VV Renovation",
+      "icon": "paint.svg"
+    }
   ],
   "faq": {
     "items": [
