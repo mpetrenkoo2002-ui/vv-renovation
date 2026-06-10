@@ -20,19 +20,19 @@
     "media": "/images/uploads/painting-1.mp4",
     "mediaAlt": "Professional painting work by VV Renovation",
     "mediaItems": [
-  {
-    "type": "video",
-    "src": "painting-1.mp4",
-    "alt": "Interior painting process by VV Renovation",
-    "controls": true
-  },
-  {
-    "type": "video",
-    "src": "painting-2.mp4",
-    "alt": "Interior painting process by VV Renovation",
-    "controls": true
-  }
-]
+      {
+        "type": "video",
+        "src": "painting-1.mp4",
+        "alt": "Interior painting process by VV Renovation",
+        "controls": true
+      },
+      {
+        "type": "video",
+        "src": "painting-2.mp4",
+        "alt": "Interior painting process by VV Renovation",
+        "controls": true
+      }
+    ]
   },
   "types": {
     "title": "Painting Services We Offer",
@@ -114,7 +114,7 @@
     "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
     "images": [
       {
-        "image": "work-1.webp",
+        "image": "/images/uploads/jericho-painting.jpg",
         "alt": "Painting project 1"
       },
       {
