@@ -20,8 +20,16 @@
     "media": "intro-tile.jpg",
     "mediaAlt": "Tile and Stone Installation",
     "mediaItems": [
-      { "type": "image", "src": "intro-tile.jpg", "alt": "Tile installation work by VV Renovation" },
-      { "type": "image", "src": "kitchen-backsplash.jpg", "alt": "Kitchen backsplash tile installation by VV Renovation" }
+      {
+        "type": "image",
+        "src": "intro-tile.jpg",
+        "alt": "Tile installation work by VV Renovation"
+      },
+      {
+        "type": "image",
+        "src": "/images/uploads/tile-install.jpg",
+        "alt": "Tile installation"
+      }
     ]
   },
   "types": {
