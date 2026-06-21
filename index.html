@@ -6,12 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home Renovation & Remodeling in Vancouver | VV Renovation</title>
   <meta name="description" content="Professional home renovation in Vancouver. Kitchen, bathroom & basement remodeling, drywall, flooring and finishing. Free estimate. Quality craftsmanship.">
+
+  <meta name="theme-color" content="#ED7C0E">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" as="image" href="hero.webp">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VV Renovation">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:url" content="https://vvrenovation.ca/">
+  <meta property="og:title" content="Home Renovation & Remodeling in Vancouver | VV Renovation">
+  <meta property="og:description" content="Professional home renovation in Vancouver. Kitchen, bathroom & basement remodeling, drywall, flooring and finishing. Free estimate. Quality craftsmanship.">
+  <meta property="og:image" content="https://vvrenovation.ca/hero.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home Renovation & Remodeling in Vancouver | VV Renovation">
+  <meta name="twitter:description" content="Professional home renovation in Vancouver. Kitchen, bathroom & basement remodeling, drywall, flooring and finishing. Free estimate. Quality craftsmanship.">
+  <meta name="twitter:image" content="https://vvrenovation.ca/hero.webp">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "name": "VV Renovation",
-  "url": "https://www.vvrenovation.ca",
+  "url": "https://vvrenovation.ca",
   "telephone": "+1-778-266-7999",
   "address": {
     "@type": "PostalAddress",
@@ -121,8 +141,8 @@
         <img src="hero.webp" class="hero-img" alt="VV Renovation contractor preparing floors for home renovation project in Vancouver">
       <div class="container">
         <div class="hero-inner">
-          <h1 id="hero-title"></h1>
-<p id="hero-subtitle"></p>
+          <h1 id="hero-title">VV Renovation<br>House Renovation<br><span class="accent">Experts in Vancouver</span></h1>
+<p id="hero-subtitle">Precision layout, framing, drywall, flooring and finishing work. Reliable service. Clean results. Honest pricing.</p>
 
 
 
@@ -691,6 +711,10 @@
 
   </div>
 
+  <div class="container" style="padding: 4px 0 0; font-size: 11px; color: rgba(255,255,255,.45); font-weight: 400; line-height: 1.4; text-align: right;">
+    *Referral bonus applies only to completed projects with a budget over $7,000.
+  </div>
+
   <div class="container footer-bottom">
     <div class="footer-copy">2026 © Copyright by VV renovation</div>
     <div class="footer-rights">All Rights Reserved</div>
@@ -698,31 +722,7 @@
 </footer>
 </main>
 <script src="js/site-settings.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-    link.addEventListener("click", function () {
-      if (typeof gtag === "function") {
-        gtag("event", "phone_call_click", {
-          event_category: "contact",
-          event_label: link.getAttribute("href")
-        });
-      }
-    });
-  });
-
-  document.querySelectorAll(".contact-form").forEach(function (form) {
-    form.addEventListener("submit", function () {
-      if (typeof gtag === "function") {
-        gtag("event", "generate_lead", {
-          event_category: "lead",
-          event_label: "free_quote_form"
-        });
-      }
-    });
-  });
-});
-</script>
+<script src="js/analytics.js"></script>
 <script>
   const hash = window.location.hash;
 

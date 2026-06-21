@@ -5,10 +5,72 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Tile & Stone Installation | VV Renovation</title>
+<title>Tile & Stone Installation in Vancouver | VV Renovation</title>
 
 <meta name="description"
 content="Tile and stone installation in Vancouver for bathrooms, kitchens, backsplashes, floors and custom stone finishes. Free estimate.">
+
+  <meta name="theme-color" content="#ED7C0E">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VV Renovation">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:url" content="https://vvrenovation.ca/tile-stone.html">
+  <meta property="og:title" content="Tile & Stone Installation in Vancouver | VV Renovation">
+  <meta property="og:description" content="Tile and stone installation in Vancouver for bathrooms, kitchens, backsplashes, floors and custom stone finishes. Free estimate.">
+  <meta property="og:image" content="https://vvrenovation.ca/tile-work-1.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tile & Stone Installation in Vancouver | VV Renovation">
+  <meta name="twitter:description" content="Tile and stone installation in Vancouver for bathrooms, kitchens, backsplashes, floors and custom stone finishes. Free estimate.">
+  <meta name="twitter:image" content="https://vvrenovation.ca/tile-work-1.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vvrenovation.ca/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://vvrenovation.ca/services.html"},
+    {"@type": "ListItem", "position": 3, "name": "Tile & Stone", "item": "https://vvrenovation.ca/tile-stone.html"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Tile and stone installation",
+  "name": "Tile & Stone Installation in Vancouver",
+  "description": "Tile and stone installation in Vancouver for bathrooms, kitchens, backsplashes, floors and custom stone finishes.",
+  "areaServed": {"@type": "City", "name": "Greater Vancouver Area"},
+  "provider": {
+    "@type": "GeneralContractor",
+    "name": "VV Renovation",
+    "url": "https://vvrenovation.ca",
+    "telephone": "+1-778-266-7999"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What tile and stone services do you provide?", "acceptedAnswer": {"@type": "Answer", "text": "We install tile and stone for bathrooms, kitchens, backsplashes, floors, and custom interior finishes for residential and commercial spaces."}},
+    {"@type": "Question", "name": "Do you install tile in bathrooms and showers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we specialize in bathroom tile installation including showers, walls, floors, and full bathroom finishes."}},
+    {"@type": "Question", "name": "How long does tile installation take?", "acceptedAnswer": {"@type": "Answer", "text": "The timeline depends on the size and complexity of the project. Most tile installations take a few days, including preparation, installation, and finishing."}},
+    {"@type": "Question", "name": "Do you prepare surfaces before installing tile?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we properly prepare and level surfaces to ensure strong adhesion, durability, and a clean, professional finish."}},
+    {"@type": "Question", "name": "Do you work with custom layouts and designs?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We work with custom layouts, patterns, and design ideas to create unique and visually appealing tile and stone finishes."}},
+    {"@type": "Question", "name": "Do you provide services across the Greater Vancouver Area?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we provide tile and stone installation services across Vancouver, Burnaby, Richmond, Surrey and surrounding areas."}}
+  ]
+}
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G7MC17H0V"></script>
@@ -641,6 +703,7 @@ content="Tile and stone installation in Vancouver for bathrooms, kitchens, backs
 
 </main>
 <script src="js/site-settings.js"></script>
+<script src="js/analytics.js"></script>
 <script src="js/service-page-content.js?v=2"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -759,31 +822,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (!isActive) {
         item.classList.add('active');
-      }
-    });
-  });
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-    link.addEventListener("click", function () {
-      if (typeof gtag === "function") {
-        gtag("event", "phone_call_click", {
-          event_category: "contact",
-          event_label: link.getAttribute("href")
-        });
-      }
-    });
-  });
-
-  document.querySelectorAll(".contact-form").forEach(function (form) {
-    form.addEventListener("submit", function () {
-      if (typeof gtag === "function") {
-        gtag("event", "generate_lead", {
-          event_category: "lead",
-          event_label: "free_quote_form"
-        });
       }
     });
   });

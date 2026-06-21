@@ -11,6 +11,69 @@
     name="description"
     content="Professional residential and commercial painting services in Vancouver. Interior and exterior painting, wall preparation and clean finishing. Free estimate."
   >
+
+  <meta name="theme-color" content="#ED7C0E">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VV Renovation">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:url" content="https://vvrenovation.ca/painting.html">
+  <meta property="og:title" content="Painting Services in Vancouver | VV Renovation">
+  <meta property="og:description" content="Professional residential and commercial painting services in Vancouver. Interior and exterior painting, wall preparation and clean finishing. Free estimate.">
+  <meta property="og:image" content="https://vvrenovation.ca/painting-hero.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Painting Services in Vancouver | VV Renovation">
+  <meta name="twitter:description" content="Professional residential and commercial painting services in Vancouver. Interior and exterior painting, wall preparation and clean finishing. Free estimate.">
+  <meta name="twitter:image" content="https://vvrenovation.ca/painting-hero.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vvrenovation.ca/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://vvrenovation.ca/services.html"},
+    {"@type": "ListItem", "position": 3, "name": "Painting", "item": "https://vvrenovation.ca/painting.html"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Painting",
+  "name": "Painting Services in Vancouver",
+  "description": "Professional residential and commercial painting services in Vancouver. Interior and exterior painting, wall preparation and clean finishing.",
+  "areaServed": {"@type": "City", "name": "Greater Vancouver Area"},
+  "provider": {
+    "@type": "GeneralContractor",
+    "name": "VV Renovation",
+    "url": "https://vvrenovation.ca",
+    "telephone": "+1-778-266-7999"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Do you provide residential and commercial painting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we provide both residential and commercial painting services across the Greater Vancouver Area."}},
+    {"@type": "Question", "name": "Do you prepare the walls before painting?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Surface preparation is a key part of the job and may include patching, sanding, caulking, priming, and protecting nearby areas."}},
+    {"@type": "Question", "name": "Can you help with color selection?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we can help guide you toward color choices that fit the lighting, function, and style of your space."}},
+    {"@type": "Question", "name": "How long does a painting project take?", "acceptedAnswer": {"@type": "Answer", "text": "Timelines depend on the size of the space, condition of the surfaces, and scope of prep work, but many projects are completed within a few days."}},
+    {"@type": "Question", "name": "Do you keep the site clean during the job?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we work carefully, protect surrounding surfaces, and clean up after the project so the space feels finished and ready."}},
+    {"@type": "Question", "name": "Do you serve all of Greater Vancouver?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we provide painting services in Vancouver, Burnaby, Richmond, Surrey, and surrounding areas throughout the Greater Vancouver Area."}}
+  ]
+}
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G7MC17H0V"></script>
 <script>
@@ -673,32 +736,8 @@
 
 </main>
 <script src="js/site-settings.js"></script>
+<script src="js/analytics.js"></script>
 <script src="js/service-page-content.js?v=2"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-    link.addEventListener("click", function () {
-      if (typeof gtag === "function") {
-        gtag("event", "phone_call_click", {
-          event_category: "contact",
-          event_label: link.getAttribute("href")
-        });
-      }
-    });
-  });
-
-  document.querySelectorAll(".contact-form").forEach(function (form) {
-    form.addEventListener("submit", function () {
-      if (typeof gtag === "function") {
-        gtag("event", "generate_lead", {
-          event_category: "lead",
-          event_label: "free_quote_form"
-        });
-      }
-    });
-  });
-});
-</script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
