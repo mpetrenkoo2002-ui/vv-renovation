@@ -6,7 +6,7 @@
       { "src": "jericho-pool.jpg",          "alt": "Indoor pool room with mirrored glass wall prepared during luxury home preparation in Jericho Beach" },
       { "src": "jericho-hallway.jpg",       "alt": "Curved board-formed concrete hallway with disc lighting in a high-end Vancouver estate" },
       { "src": "jericho-living-work.jpg",   "alt": "Large living and pool room with masked column during interior painting in Jericho Beach" },
-      { "src": "jericho-walkway.jpg",       "alt": "Recoated exterior concrete walkway beside repainted stucco wall at a Jericho Beach estate" },
+      { "src": "jericho-walkway.jpg",       "alt": "Freshly recoated exterior concrete walkway running alongside the house and glass doors at a Jericho Beach estate in Vancouver" },
       { "src": "jericho-wine-room.jpg",     "alt": "Wine room with built-in wood shelving and freshly painted ceiling in a luxury Vancouver home" },
       { "src": "jericho-detail.jpg",        "alt": "Detailed caulking and finishing work around glass partition during estate preparation in Jericho Beach" },
       { "src": "jericho-panels-outdoor.jpg","alt": "Outdoor panels refinished on the terrace overlooking the tennis court at a Jericho Beach estate" }
@@ -67,10 +67,10 @@
     ]
   },
   "relatedServices": [
-    { "label": "Painting",          "url": "painting.html",          "image": "jericho-painting.jpg", "imageAlt": "Painting service by VV Renovation",          "icon": "paint.svg"        },
-    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",          "imageAlt": "Accent wall service by VV Renovation",       "icon": "accent-walls.svg" },
-    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png",    "imageAlt": "Flooring service by VV Renovation",          "icon": "flooring.svg"     },
-    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",     "imageAlt": "Drywall finishing service by VV Renovation", "icon": "drywall.svg"      }
+    { "label": "Painting",          "url": "painting.html",          "image": "jericho-painting.jpg", "imageAlt": "Interior painting in a large luxury room with a curved ceiling by VV Renovation in Vancouver",          "icon": "paint.svg"        },
+    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",          "imageAlt": "Navy blue accent wall with a geometric wood-trim pattern by VV Renovation in Vancouver",       "icon": "accent-walls.svg" },
+    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png",    "imageAlt": "Freshly poured self-leveling floor compound being smoothed during a flooring renovation in Vancouver",          "icon": "flooring.svg"     },
+    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",     "imageAlt": "Taped drywall partition walls in a commercial build-out, drywall finishing by VV Renovation in Vancouver", "icon": "drywall.svg"      }
   ],
   "faq": {
     "items": [

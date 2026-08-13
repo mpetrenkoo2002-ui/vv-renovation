@@ -17,6 +17,7 @@
         "title": "Accent Wall & Decoration Ideas",
         "link": "accent-walls.html",
         "image": "/images/uploads/work-accent-wall.jpeg",
+        "imageAlt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior",
         "icon": "accent-walls.svg",
         "items": [
           "Accent walls",
@@ -31,6 +32,7 @@
         "title": "Drywall Finishing",
         "link": "drywall-finishing.html",
         "image": "/images/uploads/whistler-finishing.jpg",
+        "imageAlt": "Worker applying a Level 5 skim finish to drywall joints on a sloped ceiling during a Whistler renovation",
         "icon": "drywall.svg",
         "items": [
           "Drywall",
@@ -43,6 +45,7 @@
         "title": "Tile & Stone",
         "link": "tile-stone.html",
         "image": "tile.jpeg",
+        "imageAlt": "Large-format marble-look porcelain wall tile being installed with red leveling clips above a bathtub during a bathroom renovation in Vancouver",
         "icon": "tile.svg",
         "items": [
           "Bathroom",
@@ -56,6 +59,7 @@
         "title": "Flooring",
         "link": "flooring.html",
         "image": "/images/uploads/flooring-work-1.jpg",
+        "imageAlt": "Self-leveling floor compound being poured and spread across a commercial storefront during a flooring renovation in Vancouver",
         "icon": "flooring.svg",
         "items": [
           "Self leveling",
@@ -70,6 +74,7 @@
         "title": "Painting",
         "link": "painting.html",
         "image": "jericho-painting.jpg",
+        "imageAlt": "Interior painting in progress in a large luxury room with a curved ceiling and floor-to-ceiling windows in Vancouver",
         "icon": "paint.svg",
         "items": [
           "Commercial painting",
@@ -80,6 +85,7 @@
         "title": "Framing",
         "link": "framing.html",
         "image": "framing.jpg",
+        "imageAlt": "Exposed wood ceiling joists with electrical wiring and ductwork roughed in during an interior renovation in Vancouver",
         "icon": "framing.svg",
         "items": [
           "Steel stud & wood framing",
@@ -124,27 +130,27 @@
     "images": [
       {
         "image": "work-1.webp",
-        "alt": "Exterior renovation work on a modern residential building in Vancouver"
+        "alt": "Modern multi-storey building with curved rooflines and a sports court, exterior renovation by VV Renovation in the Greater Vancouver Area"
       },
       {
         "image": "/images/uploads/yoga-owner.jpg",
-        "alt": "Yoga studio renovation"
+        "alt": "Finished yoga studio interior with blue LED cove lighting and a full mirror wall after commercial renovation in Langley, BC"
       },
       {
         "image": "/images/uploads/whistler-demolition.jpg",
-        "alt": "demolition"
+        "alt": "Demolition stage with tile and marble removed exposing the substrate on a sloped wall of a Whistler chalet"
       },
       {
         "image": "work-4.webp",
-        "alt": "Wall surface preparation and spray finishing during renovation work"
+        "alt": "Worker in a protective suit spray-applying coating to an interior wall during a renovation in Vancouver"
       },
       {
         "image": "work-accent-wall.jpeg",
-        "alt": "Custom marble effect accent wall decorative finish for modern interior"
+        "alt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior"
       },
       {
         "image": "work-6.webp",
-        "alt": "Large format tile installation with leveling clips for floor renovation"
+        "alt": "Large-format black floor tile installed with red leveling clips during a renovation in Vancouver"
       }
     ],
     "buttonText": "See More on Facebook",

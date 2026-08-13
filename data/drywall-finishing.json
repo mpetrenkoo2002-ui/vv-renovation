@@ -18,10 +18,10 @@
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional drywall finishing.",
     "mediaType": "image",
     "media": "drywall.jpeg",
-    "mediaAlt": "Drywall finishing work by VV Renovation",
+    "mediaAlt": "Worker on a scissor lift fastening drywall sheets to a ceiling during a commercial renovation in Vancouver",
     "mediaItems": [
-      { "type": "image", "src": "drywall.jpeg", "alt": "Drywall finishing work by VV Renovation" },
-      { "type": "image", "src": "drywall-work-1.jpg", "alt": "Drywall installation in progress by VV Renovation" }
+      { "type": "image", "src": "drywall.jpeg", "alt": "Worker on a scissor lift fastening drywall sheets to a ceiling during a commercial renovation in Vancouver" },
+      { "type": "image", "src": "drywall-work-1.jpg", "alt": "Worker on scaffolding taping and mudding drywall joints on a high vaulted ceiling during a renovation in Vancouver" }
     ]
   },
   "types": {
@@ -113,15 +113,15 @@
     "images": [
       {
         "image": "drywall-work-1.jpg",
-        "alt": "Drywall ceiling finishing and taping work for residential renovation project"
+        "alt": "Worker on scaffolding taping and mudding drywall joints on a high vaulted ceiling during a renovation in Vancouver"
       },
       {
         "image": "drywall-work-2.jpg",
-        "alt": "Clean drywall wall finishing with smooth corner surface ready for interior painting"
+        "alt": "Smoothly finished Level 5 drywall walls and sloped ceiling with a skylight, ready for painting, in a Vancouver renovation"
       },
       {
         "image": "drywall-work-3.jpg",
-        "alt": "Interior hallway drywall finishing with taped joints and prepared walls for renovation project"
+        "alt": "Taped and mudded drywall partition walls with metal corner beads in a commercial build-out with exposed ductwork in Vancouver"
       },
       {
         "image": "work-4.webp",
@@ -129,7 +129,7 @@
       },
       {
         "image": "work-5.webp",
-        "alt": "Drywall finishing around skylight opening for interior renovation"
+        "alt": "Skylight set into a freshly painted sloped bathroom ceiling above tiled walls during a renovation in Vancouver"
       },
       {
         "image": "work-6.webp",

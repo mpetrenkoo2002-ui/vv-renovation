@@ -109,21 +109,21 @@
       "label": "Drywall Finishing",
       "url": "drywall-finishing.html",
       "image": "whistler-finishing.jpg",
-      "imageAlt": "Drywall finishing service by VV Renovation",
+      "imageAlt": "Worker applying a Level 5 skim finish to drywall joints on a sloped ceiling by VV Renovation in Whistler",
       "icon": "drywall.svg"
     },
     {
       "label": "Framing",
       "url": "framing.html",
       "image": "framing.jpg",
-      "imageAlt": "Framing service by VV Renovation",
+      "imageAlt": "Exposed wood ceiling joists with rough-in wiring and ductwork during framing by VV Renovation in Vancouver",
       "icon": "framing.svg"
     },
     {
       "label": "Painting",
       "url": "painting.html",
       "image": "whistler-painting.jpg",
-      "imageAlt": "Painting service by VV Renovation",
+      "imageAlt": "Worker rolling a finishing coat onto the sloped walls of a chalet interior by VV Renovation in Whistler",
       "icon": "paint.svg"
     }
   ],

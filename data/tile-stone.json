@@ -18,17 +18,17 @@
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver high-quality tile and stone installation tailored to each project.",
     "mediaType": "image",
     "media": "intro-tile.jpg",
-    "mediaAlt": "Tile and Stone Installation",
+    "mediaAlt": "Tile installer fitting a large-format marble-look porcelain wall tile with a polishing tool during an interior renovation in Vancouver",
     "mediaItems": [
       {
         "type": "image",
         "src": "intro-tile.jpg",
-        "alt": "Tile installation work by VV Renovation"
+        "alt": "Tile installer fitting a large-format marble-look porcelain wall tile with a polishing tool during an interior renovation in Vancouver"
       },
       {
         "type": "image",
         "src": "/images/uploads/tile-install.jpg",
-        "alt": "Tile installation"
+        "alt": "Large-format marble-look porcelain wall tile being set over notched thinset with red leveling clips during a bathroom renovation in Vancouver"
       }
     ]
   },

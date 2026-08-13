@@ -28,7 +28,7 @@ if (heroImg && hero.backgroundImage) {
     document.querySelector(".services-grid").innerHTML = data.services.cards.map(card => `
       <article class="service-card">
         <div class="service-media">
-          <img class="service-photo" src="${esc(card.image)}" alt="${esc(card.title)}">
+          <img class="service-photo" src="${esc(card.image)}" alt="${esc(card.imageAlt || card.title)}">
         </div>
         <div class="service-panel">
           ${card.icon ? `<img class="service-icon" src="${esc(card.icon)}" alt="">` : ""}

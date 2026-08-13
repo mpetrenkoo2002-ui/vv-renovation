@@ -3,13 +3,13 @@
     "heroBg": "yoga-owner1.jpg",
     "gallery": [
       { "src": "yoga-outside-1.jpg", "alt": "Finished yoga studio exterior and entrance after commercial renovation in Langley, BC" },
-      { "src": "yoga-owner.jpg",     "alt": "Black slat accent wall with brass light fixture completed during yoga studio renovation in Langley" },
+      { "src": "yoga-owner.jpg",     "alt": "Finished yoga studio interior with blue LED cove lighting and a full mirror wall after commercial renovation in Langley, BC" },
       { "src": "yoga-mats-before.jpg", "alt": "Yoga studio floor before final mat and baseboard installation, Langley commercial renovation" },
       { "src": "yoga-mats-after.jpg",  "alt": "Finished yoga studio floor with black mats and mirror wall installed, Langley renovation" },
       { "src": "yoga-shelf-before.jpg","alt": "Shelving and storage components being assembled during commercial yoga studio renovation in Langley" },
       { "src": "yoga-shelf-after.jpg", "alt": "Completed storage shelving installed inside renovated yoga studio in Langley" },
       { "src": "yoga-owner1.jpg",      "alt": "Finished yoga studio interior with mats, mirror wall and blue accent lighting, Langley BC" },
-      { "src": "yoga-mats.jpg",        "alt": "Vinyl tile and yoga mat installation detail in finished commercial studio, Langley BC" }
+      { "src": "yoga-mats.jpg",        "alt": "Dark interlocking mat flooring installed across the main training area of the renovated yoga studio in Langley, BC" }
     ],
     "aboutVideo": {
       "src": "yoga-studio-finished.mp4",
@@ -75,10 +75,10 @@
     "avatarUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXUdKmUFbAJbV7rjcXR88QrOZCQV6V6IPx9mB7Cf0BA56_sjAqsSw=s128-c0x00000000-cc-rp-mo"
   },
   "relatedServices": [
-    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png", "imageAlt": "Flooring service by VV Renovation",          "icon": "flooring.svg"     },
-    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",  "imageAlt": "Drywall finishing service by VV Renovation", "icon": "drywall.svg"      },
-    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",       "imageAlt": "Accent wall service by VV Renovation",       "icon": "accent-walls.svg" },
-    { "label": "Framing",           "url": "framing.html",           "image": "framing.jpg",      "imageAlt": "Framing service by VV Renovation",           "icon": "framing.svg"      }
+    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png", "imageAlt": "Freshly poured self-leveling floor compound being smoothed during a flooring renovation in Vancouver",          "icon": "flooring.svg"     },
+    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",  "imageAlt": "Taped drywall partition walls in a commercial build-out, drywall finishing by VV Renovation in Vancouver", "icon": "drywall.svg"      },
+    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",       "imageAlt": "Navy blue accent wall with a geometric wood-trim pattern by VV Renovation in Vancouver",       "icon": "accent-walls.svg" },
+    { "label": "Framing",           "url": "framing.html",           "image": "framing.jpg",      "imageAlt": "Exposed wood ceiling joists with rough-in wiring and ductwork during framing by VV Renovation in Vancouver",           "icon": "framing.svg"      }
   ],
   "faq": {
     "items": [
