@@ -120,6 +120,73 @@ function renderTypes(types) {
   `).join("");
 }
 
+function renderCost(cost) {
+  if (!cost) return;
+
+  setText(".accent-cost-eyebrow", cost.eyebrow);
+  setText(".accent-cost-title", cost.title);
+  setText(".accent-cost-intro", cost.intro);
+  setText(".accent-cost-note", cost.note);
+
+  const grid = document.querySelector(".accent-cost-grid");
+  if (grid && Array.isArray(cost.ranges)) {
+    grid.innerHTML = cost.ranges.map(item => `
+      <article class="accent-cost-card">
+        <p class="accent-cost-type">${esc(item.type)}</p>
+        <p class="accent-cost-range">${esc(item.range)}</p>
+        <p>${esc(item.text)}</p>
+      </article>
+    `).join("");
+  }
+
+  const factorList = document.querySelector(".accent-cost-factors");
+  if (factorList && Array.isArray(cost.factors)) {
+    factorList.innerHTML = cost.factors
+      .map(factor => `<li>${esc(factor)}</li>`)
+      .join("");
+  }
+
+  const button = document.querySelector(".accent-cost-cta");
+  if (button) {
+    button.textContent = cost.buttonText || "Get a Project-Specific Estimate";
+    button.href = cost.buttonLink || "#contact";
+  }
+}
+
+function renderFauxConcrete(section) {
+  if (!section) return;
+
+  setText(".accent-concrete-eyebrow", section.eyebrow);
+  setText(".accent-concrete-title", section.title);
+  setText(".accent-concrete-note", section.note);
+
+  const body = document.querySelector(".accent-concrete-body");
+  if (body && Array.isArray(section.body)) {
+    body.innerHTML = section.body
+      .map(paragraph => `<p>${esc(paragraph)}</p>`)
+      .join("");
+  }
+
+  const highlights = document.querySelector(".accent-concrete-highlights");
+  if (highlights && Array.isArray(section.highlights)) {
+    highlights.innerHTML = section.highlights
+      .map(item => `<li>${esc(item)}</li>`)
+      .join("");
+  }
+
+  const image = document.querySelector(".accent-concrete-media img");
+  if (image) {
+    if (section.image) image.src = section.image;
+    if (section.imageAlt) image.alt = section.imageAlt;
+  }
+
+  const button = document.querySelector(".accent-concrete-cta");
+  if (button) {
+    button.textContent = section.buttonText || "Discuss a Concrete-Look Wall";
+    button.href = section.buttonLink || "#contact";
+  }
+}
+
 function renderProcess(process) {
   if (!process) return;
 
@@ -299,6 +366,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       renderTypes(data.types);
+      renderFauxConcrete(data.fauxConcrete);
+      renderCost(data.cost);
       renderProcess(data.process);
       renderWhy(data.why);
       renderWork(data.work);

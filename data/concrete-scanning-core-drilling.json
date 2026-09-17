@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "Concrete Scanning & Core Drilling Vancouver | VV Renovation",
+    "description": "Concrete scanning and core drilling for renovation and construction projects in Greater Vancouver. See our work and request a quote for your site."
+  },
+  "promo": {
+    "eyebrow": "Specialized Concrete Services",
+    "title": "Concrete Scanning & Core Drilling",
+    "text": "Plan your concrete openings with scanning, surface marking and core drilling for renovation and construction work.",
+    "image": "images/concrete/wall-drilling.webp",
+    "imageAlt": "Core drilling equipment positioned against a marked concrete wall",
+    "buttonText": "Explore Service",
+    "buttonLink": "concrete-scanning-core-drilling.html"
+  },
+  "hero": {
+    "eyebrow": "VV Renovation / Concrete Services",
+    "title": "Concrete Scanning",
+    "secondLine": "& Core Drilling",
+    "location": "in Vancouver",
+    "text": "Concrete scanning and precision core drilling for renovation and construction projects across Greater Vancouver.",
+    "image": "images/concrete/hero-wall-drilling.webp",
+    "imageAlt": "Wall-mounted core drilling equipment beside scan markings on concrete",
+    "caption": "On site with VV Renovation",
+    "primaryButtonText": "Request a Quote",
+    "secondaryButtonText": "Call 778-266-7999",
+    "tags": [
+      "Concrete scanning",
+      "Surface marking",
+      "Core drilling"
+    ]
+  },
+  "services": {
+    "eyebrow": "01 / What We Do",
+    "title": "Scanning and Drilling",
+    "text": "Understand the work area, then prepare the opening your project needs. Request scanning, core drilling, or both.",
+    "cards": [
+      {
+        "number": "01",
+        "title": "Concrete Scanning",
+        "text": "Scanning helps locate reinforcement and other embedded features before concrete is drilled or cut. Surface markings make the findings visible where the work is planned.",
+        "items": [
+          "Review the proposed work area",
+          "Mark findings on the concrete surface"
+        ],
+        "image": "images/concrete/scan-markings.webp",
+        "imageAlt": "Concrete floor with a marked grid and highlighted locations around a column",
+        "caption": "Surface markings on a concrete slab"
+      },
+      {
+        "number": "02",
+        "title": "Concrete Core Drilling",
+        "text": "Circular openings through concrete walls and slabs for pipes, conduit and other building services. Each opening is planned around its location, dimensions and site access.",
+        "items": [
+          "Core openings in concrete walls and floors",
+          "Penetrations for renovation and building services"
+        ],
+        "image": "images/concrete/wall-drilling.webp",
+        "imageAlt": "Wall-mounted core drilling rig above markings on concrete",
+        "caption": "Core drilling setup at a marked wall"
+      }
+    ],
+    "note": "Scan findings depend on the concrete, site conditions and equipment used. The scope is reviewed for each project."
+  },
+  "applications": {
+    "eyebrow": "02 / Applications",
+    "title": "Make room for the next trade",
+    "text": "For contractors, property teams and renovation clients coordinating new services through existing concrete.",
+    "items": [
+      {
+        "title": "Plumbing",
+        "text": "Openings for pipework, drains and plumbing routes.",
+        "image": "images/concrete/application-plumbing.webp",
+        "imageAlt": "Plumber installing overhead piping in a commercial mechanical space"
+      },
+      {
+        "title": "Electrical",
+        "text": "Penetrations for conduit and electrical service routes.",
+        "image": "images/concrete/application-electrical.webp",
+        "imageAlt": "Electrician testing an electrical panel on a commercial jobsite"
+      },
+      {
+        "title": "HVAC & Mechanical",
+        "text": "Openings for mechanical services and building installations.",
+        "image": "images/concrete/application-hvac.webp",
+        "imageAlt": "Mechanical technician servicing HVAC piping and equipment"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "03 / How It Works",
+    "title": "How It Works",
+    "text": "The sequence is tailored to the scanning and drilling work your project requires.",
+    "steps": [
+      {
+        "title": "Share the details",
+        "text": "Send the site location, photos or drawings, and the work you need. Include opening sizes and quantities if known."
+      },
+      {
+        "title": "Review the scope",
+        "text": "We discuss locations, access, dimensions and scheduling to establish the work included in your quote."
+      },
+      {
+        "title": "Scan & mark",
+        "text": "For scanning work, the area is checked and findings are marked to help the project team review proposed locations."
+      },
+      {
+        "title": "Core the opening",
+        "text": "For drilling work, the equipment is positioned and the agreed concrete openings are drilled."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "04 / On Site",
+    "title": "Work Site Pictures",
+    "text": "Real site photographs: marked concrete, drilling equipment and completed openings.",
+    "images": [
+      {
+        "image": "images/concrete/marked-slab.webp",
+        "alt": "Concrete slab with a scan grid and orange surface markings",
+        "caption": "Marked concrete before further work"
+      },
+      {
+        "image": "images/concrete/core-drilling.webp",
+        "alt": "Core drilling rig positioned against a concrete wall",
+        "caption": "Wall-mounted core drilling setup"
+      },
+      {
+        "image": "images/concrete/completed-opening.webp",
+        "alt": "Completed round opening through concrete within a marked grid",
+        "caption": "A completed concrete opening"
+      },
+      {
+        "image": "images/concrete/concrete-core.webp",
+        "alt": "Extracted cylindrical concrete core standing on site",
+        "caption": "The extracted concrete core"
+      }
+    ],
+    "videos": [
+      {
+        "src": "images/concrete/scan-walkthrough.mp4",
+        "poster": "images/concrete/scan-walkthrough-poster.webp",
+        "title": "A closer look at the marked slab",
+        "text": "A site walkthrough showing the surface grid and markings.",
+        "duration": "0:36"
+      },
+      {
+        "src": "images/concrete/drilling-setup.mp4",
+        "poster": "images/concrete/drilling-setup-poster.webp",
+        "title": "The core drilling setup",
+        "text": "Equipment positioned for an opening through a concrete wall.",
+        "duration": "0:14"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "05 / Questions & Answers",
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What is concrete scanning used for?",
+        "answer": "Scanning helps identify reinforcement and other embedded features in the work area before drilling or cutting. What can be detected depends on the equipment, concrete and site conditions; a scan is not a guarantee that every embedded object will be found."
+      },
+      {
+        "question": "Can I request scanning and drilling together?",
+        "answer": "Yes. Choose “Scanning + core drilling” in the quote form and describe the work. You can also request either service separately."
+      },
+      {
+        "question": "What information do you need for a quote?",
+        "answer": "Start with the site location and the service you need. For drilling, include the number and approximate diameter of openings, concrete thickness if known, and whether the work is in a wall or floor. Photos, drawings and access details help us review the request."
+      },
+      {
+        "question": "Can you confirm the opening size from photos?",
+        "answer": "Photos help with an initial review, but may not show the concrete thickness, access constraints or what is embedded inside. Required dimensions and site conditions need to be confirmed before the work is agreed."
+      },
+      {
+        "question": "What areas do you serve?",
+        "answer": "VV Renovation serves Greater Vancouver. Include the site city or address in your request so we can discuss the location and scheduling."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "06 / Request a Quote",
+    "title": "Get a Free Estimate",
+    "text": "Share the location and scope. If you do not have all the measurements yet, send what you know.",
+    "note": "Have photos or drawings? Email them with your name and site location.",
+    "buttonText": "Request a Quote"
+  }
+}

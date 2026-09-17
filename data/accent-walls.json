@@ -1,19 +1,19 @@
 {
   "seo": {
-    "title": "Accent Wall Installation in Vancouver | VV Renovation",
-    "description": "Accent wall installation and decorative finishes in Vancouver. Microcement, marble, stucco and textured feature walls for modern interiors. Free estimate."
+    "title": "Accent Wall Installation & Cost in Vancouver | VV Renovation",
+    "description": "Vancouver accent wall cost guide. Compare faux concrete, microcement, plaster and panelled feature walls, then request a project-specific estimate."
   },
   "hero": {
     "backgroundImage": "/images/uploads/accent-wall-for-hero.jpg",
     "title": "Accent Wall Installation in Vancouver",
-    "subtitle": "Custom microcement, marble, stucco and textured feature walls designed to transform modern interiors.",
+    "subtitle": "Custom faux concrete, microcement, marble, stucco and textured feature walls for modern Vancouver interiors.",
     "buttonText": "Get Free Estimate",
     "buttonLink": "#contact"
   },
   "intro": {
     "anchorId": "accent-intro",
     "title": "Accent Walls & Decorative Finishes",
-    "mainText": "Accent walls are one of the most effective ways to transform a space without a full renovation. VV Renovation specializes in decorative feature walls including microcement, marble finishes, stucco textures, and modern wall designs.",
+    "mainText": "Accent walls are one of the most effective ways to transform a space without a full renovation. VV Renovation specializes in decorative feature walls including faux concrete and microcement looks, marble finishes, stucco textures, and modern wall designs.",
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to create unique interior spaces that elevate modern homes and commercial interiors.",
     "mediaItems": [
       {
@@ -38,8 +38,8 @@
     "title": "Types of Accent Walls We Install",
     "cards": [
       {
-        "title": "Microcement Walls",
-        "text": "Modern seamless wall finishes that create a minimalist concrete look."
+        "title": "Microcement & Faux Concrete Walls",
+        "text": "Hand-applied decorative finishes that create a modern concrete look without presenting the wall as structural concrete."
       },
       {
         "title": "Marble Decorative Walls",
@@ -54,6 +54,62 @@
         "text": "Unique decorative wall designs tailored to your space."
       }
     ]
+  },
+  "fauxConcrete": {
+    "eyebrow": "Concrete-Look Finishes",
+    "title": "Faux Concrete Walls in Vancouver",
+    "body": [
+      "A faux concrete wall uses a hand-applied decorative coating to recreate the movement, tonal variation and architectural character of concrete on an existing interior wall.",
+      "Depending on the substrate and the look you want, the finish may use microcement or a layered decorative plaster system. We review the wall condition, colour, texture and sheen before recommending a build-up and preparing a project-specific sample."
+    ],
+    "highlights": [
+      "Living rooms, bedrooms, offices and commercial feature walls",
+      "Smooth, clouded or more visibly hand-textured effects",
+      "Cool grey, warm neutral and custom colour directions",
+      "Sample approval before the full decorative finish is applied"
+    ],
+    "note": "A faux concrete finish is decorative and is not the same as poured, structural or polished concrete. The existing wall and selected finish system determine the preparation and protective coating required.",
+    "image": "/images/uploads/accent-wall-for-hero.jpg",
+    "imageAlt": "Hand-applied decorative wall finish in a modern Vancouver interior",
+    "buttonText": "Discuss a Concrete-Look Wall",
+    "buttonLink": "#contact"
+  },
+  "cost": {
+    "eyebrow": "Vancouver Cost Guide",
+    "title": "What Does an Accent Wall Cost in Vancouver?",
+    "intro": "For early planning, published Vancouver examples place many single-wall projects between a few hundred and a few thousand dollars. The finish, wall size and preparation required make a major difference, so these market ranges are not a VV Renovation price list.",
+    "ranges": [
+      {
+        "type": "Painted Feature Wall",
+        "range": "$250–$1,000",
+        "text": "A straightforward colour change is usually the lowest-cost option. Repairs, primer, dark colour changes and difficult access can add labour."
+      },
+      {
+        "type": "Panelled or Slat Wall",
+        "range": "$900–$2,500",
+        "text": "Trim layout, material, cutting around outlets and the final painted or stained finish determine the scope."
+      },
+      {
+        "type": "Hand-Finished Plaster",
+        "range": "$600–$3,000+",
+        "text": "Layered texture, stencil work, metallic effects and detailed surface preparation increase time and material use."
+      },
+      {
+        "type": "Microcement or Marble Effect",
+        "range": "Custom Estimate",
+        "text": "Premium decorative systems are quoted after the substrate, dimensions, sample finish and required protective coating are reviewed."
+      }
+    ],
+    "factors": [
+      "Wall width and ceiling height",
+      "Existing cracks, texture or drywall repairs",
+      "Finish system, colour layers and sample approval",
+      "Corners, niches, fireplaces, outlets and built-ins",
+      "Furniture protection, access and occupied-space setup"
+    ],
+    "note": "Planning ranges are based on currently published Vancouver market examples and are not fixed VV Renovation prices. Your written estimate is based on the actual wall, finish and site conditions.",
+    "buttonText": "Get a Project-Specific Estimate",
+    "buttonLink": "#contact"
   },
   "process": {
     "title": "How It Works",
@@ -141,6 +197,14 @@
       {
         "question": "How long does accent wall installation take?",
         "answer": "Most accent wall projects take from 1 to 5 days depending on the material, wall size, and complexity of the design."
+      },
+      {
+        "question": "How much does an accent wall cost in Vancouver?",
+        "answer": "Published Vancouver planning examples commonly range from about $250–$1,000 for a painted feature wall, $900–$2,500 for a panelled wall, and $600–$3,000 or more for hand-finished plaster. Microcement, marble effects and highly custom textures require a project-specific estimate. These are market references, not fixed VV Renovation prices."
+      },
+      {
+        "question": "What is a faux concrete wall finish?",
+        "answer": "A faux concrete wall is a decorative, hand-applied finish that recreates the tonal variation and architectural look of concrete on an existing wall. Depending on the substrate and desired texture, the finish may use microcement or a layered plaster system. It is decorative rather than poured or structural concrete."
       },
       {
         "question": "Do you help with design and material selection?",

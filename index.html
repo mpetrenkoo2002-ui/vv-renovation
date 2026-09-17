@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-  <link rel="canonical" href="https://vvrenovation.ca/">
+  <link rel="canonical" href="https://www.vvrenovation.ca/">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home Renovation & Remodeling in Vancouver | VV Renovation</title>
@@ -15,23 +15,23 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="VV Renovation">
   <meta property="og:locale" content="en_CA">
-  <meta property="og:url" content="https://vvrenovation.ca/">
+  <meta property="og:url" content="https://www.vvrenovation.ca/">
   <meta property="og:title" content="Home Renovation & Remodeling in Vancouver | VV Renovation">
   <meta property="og:description" content="Professional home renovation in Vancouver. Kitchen, bathroom & basement remodeling, drywall, flooring and finishing. Free estimate. Quality craftsmanship.">
-  <meta property="og:image" content="https://vvrenovation.ca/hero.webp">
+  <meta property="og:image" content="https://www.vvrenovation.ca/hero.webp">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Home Renovation & Remodeling in Vancouver | VV Renovation">
   <meta name="twitter:description" content="Professional home renovation in Vancouver. Kitchen, bathroom & basement remodeling, drywall, flooring and finishing. Free estimate. Quality craftsmanship.">
-  <meta name="twitter:image" content="https://vvrenovation.ca/hero.webp">
+  <meta name="twitter:image" content="https://www.vvrenovation.ca/hero.webp">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "name": "VV Renovation",
-  "url": "https://vvrenovation.ca",
+  "url": "https://www.vvrenovation.ca",
   "telephone": "+1-778-266-7999",
   "address": {
     "@type": "PostalAddress",
@@ -48,7 +48,9 @@
     "Kitchen remodeling",
     "Bathroom remodeling",
     "Basement remodeling",
-    "Drywall installation"
+    "Drywall installation",
+    "Concrete scanning",
+    "Concrete core drilling"
   ]
 }
 </script>
@@ -68,7 +70,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260910">
+  <link rel="stylesheet" href="concrete.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -167,7 +170,7 @@
 
     <section class="services" id="services" aria-label="Services">
   <div class="container">
-    <h2 class="services-title">Our Home Renovation Services</h2>
+    <h2 class="services-title">Our Renovation &amp; Concrete Services</h2>
 
     <div class="services-grid">
       <!-- Card 1 -->
@@ -239,7 +242,7 @@
 
         <div class="service-panel">
           <img class="service-icon" src="drywall.svg" alt="Drywall Finishing">
-          <h3 class="service-heading"><a href="drywall.html">Drywall Finishing</a></h3>
+          <h3 class="service-heading"><a href="drywall-finishing.html">Drywall Finishing</a></h3>
 
           <ul class="service-list">
             <li>Drywall</li>
@@ -290,6 +293,8 @@
       </article>
     </div>
 
+    <div data-concrete-promo><article class="concrete-promo"><a class="concrete-promo-media" href="concrete-scanning-core-drilling.html" aria-label="Concrete Scanning &amp; Core Drilling"><img src="images/concrete/wall-drilling.webp" srcset="images/concrete/wall-drilling-small.webp 720w, images/concrete/wall-drilling.webp 1440w" sizes="(max-width: 760px) 92vw, 50vw" alt="Core drilling equipment positioned against a marked concrete wall" loading="lazy" width="1440" height="1080"></a><div class="concrete-promo-copy"><p class="concrete-eyebrow">Specialized Concrete Services</p><h3>Concrete Scanning &amp; Core Drilling</h3><p>Plan your concrete openings with scanning, surface marking and core drilling for renovation and construction work.</p><a class="btn btn-primary" href="concrete-scanning-core-drilling.html">Explore Service <span aria-hidden="true">↗</span></a></div></article></div>
+
     <div class="services-cta">
       <a class="btn btn-primary" href="#contact">Get Free Estimate</a>
     </div>
@@ -300,7 +305,7 @@
     <h2 class="why-title">Why Should You Choose Us</h2>
 
     <p class="why-subtitle">
-      VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area.
+      VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area, including <a href="richmond-home-renovation.html">home renovations in Richmond, BC</a>.
     </p>
 
     <div class="why-grid">
@@ -626,6 +631,13 @@
 
         <div class="footer-services-grid">
           <div class="footer-col">
+            <div class="footer-col-title">Concrete Services</div>
+            <ul class="footer-list">
+              <li><a href="concrete-scanning-core-drilling.html#concrete-services">Concrete scanning</a></li>
+              <li><a href="concrete-scanning-core-drilling.html">Core drilling</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
             <div class="footer-col-title">Accent Wall &amp; Decoration Ideas</div>
             <ul class="footer-list">
               <li><a href="accent-walls.html">Accent walls</a></li>
@@ -737,6 +749,7 @@
 
 </body>
 <script src="js/home-content.js"></script>
+<script src="js/concrete-content.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');

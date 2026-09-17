@@ -7,6 +7,16 @@
 
   var pageName = window.location.pathname.replace(/^.*\//, '') || 'index.html';
 
+  function trackLead(leadType, destination) {
+    track('generate_lead', {
+      event_category: 'lead',
+      event_label: leadType,
+      lead_type: leadType,
+      contact_destination: destination,
+      page_name: pageName
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
 
     // 1. Phone call clicks
@@ -17,6 +27,7 @@
           event_label: link.href.replace('tel://', '').replace('tel:', ''),
           page_name: pageName
         });
+        trackLead('phone_click', link.href.replace('tel://', '').replace('tel:', ''));
       });
     });
 
@@ -28,6 +39,7 @@
           event_label: link.href.replace('mailto:', ''),
           page_name: pageName
         });
+        trackLead('email_click', link.href.replace('mailto:', ''));
       });
     });
 
@@ -118,11 +130,7 @@
       });
 
       form.addEventListener('submit', function () {
-        track('generate_lead', {
-          event_category: 'lead',
-          event_label: 'free_quote_form',
-          page_name: pageName
-        });
+        trackLead('quote_form_submit', form.getAttribute('action') || 'contact_form');
       });
     });
 
