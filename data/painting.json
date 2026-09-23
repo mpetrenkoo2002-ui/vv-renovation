@@ -17,19 +17,21 @@
     "mainText": "A quality paint job does more than change a color — it refreshes the entire feel of a space. VV Renovation provides clean, detail-focused painting services for homes, offices, commercial interiors, and renovation projects.",
     "secondaryText": "We work with homeowners, builders, designers, and property managers across the Greater Vancouver Area to deliver smooth finishes, consistent color, and professional results from preparation to final coat.",
     "mediaType": "video",
-    "media": "/images/uploads/painting-1.mp4",
-    "mediaAlt": "Professional painting work by VV Renovation",
+    "media": "exterior-house-painting.mp4",
+    "mediaAlt": "Exterior house painting by VV Renovation",
     "mediaItems": [
       {
         "type": "video",
-        "src": "painting-1.mp4",
-        "alt": "Interior painting process by VV Renovation",
+        "src": "exterior-house-painting.mp4",
+        "poster": "exterior-house-painting-poster.webp",
+        "alt": "Exterior house wall painting from a ladder by VV Renovation",
         "controls": true
       },
       {
         "type": "video",
-        "src": "painting-2.mp4",
-        "alt": "Interior painting process by VV Renovation",
+        "src": "exterior-spray-painting.mp4",
+        "poster": "exterior-spray-painting-poster.webp",
+        "alt": "Exterior spray painting of trim panels by VV Renovation",
         "controls": true
       }
     ]

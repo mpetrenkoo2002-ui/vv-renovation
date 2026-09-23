@@ -6,7 +6,7 @@ function esc(value) {
     .replaceAll('"', "&quot;");
 }
 
-fetch("data/services.json")
+fetch("data/services.json", { cache: "no-cache" })
   .then(function(res) { return res.json(); })
   .then(function(data) {
     var intro = data.intro;

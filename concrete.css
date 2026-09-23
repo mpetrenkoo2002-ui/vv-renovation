@@ -70,8 +70,8 @@
 .concrete-gallery-link:hover img { transform: scale(1.025); }
 .concrete-enlarge { position: absolute; bottom: 12px; right: 12px; display: grid; place-items: center; width: 32px; height: 32px; background: #fff; color: #0b2a4a; }
 .concrete-gallery figcaption { padding-top: 14px; font-size: 13px; line-height: 1.5; color: #576779; }
-.concrete-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 50px; }
-.concrete-videos figure { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); background: var(--bg); align-items: center; }
+.concrete-videos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 50px; }
+.concrete-videos figure { display: grid; grid-template-columns: 1fr; background: var(--bg); align-content: start; }
 .concrete-videos video { display: block; width: 100%; aspect-ratio: 9 / 16; background: #0b2a4a; object-fit: contain; }
 .concrete-videos figcaption { padding: 24px; }
 .concrete-videos .concrete-eyebrow { color: #83501f; font-size: 10px; letter-spacing: .08em; }
@@ -137,6 +137,7 @@
   .concrete-hero h1 { font-size: clamp(46px, 6.4vw, 68px); }
   .concrete-hero .concrete-actions { gap: 10px 24px; }
   .concrete-service-copy { padding: 24px; }
+  .concrete-videos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .concrete-videos figure { grid-template-columns: 1fr; }
   .concrete-videos video { max-height: 440px; }
   .concrete-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }

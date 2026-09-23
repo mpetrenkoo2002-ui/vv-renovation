@@ -1317,7 +1317,7 @@ body[data-page="accent-walls"] .service-work .work-item{
   min-height: 520px;
   margin: 0;
   overflow: hidden;
-  border-radius: 22px;
+  border-radius: 0;
   box-shadow: 0 24px 60px rgba(11, 49, 83, 0.18);
 }
 

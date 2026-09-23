@@ -6,7 +6,7 @@ function esc(v) {
     .replaceAll('"', "&quot;");
 }
 
-fetch("data/whistler-residential-renovation.json")
+fetch("data/whistler-residential-renovation.json", { cache: "no-cache" })
   .then(function(res) { return res.json(); })
   .then(function(data) {
 

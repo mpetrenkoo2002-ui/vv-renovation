@@ -22,7 +22,7 @@
     "imageAlt": "Wall-mounted core drilling equipment beside scan markings on concrete",
     "caption": "On site with VV Renovation",
     "primaryButtonText": "Request a Quote",
-    "secondaryButtonText": "Call 778-266-7999",
+    "secondaryButtonText": "Call 647-834-8017",
     "tags": [
       "Concrete scanning",
       "Surface marking",
@@ -149,6 +149,13 @@
         "title": "The core drilling setup",
         "text": "Equipment positioned for an opening through a concrete wall.",
         "duration": "0:14"
+      },
+      {
+        "src": "images/concrete/core-drilling-in-action.mp4",
+        "poster": "images/concrete/core-drilling-in-action-poster.webp",
+        "title": "Core drilling in action",
+        "text": "A site montage showing the drilling process, wall-mounted rig and core barrels.",
+        "duration": "0:23"
       }
     ]
   },

@@ -47,10 +47,11 @@ if (introGrid) {
         const controls = item.controls ? "controls" : "";
         const autoplay = item.autoplay ? "autoplay" : "";
         const loop = item.loop ? "loop" : "";
+        const poster = item.poster ? `poster="${esc(item.poster)}"` : "";
 
         return `
           <div class="intro-video intro-media-card">
-            <video ${controls} ${autoplay} ${loop} muted playsinline preload="metadata" aria-label="${alt}">
+            <video ${controls} ${autoplay} ${loop} ${poster} muted playsinline preload="metadata" aria-label="${alt}">
               <source src="${src}" type="video/mp4">
             </video>
           </div>
@@ -316,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch(`data/${page}.json`)
+  fetch(`data/${page}.json`, { cache: "no-cache" })
     .then((res) => {
       if (!res.ok) throw new Error(`Failed to load data/${page}.json`);
       return res.json();

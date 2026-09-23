@@ -6,7 +6,7 @@ function esc(v) {
     .replaceAll('"', "&quot;");
 }
 
-fetch("data/jericho-beach.json")
+fetch("data/jericho-beach.json", { cache: "no-cache" })
   .then(function(res) { return res.json(); })
   .then(function(data) {
 

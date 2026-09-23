@@ -67,7 +67,7 @@
     ]
   },
   "relatedServices": [
-    { "label": "Painting",          "url": "painting.html",          "image": "jericho-painting.jpg", "imageAlt": "Interior painting in a large luxury room with a curved ceiling by VV Renovation in Vancouver",          "icon": "paint.svg"        },
+    { "label": "Painting",          "url": "painting.html",          "image": "exterior-painting-service.webp", "imageAlt": "Exterior house painting in progress by VV Renovation in Greater Vancouver",          "icon": "paint.svg"        },
     { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",          "imageAlt": "Navy blue accent wall with a geometric wood-trim pattern by VV Renovation in Vancouver",       "icon": "accent-walls.svg" },
     { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png",    "imageAlt": "Freshly poured self-leveling floor compound being smoothed during a flooring renovation in Vancouver",          "icon": "flooring.svg"     },
     { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",     "imageAlt": "Taped drywall partition walls in a commercial build-out, drywall finishing by VV Renovation in Vancouver", "icon": "drywall.svg"      }
