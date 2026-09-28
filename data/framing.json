@@ -17,18 +17,13 @@
     "mainText": "Good framing is the foundation of a clean, durable and well-built interior. VV Renovation provides precise framing work for partitions, ceilings, renovation layouts and finish carpentry with attention to structure, alignment and long-term reliability.",
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional framing services.",
     "mediaType": "image",
-    "media": "framing.jpg",
-    "mediaAlt": "Exposed wood ceiling joists with electrical wiring and ductwork roughed in during an interior renovation in Vancouver",
+    "media": "/images/uploads/steel-stud-framing-services.jpg",
+    "mediaAlt": "Illustration of a worker installing steel stud partition framing",
     "mediaItems": [
       {
         "type": "image",
-        "src": "framing.jpg",
-        "alt": "Exposed wood ceiling joists with electrical wiring and ductwork roughed in during an interior renovation in Vancouver"
-      },
-      {
-        "type": "image",
-        "src": "/images/uploads/bar-cabinet.jpeg",
-        "alt": "Custom plywood bar and shelving unit being built during finish carpentry on a commercial renovation in Vancouver"
+        "src": "/images/uploads/steel-stud-framing-services.jpg",
+        "alt": "Illustration of a worker installing steel stud partition framing"
       }
     ]
   },
@@ -120,28 +115,16 @@
     "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
     "images": [
       {
-        "image": "/images/uploads/image_2026-09-22_12-25-54.png",
-        "alt": "Exposed wood ceiling joists with electrical wiring and ductwork roughed in during an interior renovation in Vancouver"
+        "image": "/images/uploads/commercial-corridor-framing.png",
+        "alt": "Commercial corridor renovation with partition walls and exposed ceiling ductwork"
       },
       {
-        "image": "/images/uploads/11whatsapp-image-2026-05-24-at-5.13.23-am.jpeg",
-        "alt": "  "
+        "image": "/images/uploads/steel-stud-partition-work.jpg",
+        "alt": "Steel stud partitions and drywall work during a commercial interior renovation"
       },
       {
-        "image": "/images/uploads/whatsapp-image-2026-05-24-at-5.12.32-am.jpeg",
-        "alt": "  "
-      },
-      {
-        "image": "/images/uploads/whatsapp-image-2026-05-24-at-5.12.33-am.jpeg",
-        "alt": "  "
-      },
-      {
-        "image": "/images/uploads/11whatsapp-image-2026-05-24-at-5.12.32-am.jpeg",
-        "alt": "  "
-      },
-      {
-        "image": "work-6.webp",
-        "alt": "  "
+        "image": "/images/uploads/steel-stud-ceiling-framing.png",
+        "alt": "Steel stud partition walls and ceiling framing during a commercial interior renovation"
       }
     ]
   },

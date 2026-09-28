@@ -56,7 +56,7 @@ if (heroImg && hero.backgroundImage) {
     const work = document.querySelector(".work");
     work.querySelector(".section-title").textContent = data.work.title;
     work.querySelector(".work-grid").innerHTML = data.work.images.map(item => `
-      <a href="${esc(item.image)}" target="_blank" rel="noopener">
+      <a href="${esc(item.image)}">
         <img src="${esc(item.image)}" alt="${esc(item.alt)}" class="work-item">
       </a>
     `).join("");
@@ -68,3 +68,29 @@ if (heroImg && hero.backgroundImage) {
   .catch((error) => {
     console.error("Homepage content loading error:", error);
   });
+
+const workDialog = document.getElementById("work-lightbox");
+let workDialogOpener;
+
+document.querySelector(".work-grid")?.addEventListener("click", (event) => {
+  const link = event.target.closest("a[href]");
+  if (!link || !workDialog || typeof workDialog.showModal !== "function") return;
+  event.preventDefault();
+  workDialogOpener = link;
+  const thumbnail = link.querySelector("img");
+  const image = workDialog.querySelector("img");
+  image.src = link.href;
+  image.alt = thumbnail?.alt || "Project photograph";
+  workDialog.showModal();
+});
+
+if (workDialog) {
+  workDialog.querySelector("button").addEventListener("click", () => workDialog.close());
+  workDialog.addEventListener("click", (event) => {
+    if (event.target === workDialog) workDialog.close();
+  });
+  workDialog.addEventListener("close", () => {
+    workDialog.querySelector("img").removeAttribute("src");
+    workDialogOpener?.focus();
+  });
+}

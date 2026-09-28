@@ -1,18 +1,18 @@
 {
   "seo": {
-    "title": "Accent Wall Installation in Vancouver | VV Renovation",
+    "title": "Accent Walls & Decoration in Vancouver | VV Renovation",
     "description": "Custom accent wall installation in Vancouver, including faux concrete, microcement, plaster, panelled and textured feature walls."
   },
   "hero": {
     "backgroundImage": "/images/uploads/accent-wall-for-hero.jpg",
-    "title": "Accent Wall Installation in Vancouver",
+    "title": "Accent Walls & Decoration in Vancouver",
     "subtitle": "Custom faux concrete, microcement, marble, stucco and textured feature walls for modern Vancouver interiors.",
     "buttonText": "Get Free Estimate",
     "buttonLink": "#contact"
   },
   "intro": {
     "anchorId": "accent-intro",
-    "title": "Accent Walls & Decorative Finishes",
+    "title": "Accent Walls & Decoration",
     "mainText": "Accent walls are one of the most effective ways to transform a space without a full renovation. VV Renovation specializes in decorative feature walls including faux concrete and microcement looks, marble finishes, stucco textures, and modern wall designs.",
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to create unique interior spaces that elevate modern homes and commercial interiors.",
     "mediaItems": [
@@ -143,6 +143,18 @@
       {
         "image": "/images/uploads/accent-wall-work.jpg",
         "alt": "Applying metallic glaze with a sponge to create a blue and gold decorative accent wall finish during a Vancouver renovation"
+      },
+      {
+        "image": "/images/uploads/wood-slat-accent-wall-installation.jpg",
+        "alt": "Installation of a natural wood slat accent wall beside a teal wall"
+      },
+      {
+        "image": "/images/uploads/decorative-wall-finish-in-progress.png",
+        "alt": "Decorative textured wall finish in progress beside grey wall panels"
+      },
+      {
+        "image": "/images/uploads/grey-textured-accent-wall.jpg",
+        "alt": "Grey textured decorative accent wall with a hand-applied plaster finish"
       }
     ]
   },

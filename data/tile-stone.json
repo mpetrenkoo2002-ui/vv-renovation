@@ -112,6 +112,10 @@
     "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
     "images": [
       {
+        "image": "/images/uploads/terrazzo-wood-bathroom.png",
+        "alt": "Bathroom with terrazzo wall tiles, wood-effect finishes and a black vessel sink"
+      },
+      {
         "image": "tile-work-1.jpg",
         "alt": "Large format marble tile installation for modern bathroom renovation in Vancouver"
       },
@@ -130,10 +134,6 @@
       {
         "image": "tile.jpeg",
         "alt": "Large format marble tile installation using leveling clips for clean bathroom wall finish"
-      },
-      {
-        "image": "work-6.webp",
-        "alt": "Dark large format floor tile installation with leveling clips for professional renovation project"
       }
     ]
   },

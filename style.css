@@ -633,8 +633,40 @@ section[id] {
   box-shadow: 0 12px 24px rgba(0,0,0,.15);
 }
 
-/* Accent Walls portfolio: tall 9:16 portrait cards */
-body[data-page="accent-walls"] .service-work .work-item{
+.work-lightbox{
+  border: 0;
+  padding: 48px 20px 20px;
+  background: #0b2035;
+  color: #fff;
+  max-width: min(94vw, 1200px);
+  max-height: 94dvh;
+}
+
+.work-lightbox::backdrop{ background: #041320e8; }
+.work-lightbox img{
+  display: block;
+  max-width: 85vw;
+  max-height: 78dvh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.work-lightbox button{
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Accent Walls and Tile & Stone portfolios: tall 9:16 portrait cards */
+body[data-page="accent-walls"] .service-work .work-item,
+body[data-page="tile-stone"] #work .work-item{
   height: auto;
   aspect-ratio: 9 / 16;
 }
@@ -1371,6 +1403,89 @@ body[data-page="accent-walls"] .service-work .work-item{
     text-align: center;
   }
 }
+
+.finish-tabs{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccd4db;
+}
+.finish-tabs button{
+  padding: 16px 22px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: #42566a;
+  font: inherit;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 700;
+  cursor: pointer;
+}
+.finish-tabs button[aria-selected="true"]{
+  border-bottom-color: #ed7c0e;
+  color: #0b3153;
+}
+.finish-tabs button:hover{ background: #fff8ed; }
+.finish-tabs button:focus-visible{ outline: 3px solid #ed7c0e; outline-offset: -3px; }
+.finish-panel[hidden]{ display: none; }
+.finish-panel{ scroll-margin-top: 110px; }
+
+.microcement-gallery{
+  min-width: 0;
+  width: 100%;
+  max-width: 540px;
+  justify-self: center;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(11, 49, 83, 0.14);
+}
+.microcement-slide{ margin: 0; }
+.microcement-gallery [hidden]{ display: none; }
+.microcement-slide video,
+.microcement-slide img{
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #0b2035;
+}
+.microcement-slide figcaption{
+  padding: 20px 24px 0;
+  color: #0b3153;
+  font-size: 18px;
+  font-weight: 700;
+}
+.microcement-navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px 20px;
+  gap: 16px;
+}
+.microcement-navigation button{
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #d2dbe2;
+  border-radius: 0;
+  background: #fff;
+  color: #0b3153;
+  font: inherit;
+  font-size: 24px;
+  cursor: pointer;
+}
+.microcement-navigation button:hover{
+  border-color: #ed7c0e;
+  background: #ed7c0e;
+  color: #fff;
+}
+.microcement-navigation button:focus-visible{
+  outline: 3px solid #ed7c0e;
+  outline-offset: 3px;
+}
+.microcement-navigation span{ color: #42566a; font-size: 14px; }
 
 .accent-cost {
   padding: 96px 0;
@@ -2618,6 +2733,32 @@ body[data-page="accent-walls"] .service-work .work-item{
 /* =========================
    Services: tap-to-open on mobile
 ========================= */
+
+/* Framing intro uses one landscape illustration, not staggered portraits. */
+body[data-page="framing"] #framing-intro .intro-grid{
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: center;
+}
+body[data-page="framing"] #framing-intro .service-intro-media{
+  grid-template-columns: minmax(0, 1fr);
+}
+body[data-page="framing"] #framing-intro .intro-image{
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  transform: none;
+}
+body[data-page="framing"] #framing-intro .intro-image img{
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+@media (max-width: 1000px){
+  body[data-page="framing"] #framing-intro .intro-grid{
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+}
 
 /* On mobile/tablet: open card when it has .is-open (tap) */
 

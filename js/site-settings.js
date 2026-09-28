@@ -39,7 +39,7 @@ function renderProjectsMenu(projects) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("data/site-settings.json")
+  fetch("data/site-settings.json?v=20260927-decoration", { cache: "no-cache" })
     .then((res) => {
       if (!res.ok) throw new Error("Failed to load site settings");
       return res.json();
