@@ -116,28 +116,16 @@
     "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
     "images": [
       {
-        "image": "/images/uploads/jericho-painting.jpg",
-        "alt": "Interior painting in progress in a large luxury room with a curved ceiling and floor-to-ceiling windows in Vancouver"
+        "image": "/images/uploads/painting-dark-vaulted-room.png",
+        "alt": "Dark interior walls and a vaulted ceiling during painting with scaffolding and protected floors"
       },
       {
-        "image": "work-3.webp",
-        "alt": "Hot tub with its side panel removed exposing the plumbing and pump during installation by VV Renovation in Vancouver"
+        "image": "/images/uploads/painting-house-exterior.png",
+        "alt": "Exterior house painting with a painter on a ladder and masked windows"
       },
       {
-        "image": "work-4.webp",
-        "alt": "Worker in a protective suit spray-applying coating to an interior wall during a renovation in Vancouver"
-      },
-      {
-        "image": "work-5.webp",
-        "alt": "Skylight set into a freshly painted sloped bathroom ceiling above tiled walls during a renovation in Vancouver"
-      },
-      {
-        "image": "work-6.webp",
-        "alt": "Large-format black floor tile installed with red leveling clips during a renovation in Vancouver"
-      },
-      {
-        "image": "work-accent-wall.jpeg",
-        "alt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior"
+        "image": "/images/uploads/painting-dark-window-wall.png",
+        "alt": "Dark painted interior wall and ceiling beside a large window with masked edges and protected floors"
       }
     ]
   },

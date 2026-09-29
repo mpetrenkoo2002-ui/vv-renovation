@@ -633,6 +633,181 @@ section[id] {
   box-shadow: 0 12px 24px rgba(0,0,0,.15);
 }
 
+/* Homepage location / click-to-load map */
+.home-find-us {
+  padding: 96px 0;
+  background: var(--bg);
+}
+.home-find-us-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  gap: 72px;
+  align-items: center;
+}
+.home-find-us-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 24px;
+  color: #9a4b00;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: 13px;
+  font-weight: 700;
+}
+.home-find-us-eyebrow::before {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.home-find-us-copy h2 {
+  margin: 0 0 24px;
+  font-family: Poppins, Inter, sans-serif;
+  font-size: clamp(32px, 3.4vw, 48px);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+  color: var(--nav-text);
+}
+.home-find-us-description {
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #52677d;
+}
+.home-find-us-area-label {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--nav-text);
+}
+.home-find-us-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+}
+.home-find-us-areas li {
+  padding: 7px 12px;
+  border: 1px solid #ced1d1;
+  color: #52677d;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.home-find-us-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid #ced1d1;
+  margin-bottom: 24px;
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.home-find-us-address img { flex-shrink: 0; }
+.home-find-us-postcode { color: #52677d; font-size: 14px; }
+.home-find-us-load { gap: 20px; }
+.home-find-us-load span { font-size: 22px; }
+.home-find-us-map {
+  border: 1px solid #ced1d1;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(11, 42, 74, .08);
+  min-width: 0;
+}
+.home-find-us-map-stage { height: 480px; }
+.home-find-us-map-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  color: #fff;
+  background-color: var(--nav-text);
+  background-image: radial-gradient(ellipse at 50% 48%, rgba(32, 68, 102, .9), transparent 70%), linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+}
+.home-find-us-map-placeholder[hidden],
+.home-find-us-load[hidden] { display: none; }
+.home-find-us-map-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: #bdc9d6;
+}
+.home-find-us-map-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home-find-us-pin {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  border: 1px solid rgba(237,124,14,.5);
+  margin-bottom: 24px;
+}
+.home-find-us-map-content h3 {
+  margin: 0 0 8px;
+  font-family: Poppins, Inter, sans-serif;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -.025em;
+}
+.home-find-us-map-content p {
+  margin: 0 0 30px;
+  font-size: 15px;
+  color: #bdc9d6;
+  line-height: 1.5;
+}
+.home-find-us-load { cursor: pointer; font-family: inherit; }
+.home-find-us-map-footer {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.14);
+  font-size: 12px;
+  text-align: center;
+  color: #bdc9d6;
+}
+.home-find-us-map-stage iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.home-find-us-map-note {
+  margin: 0;
+  padding: 16px 22px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #52677d;
+}
+.home-find-us a:focus-visible,
+.home-find-us button:focus-visible,
+.home-find-us iframe:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.home-find-us-address:hover { text-decoration: underline; }
+@media (max-width: 960px) {
+  .home-find-us-grid { gap: 36px; }
+  .home-find-us-map-stage { height: 460px; }
+}
+@media (max-width: 760px) {
+  .home-find-us { padding: 64px 0; }
+  .home-find-us-grid { grid-template-columns: 1fr; gap: 36px; }
+  .home-find-us-map-stage { height: 410px; }
+  .home-find-us-map-placeholder { padding: 24px; }
+  .home-find-us-description { font-size: 16px; }
+  .home-find-us .btn { min-height: 52px; height: auto; padding: 14px 24px; font-size: 16px; }
+}
+
 .work-lightbox{
   border: 0;
   padding: 48px 20px 20px;
@@ -666,6 +841,7 @@ section[id] {
 
 /* Accent Walls and Tile & Stone portfolios: tall 9:16 portrait cards */
 body[data-page="accent-walls"] .service-work .work-item,
+body[data-page="drywall-finishing"] #work .work-item,
 body[data-page="tile-stone"] #work .work-item{
   height: auto;
   aspect-ratio: 9 / 16;

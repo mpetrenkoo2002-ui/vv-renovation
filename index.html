@@ -70,7 +70,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260927">
+  <link rel="stylesheet" href="style.css?v=20260928-find-us">
   <link rel="stylesheet" href="concrete.css">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -553,6 +553,40 @@
   </div>
 </section>
 
+<section class="home-find-us" id="find-us" aria-labelledby="find-us-title">
+  <div class="container home-find-us-grid">
+    <div class="home-find-us-copy">
+      <p class="home-find-us-eyebrow">Find Us / Greater Vancouver</p>
+      <h2 id="find-us-title">Your Local<br>Renovation Team.</h2>
+      <p class="home-find-us-description">Based in Richmond, we bring detail-focused renovation and finishing to homes and commercial spaces across Greater Vancouver. Find VV Renovation on Google Maps and tell us about your project.</p>
+      <p class="home-find-us-area-label">Working in your neighbourhood</p>
+      <ul class="home-find-us-areas" aria-label="Service areas">
+        <li>Richmond</li><li>Vancouver</li><li>Burnaby</li><li>Surrey</li><li>Langley</li><li>North Vancouver</li><li>New Westminster</li><li>Whistler</li>
+      </ul>
+      <a class="home-find-us-address" href="https://www.google.com/maps/place/?q=place_id:ChIJg4fX0_wLhlQRbJ5qrb3lf-E" target="_blank" rel="noopener noreferrer">
+        <img src="pin.svg" width="28" height="28" alt="" aria-hidden="true">
+        <span>5320 Cantrell Rd, Richmond<br><span class="home-find-us-postcode">BC V7C 3G8</span></span>
+      </a>
+    </div>
+    <div class="home-find-us-map" data-location-map>
+      <div class="home-find-us-map-stage" id="home-location-map" data-map-stage>
+        <div class="home-find-us-map-placeholder" data-map-placeholder>
+          <span class="home-find-us-map-label">Richmond, British Columbia</span>
+          <div class="home-find-us-map-content">
+            <div class="home-find-us-pin"><img src="pin.svg" width="52" height="52" alt="" aria-hidden="true"></div>
+            <h3>VV Renovation</h3>
+            <p>Your project. Our craftsmanship.</p>
+            <button class="btn btn-primary home-find-us-load" type="button" aria-controls="home-location-map" data-load-map hidden>Load Google Map <span aria-hidden="true">↗</span></button>
+            <noscript><a class="btn btn-primary" href="https://www.google.com/maps/place/?q=place_id:ChIJg4fX0_wLhlQRbJ5qrb3lf-E" target="_blank" rel="noopener noreferrer">Open Google Maps ↗</a></noscript>
+          </div>
+          <span class="home-find-us-map-footer">Serving the Greater Vancouver Area</span>
+        </div>
+      </div>
+      <p class="home-find-us-map-note" data-map-status role="status">The map loads only when you choose to connect to Google Maps.</p>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact" aria-label="Contact">
   <div class="container contact-grid">
     <div class="contact-left">
@@ -735,6 +769,7 @@
 </main>
 <script src="js/site-settings.js?v=20260927-decoration"></script>
 <script src="js/analytics.js"></script>
+<script src="js/home-location-map.js?v=20260928"></script>
 <script>
   const hash = window.location.hash;
 

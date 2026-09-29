@@ -16,19 +16,25 @@
     "title": "Drywall Finishing Services",
     "mainText": "Drywall finishing is what gives walls and ceilings their clean, seamless final appearance. VV Renovation provides precise drywall installation and finishing with attention to straight lines, smooth surfaces and ready-to-paint results.",
     "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to deliver clean, reliable and professional drywall finishing.",
-    "mediaType": "image",
-    "media": "drywall.jpeg",
-    "mediaAlt": "Worker on a scissor lift fastening drywall sheets to a ceiling during a commercial renovation in Vancouver",
+    "mediaType": "video",
+    "media": "/images/uploads/drywall-installation-video.mp4",
+    "mediaAlt": "Drywall installation project video by VV Renovation",
     "mediaItems": [
       {
-        "type": "image",
-        "src": "drywall.jpeg",
-        "alt": "Worker on a scissor lift fastening drywall sheets to a ceiling during a commercial renovation in Vancouver"
+        "type": "video",
+        "src": "/images/uploads/drywall-installation-video.mp4",
+        "alt": "Drywall installation project video by VV Renovation",
+        "controls": true,
+        "autoplay": false,
+        "loop": false
       },
       {
-        "type": "image",
-        "src": "drywall-work-1.jpg",
-        "alt": "Worker on scaffolding taping and mudding drywall joints on a high vaulted ceiling during a renovation in Vancouver"
+        "type": "video",
+        "src": "/images/uploads/drywall-finishing-process.mp4",
+        "alt": "Drywall finishing process video by VV Renovation",
+        "controls": true,
+        "autoplay": false,
+        "loop": false
       }
     ]
   },
@@ -140,8 +146,8 @@
         "alt": "Exterior painting process"
       },
       {
-        "image": "work-6.webp",
-        "alt": "Large format floor tile installation with leveling clips for renovation project"
+        "image": "/images/uploads/drywall-wall-finishing-detail.jpg",
+        "alt": "Drywall wall and ceiling finishing in progress with scaffolding, a work light and a protected window"
       }
     ]
   },
