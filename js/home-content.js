@@ -16,7 +16,18 @@ if (heroImg && hero.backgroundImage) {
 }
     document.querySelector(".hero h1").innerHTML =
       `${esc(hero.line1)}<br>${esc(hero.line2)}<br><span class="accent">${esc(hero.accent)}</span>`;
-    document.querySelector(".hero p").textContent = hero.subtitle;
+    const heroSubtitle = document.querySelector(".hero p");
+    const richmondLinkText = "Richmond-based home renovation contractor";
+    const subtitle = String(hero.subtitle ?? "");
+    if (subtitle.startsWith(richmondLinkText)) {
+      const richmondLink = document.createElement("a");
+      richmondLink.href = "richmond-home-renovation.html";
+      richmondLink.style.color = "inherit";
+      richmondLink.textContent = richmondLinkText;
+      heroSubtitle.replaceChildren(richmondLink, document.createTextNode(subtitle.slice(richmondLinkText.length)));
+    } else {
+      heroSubtitle.textContent = subtitle;
+    }
 
     const heroButtons = document.querySelectorAll(".hero .cta-row a");
     heroButtons[0].textContent = hero.primaryButtonText;

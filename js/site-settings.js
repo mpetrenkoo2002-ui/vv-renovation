@@ -38,7 +38,25 @@ function renderProjectsMenu(projects) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function initializeNavigationMenus() {
+  // Keep navigation usable while CMS settings load or if the request fails.
+  renderServicesMenu([
+    { label: "All Services", url: "services.html" },
+    { label: "Richmond Renovations", url: "richmond-home-renovation.html" },
+    { label: "Concrete Scanning & Core Drilling", url: "concrete-scanning-core-drilling.html" },
+    { label: "Accent Walls & Decoration", url: "accent-walls.html" },
+    { label: "Drywall Finishing", url: "drywall-finishing.html" },
+    { label: "Tile & Stone", url: "tile-stone.html" },
+    { label: "Flooring", url: "flooring.html" },
+    { label: "Painting", url: "painting.html" },
+    { label: "Framing", url: "framing.html" }
+  ]);
+  renderProjectsMenu([
+    { label: "Yoga Studio — Langley", url: "yoga-studio-langley.html" },
+    { label: "Luxury Home — Jericho Beach", url: "jericho-beach.html" },
+    { label: "Interior Renovation — Whistler", url: "whistler-residential-renovation.html" }
+  ]);
+
   fetch("data/site-settings.json?v=20260927-decoration", { cache: "no-cache" })
     .then((res) => {
       if (!res.ok) throw new Error("Failed to load site settings");
@@ -51,4 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Site settings loading error:", error);
     });
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeNavigationMenus, { once: true });
+} else {
+  initializeNavigationMenus();
+}
