@@ -157,6 +157,8 @@ section[id] {
 
 .hero h1 .accent{
   display: block;
+  /* Keep descenders inside the gradient's painted area. */
+  padding-bottom: 0.15em;
   background: linear-gradient(
     90deg,
     #ED7C0E 0%,
