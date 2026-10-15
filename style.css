@@ -155,6 +155,10 @@ section[id] {
   color: #fff;
 }
 
+.hero #hero-title{
+  font-size: clamp(30px, 4vw, 48px);
+}
+
 .hero h1 .accent{
   display: block;
   background: linear-gradient(

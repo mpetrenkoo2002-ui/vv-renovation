@@ -2,13 +2,13 @@
   "hero": {
     "secondaryButtonLink": "#contact",
     "primaryButtonText": "Call Us",
-    "accent": "Experts in Vancouver",
+    "accent": "Renovation & Interior Finishing",
     "backgroundImage": "/images/uploads/hero.webp",
     "primaryButtonLink": "tel:+17782667999",
     "secondaryButtonText": "Get Free Quote",
     "subtitle": "Richmond-based home renovation contractor serving Greater Vancouver. Precision framing, drywall, flooring and finishing work. Request a project estimate.",
     "line1": "VV Renovation",
-    "line2": "House Renovation"
+    "line2": "Commercial & Residential"
   },
   "services": {
     "title": "Our Renovation & Concrete Services",
