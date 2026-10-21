@@ -1013,6 +1013,18 @@ body[data-page="tile-stone"] #work .work-item{
   gap: 14px;
 }
 
+.contact-form .quote-request-status{
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.contact-form .quote-request-status[hidden]{ display: none; }
+.contact-form button[type="submit"]:disabled{ opacity: .65; cursor: default; }
+
 .field input,
 .field textarea{
   width: 100%;
