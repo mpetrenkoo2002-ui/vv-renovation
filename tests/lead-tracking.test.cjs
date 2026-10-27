@@ -66,6 +66,7 @@ function harness(options = {}) {
   };
   let count = 0;
   const window = {
+    VVTracking: { internal: Boolean(options.internal) },
     location: new URL(options.url || 'https://www.vvrenovation.ca/'),
     localStorage: {
       getItem: key => { if (options.blockStorage) throw Error('blocked'); return stored.get(key) || null; },
@@ -226,7 +227,44 @@ test('phone and email clicks remain contact actions and are not quote leads', ()
   h.phone.listeners.click();
   h.email.listeners.click();
   assert.equal(h.events.map(event => event.name).join(','), 'phone_call_click,email_click');
+  assert.equal(h.metaEvents.map(event => event[1]).join(','), 'PhoneClick,EmailClick');
+  assert.ok(h.metaEvents.every(event => event[0] === 'trackCustom'));
+  assert.ok(h.events.every(event => event.name !== 'generate_lead'));
+});
+
+test('phone clicks retain first/last attribution, destination and Vancouver business time', () => {
+  const stored = new Map();
+  harness({ stored, url: 'https://www.vvrenovation.ca/?utm_source=instagram&utm_medium=organic_social&utm_campaign=profile' });
+  const h = harness({ stored, url: 'https://www.vvrenovation.ca/painting?utm_source=google&utm_medium=cpc&utm_campaign=painting' });
+  h.phone.closest = selector => selector === '#home, .hero' ? {} : null;
+  h.phone.listeners.click();
+  const event = h.events[0];
+  assert.equal(event.name, 'phone_call_click');
+  assert.equal(event.params.contact_source, 'google');
+  assert.equal(event.params.first_source, 'instagram');
+  assert.equal(event.params.contact_campaign, 'painting');
+  assert.equal(event.params.contact_destination, '+17782667999');
+  assert.equal(event.params.contact_location, 'hero');
+  assert.equal(event.params.business_timezone, 'America/Vancouver');
+  assert.match(event.params.business_hour, /^(0\d|1\d|2[0-3])$/);
+  assert.match(event.params.interaction_time_utc, /^\d{4}-\d{2}-\d{2}T/);
+  assert.equal(h.metaEvents[0][3].eventID, event.params.interaction_id);
+  const data = JSON.stringify([h.events, h.metaEvents]);
+  for (const customerValue of ['Fixture Person', 'fixture@example.test', '5555555555', 'Fixture message']) assert.ok(!data.includes(customerValue));
+});
+
+test('owner mode preserves working forms but suppresses contact and accepted-lead analytics', async () => {
+  const h = harness({ internal: true });
+  h.phone.listeners.click();
+  h.email.listeners.click();
+  await h.submit();
+  assert.equal(h.requests.length, 1);
+  assert.equal(h.field('traffic_type'), 'internal');
+  assert.equal(h.field('lead_source'), 'internal');
+  assert.equal(h.form.resetCount, 1);
+  assert.equal(h.events.length, 0);
   assert.equal(h.metaEvents.length, 0);
+  assert.equal(h.stored.size, 0);
 });
 
 test('invalid forms and non-Formspree destinations do not produce accepted leads', async () => {

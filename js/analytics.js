@@ -1,5 +1,8 @@
 (function () {
+  function isInternal() { return Boolean(window.VVTracking && window.VVTracking.internal); }
+
   function track(eventName, params) {
+    if (isInternal()) return;
     try {
       if (typeof gtag === 'function') gtag('event', eventName, params);
     } catch (_) { /* A blocked tracker must not interrupt a quote request. */ }
@@ -71,6 +74,11 @@
 
   function getAttribution() {
     var incoming = newTouch();
+    if (isInternal()) {
+      incoming.touch.source = 'internal';
+      incoming.touch.medium = 'internal';
+      return { first: incoming.touch, last: incoming.touch };
+    }
     var saved;
     try { saved = JSON.parse(window.localStorage.getItem(attributionKey)); } catch (_) { /* Storage can be unavailable. */ }
     var now = Date.now();
@@ -110,13 +118,15 @@
       lead_campaign: last.utm_campaign, landing_page: last.landing_page, referrer: last.referrer,
       first_source: first.source, first_medium: first.medium, first_campaign: first.utm_campaign,
       first_landing_page: first.landing_page, first_referrer: first.referrer, first_seen_at: first.seen_at,
-      form_page: pageUrl(window.location.href), ga_client_id: gaClientId
+      form_page: pageUrl(window.location.href), ga_client_id: gaClientId,
+      traffic_type: isInternal() ? 'internal' : 'external'
     };
     campaignKeys.concat(clickKeys).forEach(function (key) { fields[key] = last[key]; });
     Object.keys(fields).forEach(function (key) { setField(form, key, fields[key]); });
   }
 
   function trackAcceptedLead(leadId) {
+    if (isInternal()) return;
     // Send attribution and a random ID only; never send the customer's form fields.
     var params = {
       event_category: 'lead', lead_type: 'quote_form_accepted', lead_id: leadId,
@@ -127,6 +137,43 @@
     try {
       if (typeof fbq === 'function') fbq('track', 'Lead', { lead_id: leadId, content_name: pageName }, { eventID: leadId });
     } catch (_) { /* Formspree acceptance does not depend on Meta. */ }
+  }
+
+  function contactLocation(link) {
+    if (!link.closest) return 'page';
+    if (link.closest('footer, .footer')) return 'footer';
+    if (link.closest('#contact, .contact-section, .contact')) return 'contact';
+    if (link.closest('#home, .hero')) return 'hero';
+    if (link.closest('header, .topbar, .top-bar, .top-bar-inner')) return 'header';
+    return 'page';
+  }
+
+  function trackContact(link, method) {
+    if (isInternal()) return;
+    var eventId = newLeadId();
+    var now = new Date();
+    var hour = '';
+    var weekday = '';
+    try {
+      hour = new Intl.DateTimeFormat('en-GB', { timeZone: 'America/Vancouver', hour: '2-digit', hourCycle: 'h23' }).format(now);
+      weekday = new Intl.DateTimeFormat('en-GB', { timeZone: 'America/Vancouver', weekday: 'short' }).format(now);
+    } catch (_) { /* GA4 still records its own event timestamp. */ }
+    // Only business destinations are sent, never a visitor's phone or email.
+    var destination = link.href.replace(/^(tel:\/\/|tel:|mailto:)/, '').split('?')[0];
+    var params = {
+      event_category: 'contact', event_label: destination, page_name: pageName,
+      interaction_id: eventId, contact_method: method, contact_destination: destination,
+      contact_location: contactLocation(link), contact_source: clean(attribution.last.source),
+      contact_medium: clean(attribution.last.medium), contact_campaign: clean(attribution.last.utm_campaign),
+      first_source: clean(attribution.first.source), first_medium: clean(attribution.first.medium),
+      first_campaign: clean(attribution.first.utm_campaign), landing_page: attribution.last.landing_page,
+      business_hour: hour, business_weekday: weekday, business_timezone: 'America/Vancouver',
+      interaction_time_utc: now.toISOString()
+    };
+    track(method === 'phone' ? 'phone_call_click' : 'email_click', params);
+    try {
+      if (typeof fbq === 'function') fbq('trackCustom', method === 'phone' ? 'PhoneClick' : 'EmailClick', params, { eventID: eventId });
+    } catch (_) { /* Opening the phone/email app must not depend on Meta. */ }
   }
 
   function setupQuoteForm(form) {
@@ -199,22 +246,14 @@
     // 1. Phone call clicks
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.addEventListener('click', function () {
-        track('phone_call_click', {
-          event_category: 'contact',
-          event_label: link.href.replace('tel://', '').replace('tel:', ''),
-          page_name: pageName
-        });
+        trackContact(link, 'phone');
       });
     });
 
     // 2. Email link clicks
     document.querySelectorAll('a[href^="mailto:"]').forEach(function (link) {
       link.addEventListener('click', function () {
-        track('email_click', {
-          event_category: 'contact',
-          event_label: link.href.replace('mailto:', ''),
-          page_name: pageName
-        });
+        trackContact(link, 'email');
       });
     });
 
@@ -291,7 +330,7 @@
     // 8. Quote requests: persist attribution and count only confirmed acceptance.
     document.querySelectorAll('.contact-form').forEach(setupQuoteForm);
     try {
-      if (typeof gtag === 'function') gtag('get', 'G-0G7MC17H0V', 'client_id', function (clientId) {
+      if (!isInternal() && typeof gtag === 'function') gtag('get', 'G-0G7MC17H0V', 'client_id', function (clientId) {
         gaClientId = clean(clientId, 100);
         document.querySelectorAll('.contact-form').forEach(function (form) { setField(form, 'ga_client_id', gaClientId); });
       });
