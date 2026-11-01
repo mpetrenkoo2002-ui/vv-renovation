@@ -29,7 +29,7 @@ function harness(options = {}) {
   const button = new Element('button');
   const phone = new Element('a');
   const email = new Element('a');
-  phone.href = 'tel:+17782667999';
+  phone.href = 'tel:+17783584010';
   email.href = 'mailto:volodymyr@vvrenovation.ca';
   form.action = options.endpoint || 'https://formspree.io/f/mqedjzqz';
   form.fields = new Map();
@@ -243,7 +243,7 @@ test('phone clicks retain first/last attribution, destination and Vancouver busi
   assert.equal(event.params.contact_source, 'google');
   assert.equal(event.params.first_source, 'instagram');
   assert.equal(event.params.contact_campaign, 'painting');
-  assert.equal(event.params.contact_destination, '+17782667999');
+  assert.equal(event.params.contact_destination, '+17783584010');
   assert.equal(event.params.contact_location, 'hero');
   assert.equal(event.params.business_timezone, 'America/Vancouver');
   assert.match(event.params.business_hour, /^(0\d|1\d|2[0-3])$/);
