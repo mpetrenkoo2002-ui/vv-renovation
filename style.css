@@ -3318,6 +3318,12 @@ a.project-testimonial-google-badge:hover {
   color: var(--nav-text);
 }
 
+@media (min-width: 1101px) {
+  .project-related-service-grid:has(> .project-related-service-card:nth-child(4)) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 /* Tablet */
 
 /* Mobile */

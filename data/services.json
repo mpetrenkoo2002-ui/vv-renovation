@@ -10,12 +10,20 @@
   },
   "cards": [
     {
-      "title": "Accent Wall & Decoration Ideas",
+      "title": "Decorative Finishes",
       "link": "accent-walls.html",
       "image": "accent.webp",
       "imageAlt": "Navy blue accent wall with a geometric diamond wood-trim pattern in a modern interior by VV Renovation in Vancouver",
       "icon": "accent-walls.svg",
-      "items": ["Accent walls", "Micro cement", "Marble", "Stucco & texture", "And more..."]
+      "items": [
+        "Accent walls",
+        "Micro cement",
+        "Marble",
+        "Stucco",
+        "Texture",
+        "And more..."
+      ],
+      "summary": "Accent walls, microcement & textures"
     },
     {
       "title": "Drywall Finishing",
@@ -23,7 +31,13 @@
       "image": "drywall.jpeg",
       "imageAlt": "Worker on a scissor lift fastening drywall sheets to a ceiling during a commercial renovation in Vancouver",
       "icon": "drywall.svg",
-      "items": ["Drywall installation", "Taping & mudding", "Drywall level 5", "And more..."]
+      "items": [
+        "Drywall",
+        "Taping & mudding",
+        "Drywall level 5",
+        "And more..."
+      ],
+      "summary": "Installation, taping & smooth finishes"
     },
     {
       "title": "Tile & Stone",
@@ -31,7 +45,14 @@
       "image": "tile.jpeg",
       "imageAlt": "Large-format marble-look porcelain wall tile being installed with red leveling clips above a bathtub during a bathroom renovation in Vancouver",
       "icon": "tile.svg",
-      "items": ["Bathroom tile", "Backsplash", "Commercial", "Kitchen countertop", "And more..."]
+      "items": [
+        "Bathroom",
+        "Backsplash",
+        "Commercial",
+        "Kitchen countertop",
+        "And more..."
+      ],
+      "summary": "Bathrooms, backsplashes & countertops"
     },
     {
       "title": "Flooring",
@@ -39,7 +60,16 @@
       "image": "flooring-hero.webp",
       "imageAlt": "Finished light oak hardwood flooring in a bright empty room after a residential renovation in Vancouver",
       "icon": "flooring.svg",
-      "items": ["Self leveling", "Hardwood & engineered wood", "Laminate & vinyl", "Micro cement floor", "And more..."]
+      "items": [
+        "Self leveling",
+        "Micro cement floor",
+        "Hardwood",
+        "Engineered wood",
+        "Laminate",
+        "Vinyl",
+        "And more..."
+      ],
+      "summary": "Floor preparation & installation"
     },
     {
       "title": "Painting",
@@ -47,7 +77,11 @@
       "image": "exterior-painting-service.webp",
       "imageAlt": "Exterior house painting in progress by VV Renovation in Greater Vancouver",
       "icon": "paint.svg",
-      "items": ["Commercial painting", "Residential painting"]
+      "items": [
+        "Commercial painting",
+        "Residential painting"
+      ],
+      "summary": "Residential & commercial painting"
     },
     {
       "title": "Framing",
@@ -55,7 +89,41 @@
       "image": "/images/uploads/commercial-corridor-framing.png",
       "imageAlt": "Commercial corridor renovation with partition walls and exposed ceiling ductwork",
       "icon": "framing.svg",
-      "items": ["Steel stud framing", "Wood framing", "Finish carpentry", "And more..."]
+      "items": [
+        "Steel stud framing",
+        "Wood framing",
+        "Finish carpentry",
+        "And more..."
+      ],
+      "summary": "Steel stud & wood framing"
+    },
+    {
+      "title": "Carpentry",
+      "link": "carpentry.html",
+      "image": "images/carpentry/moutcha-bay-railings.webp",
+      "imageAlt": "Timber walkway and wooden railings under construction at Moutcha Bay Resort",
+      "icon": "carpentry.svg",
+      "items": [
+        "Decks & walkways",
+        "Stairs & railings",
+        "Wood repairs",
+        "Interior trim",
+        "Custom wood details"
+      ],
+      "summary": "Decks, stairs & woodwork"
+    },
+    {
+      "title": "Concrete Services",
+      "link": "concrete-scanning-core-drilling.html",
+      "image": "images/concrete/wall-drilling-small.webp",
+      "imageAlt": "Core drilling equipment mounted against a marked concrete wall",
+      "icon": "images/icons/drill.svg",
+      "items": [
+        "Concrete scanning",
+        "Surface marking",
+        "Core drilling"
+      ],
+      "summary": "Scanning & core drilling"
     }
   ],
   "cta": {

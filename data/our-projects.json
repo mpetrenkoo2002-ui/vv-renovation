@@ -1,8 +1,8 @@
 {
   "heading": {
     "eyebrow": "Our Projects",
-    "title": "Renovation Projects in the Greater Vancouver Area",
-    "text": "A look at completed renovation projects by VV Renovation — from commercial build-outs to detailed residential finishing. Each project combines our core trades: <a href=\"framing.html\">framing</a>, <a href=\"drywall-finishing.html\">drywall finishing</a>, <a href=\"flooring.html\">flooring</a>, <a href=\"tile-stone.html\">tile &amp; stone</a>, <a href=\"accent-walls.html\">accent walls</a> and <a href=\"painting.html\">painting</a>."
+    "title": "Renovation & Carpentry Projects in British Columbia",
+    "text": "A look at renovation and carpentry projects by VV Renovation, from commercial build-outs and residential finishing in Greater Vancouver to timber walkways and stairs at Moutcha Bay Resort on Vancouver Island. Explore our <a href=\"carpentry.html\">carpentry</a>, <a href=\"framing.html\">framing</a>, <a href=\"drywall-finishing.html\">drywall finishing</a>, <a href=\"flooring.html\">flooring</a> and <a href=\"painting.html\">painting</a> work."
   },
   "projects": [
     {
@@ -34,6 +34,15 @@
       "description": "A full chalet interior renovation: demolition of tile, stone and marble, framing, drywall, Level 5 finishing and painting — executed with precision across sloped ceilings and complex angled geometry.",
       "location": "Whistler, BC",
       "timeline": "Multi-stage"
+    },
+    {
+      "title": "Custom Carpentry at Moutcha Bay Resort",
+      "url": "moutcha-bay-resort.html",
+      "image": "images/projects/moutcha-bay/resort-hero.webp",
+      "imageAlt": "Overview of Moutcha Bay Resort on a forested Vancouver Island hillside",
+      "tag": "Resort Carpentry",
+      "description": "Timber walkways, wooden stairs, landings and railings around the forest cabins, fitted to the wooded hillside and existing trees.",
+      "location": "Vancouver Island, BC"
     }
   ]
 }

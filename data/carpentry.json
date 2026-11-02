@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Carpentry Services in Vancouver | VV Renovation",
+    "description": "Carpentry for renovation projects in Greater Vancouver. Decks, timber walkways, stairs, railings, wood repairs and interior trim. Request a free estimate."
+  },
+  "hero": {
+    "backgroundImage": "images/carpentry/moutcha-bay-railings.webp",
+    "title": "Carpentry Services",
+    "subtitle": "Decks, walkways, stairs and wood details, built with care for your home or commercial space.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "scrollTarget": "carpentry-intro"
+  },
+  "intro": {
+    "anchorId": "carpentry-intro",
+    "title": "Woodwork for Commercial and Residential spaces",
+    "mainText": "From a timber walkway to the finishing details inside a room, good carpentry brings a space together. VV Renovation installs and repairs decks, stairs, railings and interior wood details for residential and commercial renovation projects.",
+    "secondaryText": "Based in Richmond and serving Greater Vancouver, we work with you to plan the layout, choose materials and fit each detail to the space.",
+    "mediaItems": [
+      {
+        "type": "image",
+        "src": "images/carpentry/carpenter-at-work.webp",
+        "alt": "Carpenter cutting a timber board with a mitre saw during on-site woodwork"
+      }
+    ]
+  },
+  "types": {
+    "title": "Carpentry We Can Help With",
+    "cards": [
+      {
+        "title": "Decks & Walkways",
+        "text": "Installation and replacement of decking and timber walkways, fitted to the building and the surrounding site."
+      },
+      {
+        "title": "Stairs & Railings",
+        "text": "Wooden steps, handrails and railing details for entrances, decks and outdoor connections."
+      },
+      {
+        "title": "Wood Repairs",
+        "text": "Repair and replacement of worn or damaged wood as part of a renovation, with the scope assessed on site."
+      },
+      {
+        "title": "Interior Trim",
+        "text": "Baseboards, door and window trim, and other finishing details with careful cuts and neat joints."
+      },
+      {
+        "title": "Custom Wood Details",
+        "text": "Wood features and fitted details planned around your layout, materials and renovation goals."
+      },
+      {
+        "title": "Renovation Carpentry",
+        "text": "Practical woodwork coordinated with the other trades, from preparation through to the finishing stage."
+      }
+    ]
+  },
+  "process": {
+    "title": "How We Approach Your Project",
+    "buttonText": "Discuss Your Project",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Discuss the Work",
+        "text": "Send us a few photos and tell us what you would like to build, repair or replace."
+      },
+      {
+        "title": "Measure & Plan",
+        "text": "We assess the space, confirm the materials and details, and prepare a project-specific estimate."
+      },
+      {
+        "title": "Build & Install",
+        "text": "We complete the agreed woodwork with attention to fit, alignment and the surrounding finishes."
+      },
+      {
+        "title": "Review Together",
+        "text": "We walk through the work with you, check the details and leave the area ready to use or for the next trade."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Carpentry Questions",
+    "items": [
+      {
+        "question": "What carpentry work do you offer?",
+        "answer": "Our work includes decks, timber walkways, stairs, railings, wood repairs and interior trim. Send us photos or drawings so we can confirm the scope for your project."
+      },
+      {
+        "question": "Can you repair existing woodwork?",
+        "answer": "Yes. We assess the condition on site and discuss which parts can be repaired and which may need replacement before agreeing on the work."
+      },
+      {
+        "question": "Do you work on residential and commercial projects?",
+        "answer": "Yes. We provide carpentry for homes and commercial renovation projects across Greater Vancouver. Projects outside this area can be discussed individually."
+      },
+      {
+        "question": "How do I get an estimate?",
+        "answer": "Use the form below or call us with a description of the work. Photos, approximate dimensions and your preferred timing help us prepare for the consultation."
+      }
+    ]
+  },
+  "deckReplacement": {
+    "title": "Deck Board Replacement",
+    "text": "A worn deck surface, renewed with new decking. Compare the original boards with the finished deck in these two site videos.",
+    "videos": [
+      {
+        "label": "Before",
+        "title": "Worn Deck Boards",
+        "text": "The original weathered timber boards before replacement.",
+        "src": "images/carpentry/deck-before-silent.mp4",
+        "poster": "images/carpentry/deck-before-poster.webp"
+      },
+      {
+        "label": "After",
+        "title": "New Deck Surface",
+        "text": "The finished deck with new boards and a refreshed, consistent surface.",
+        "src": "images/carpentry/deck-after-silent.mp4",
+        "poster": "images/carpentry/deck-after-poster.webp"
+      }
+    ]
+  }
+}

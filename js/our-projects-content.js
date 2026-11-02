@@ -33,7 +33,7 @@ fetch("data/our-projects.json")
             '<p class="projects-hub-card-text">' + esc(proj.description) + '</p>' +
             '<div class="projects-hub-meta">' +
               '<span>' + esc(proj.location) + '</span>' +
-              '<span>' + esc(proj.timeline) + '</span>' +
+              (proj.timeline ? '<span>' + esc(proj.timeline) + '</span>' : '') +
             '</div>' +
             '<span class="projects-hub-link">View Project →</span>' +
           '</div>' +

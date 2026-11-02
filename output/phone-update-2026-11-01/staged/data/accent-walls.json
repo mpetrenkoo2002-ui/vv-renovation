@@ -1,0 +1,194 @@
+{
+  "seo": {
+    "title": "Accent Walls & Decoration in Vancouver | VV Renovation",
+    "description": "Custom accent wall installation in Vancouver, including faux concrete, microcement, plaster, panelled and textured feature walls."
+  },
+  "hero": {
+    "backgroundImage": "/images/uploads/accent-wall-for-hero.jpg",
+    "title": "Accent Walls & Decoration in Vancouver",
+    "subtitle": "Custom faux concrete, microcement, marble, stucco and textured feature walls for modern Vancouver interiors.",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact"
+  },
+  "intro": {
+    "anchorId": "accent-intro",
+    "title": "Accent Walls & Decoration",
+    "mainText": "Accent walls are one of the most effective ways to transform a space without a full renovation. VV Renovation specializes in decorative feature walls including faux concrete and microcement looks, marble finishes, stucco textures, and modern wall designs.",
+    "secondaryText": "We work with homeowners, designers and builders across the Greater Vancouver Area to create unique interior spaces that elevate modern homes and commercial interiors.",
+    "mediaItems": [
+      {
+        "type": "video",
+        "src": "/images/uploads/accent-walls-1.mp4",
+        "alt": "Accent wall decorative finish installation video 1",
+        "autoplay": true,
+        "loop": true,
+        "controls": false
+      },
+      {
+        "type": "video",
+        "src": "/images/uploads/accent-walls.mp4",
+        "alt": "Accent wall decorative finish installation video 2",
+        "autoplay": true,
+        "loop": true,
+        "controls": false
+      }
+    ]
+  },
+  "types": {
+    "title": "Types of Accent Walls We Install",
+    "cards": [
+      {
+        "title": "Microcement & Faux Concrete Walls",
+        "text": "Hand-applied decorative finishes that create a modern concrete look without presenting the wall as structural concrete."
+      },
+      {
+        "title": "Marble Decorative Walls",
+        "text": "Luxury marble finishes that add elegance to interiors."
+      },
+      {
+        "title": "Stucco & Textured Walls",
+        "text": "Decorative textured finishes perfect for feature walls."
+      },
+      {
+        "title": "Custom Feature Walls",
+        "text": "Unique decorative wall designs tailored to your space."
+      }
+    ]
+  },
+  "fauxConcrete": {
+    "eyebrow": "Concrete-Look Finishes",
+    "title": "Faux Concrete Walls in Vancouver",
+    "body": [
+      "A faux concrete wall uses a hand-applied decorative coating to recreate the movement, tonal variation and architectural character of concrete on an existing interior wall.",
+      "Depending on the substrate and the look you want, the finish may use microcement or a layered decorative plaster system. We review the wall condition, colour, texture and sheen before recommending a build-up and preparing a project-specific sample."
+    ],
+    "highlights": [
+      "Living rooms, bedrooms, offices and commercial feature walls",
+      "Smooth, clouded or more visibly hand-textured effects",
+      "Cool grey, warm neutral and custom colour directions",
+      "Sample approval before the full decorative finish is applied"
+    ],
+    "note": "A faux concrete finish is decorative and is not the same as poured, structural or polished concrete. The existing wall and selected finish system determine the preparation and protective coating required.",
+    "image": "/images/uploads/accent-wall-for-hero.jpg",
+    "imageAlt": "Hand-applied decorative wall finish in a modern Vancouver interior",
+    "buttonText": "Discuss a Concrete-Look Wall",
+    "buttonLink": "#contact"
+  },
+  "process": {
+    "title": "How It Works",
+    "buttonText": "Get Free Estimate",
+    "buttonLink": "#contact",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We discuss your vision, style preferences, space requirements, and recommend the best decorative finish for your interior."
+      },
+      {
+        "title": "Surface Preparation",
+        "text": "Our team carefully prepares the wall surface to ensure proper adhesion, durability, and a flawless final result."
+      },
+      {
+        "title": "Material Application",
+        "text": "We apply the selected finish with precision, whether it is microcement, marble effect, stucco, or another custom texture."
+      },
+      {
+        "title": "Final Finishing",
+        "text": "We complete all final detailing and leave your space clean and polished."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Detail-Oriented Execution",
+        "text": "We focus on precision and finishing quality."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We maintain tidy worksites and clean up thoroughly."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We stick to schedules and meet deadlines."
+      },
+      {
+        "title": "Experienced Craftsmanship",
+        "text": "Skilled workmanship backed by years of experience."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed at every stage of the project — no surprises."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Accent Wall Work",
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi",
+    "images": [
+      {
+        "image": "work-accent-wall.jpeg",
+        "alt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior"
+      },
+      {
+        "image": "/images/uploads/yoga-wall.jpg",
+        "alt": "Black vertical slat wood accent wall with a brass picture light, built during a commercial renovation in the Greater Vancouver Area"
+      },
+      {
+        "image": "/images/uploads/accent-wall-work.jpg",
+        "alt": "Applying metallic glaze with a sponge to create a blue and gold decorative accent wall finish during a Vancouver renovation"
+      },
+      {
+        "image": "/images/uploads/wood-slat-accent-wall-installation.jpg",
+        "alt": "Installation of a natural wood slat accent wall beside a teal wall"
+      },
+      {
+        "image": "/images/uploads/decorative-wall-finish-in-progress.png",
+        "alt": "Decorative textured wall finish in progress beside grey wall panels"
+      },
+      {
+        "image": "/images/uploads/grey-textured-accent-wall.jpg",
+        "alt": "Grey textured decorative accent wall with a hand-applied plaster finish"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Accent Walls FAQ",
+    "items": [
+      {
+        "question": "What types of accent walls do you install?",
+        "answer": "We install microcement walls, marble decorative finishes, stucco textures, and fully custom feature walls tailored to your interior design."
+      },
+      {
+        "question": "Are accent walls suitable for any room?",
+        "answer": "Yes, accent walls can be installed in living rooms, bedrooms, offices, commercial spaces, and feature areas where you want to create visual impact."
+      },
+      {
+        "question": "How long does accent wall installation take?",
+        "answer": "Most accent wall projects take from 1 to 5 days depending on the material, wall size, and complexity of the design."
+      },
+      {
+        "question": "What is a faux concrete wall finish?",
+        "answer": "A faux concrete wall is a decorative, hand-applied finish that recreates the tonal variation and architectural look of concrete on an existing wall. Depending on the substrate and desired texture, the finish may use microcement or a layered plaster system. It is decorative rather than poured or structural concrete."
+      },
+      {
+        "question": "Do you help with design and material selection?",
+        "answer": "Yes, we help you choose the right finish, color, and texture based on your space, lighting, and overall interior style."
+      },
+      {
+        "question": "Are decorative finishes durable?",
+        "answer": "Absolutely. We use high-quality materials and proper surface preparation to ensure long-lasting, durable and easy-to-maintain finishes."
+      },
+      {
+        "question": "Do you work across the Greater Vancouver Area?",
+        "answer": "Yes, we provide accent wall installation services across Vancouver and surrounding areas including Burnaby, Richmond, Surrey, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Maple Ridge, Pitt Meadows, White Rock, North Vancouver (City), North Vancouver (District), West Vancouver, Delta, Langley (City), Langley (Township)."
+      }
+    ]
+  }
+}

@@ -35,6 +35,10 @@
     {
       "label": "Framing",
       "url": "framing.html"
+    },
+    {
+      "label": "Carpentry",
+      "url": "carpentry.html"
     }
   ],
   "projectsMenu": [
@@ -49,6 +53,10 @@
     {
       "label": "Interior Renovation — Whistler",
       "url": "whistler-residential-renovation.html"
+    },
+    {
+      "label": "Moutcha Bay Resort — Carpentry",
+      "url": "moutcha-bay-resort.html"
     }
   ]
 }

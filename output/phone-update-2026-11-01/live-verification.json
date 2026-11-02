@@ -1,0 +1,139 @@
+{
+  "checkedAt": "2026-11-01T00:04:20.174Z",
+  "commit": "39fb13ec6cbaa5140f394865c9280f83a3b3ea1a",
+  "results": [
+    {
+      "path": "/accent-walls-poster.html",
+      "status": 200,
+      "phoneLinks": 0,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/accent-walls.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/concrete-scanning-core-drilling.html",
+      "status": 200,
+      "phoneLinks": 4,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/drywall-finishing.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/flooring.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/framing.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "phoneLinks": 4,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/jericho-beach.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/our-projects.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/painting.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/richmond-home-renovation.html",
+      "status": 200,
+      "phoneLinks": 4,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/services.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/tile-stone.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/whistler-residential-renovation.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/yoga-studio-langley.html",
+      "status": 200,
+      "phoneLinks": 3,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/data/home.json",
+      "status": 200,
+      "phoneLinks": 0,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/data/services.json",
+      "status": 200,
+      "phoneLinks": 0,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/data/concrete-scanning-core-drilling.json",
+      "status": 200,
+      "phoneLinks": 0,
+      "oldPhone": false,
+      "newPhone": true
+    },
+    {
+      "path": "/js/concrete-content.js?v=20261101-phone",
+      "status": 200,
+      "phoneLinks": 1,
+      "oldPhone": false,
+      "newPhone": true
+    }
+  ]
+}

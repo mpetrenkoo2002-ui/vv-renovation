@@ -108,7 +108,7 @@ test('a storage change suppresses future tracking in already-open public tabs', 
 test('all public tracked pages share the synchronous bootstrap and no duplicate inline initializers', () => {
   const root = path.join(__dirname,'..');
   const pages = fs.readdirSync(root).filter(file => file.endsWith('.html')).map(file => ({file,html:fs.readFileSync(path.join(root,file),'utf8')})).filter(p => p.html.includes('js/analytics.js'));
-  assert.equal(pages.length,14);
+  assert.equal(pages.length,16);
   for (const {file,html} of pages) {
     assert.equal((html.match(/<script src="js\/tracking-bootstrap\.js/g) || []).length,1,file);
     assert.ok(html.indexOf('js/tracking-bootstrap.js') < html.indexOf('</head>'),file);

@@ -37,6 +37,7 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Short Description", name: "summary", widget: "string", required: false }
                   - { label: "Link", name: "link", widget: "string" }
                   - { label: "Image", name: "image", widget: "image" }
                   - { label: "Icon", name: "icon", widget: "image", required: false }
@@ -123,6 +124,7 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "summary", widget: "string", required: false }
               - { label: "Link URL (e.g. flooring.html)", name: "link", widget: "string" }
               - { label: "Card Image", name: "image", widget: "image" }
               - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
@@ -817,6 +819,120 @@ collections:
                   - { label: "Question", name: "question", widget: "string" }
                   - { label: "Answer", name: "answer", widget: "text" }
 
+      - name: "carpentry"
+        label: "Carpentry Page"
+        file: "data/carpentry.json"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Hero Background Image", name: "backgroundImage", widget: "image", required: false }
+              - { label: "Hero Title", name: "title", widget: "string" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+              - { label: "Scroll Target ID", name: "scrollTarget", widget: "string", required: false }
+
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Anchor ID", name: "anchorId", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Main Text", name: "mainText", widget: "text" }
+              - { label: "Secondary Text", name: "secondaryText", widget: "text" }
+              - label: "Intro Media Items"
+                name: "mediaItems"
+                widget: "list"
+                required: false
+                summary: "{{fields.type}} — {{fields.src}}"
+                min: 1
+                max: 2
+                fields:
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    default: "image"
+                    options:
+                      - { label: "Video", value: "video" }
+                      - { label: "Image", value: "image" }
+                  - label: "Source File"
+                    name: "src"
+                    widget: "file"
+                    required: false
+                    media_library:
+                      config:
+                        multiple: false
+                  - { label: "Alt / Video Description", name: "alt", widget: "string", required: false }
+                  - { label: "Autoplay", name: "autoplay", widget: "boolean", default: true, required: false }
+                  - { label: "Loop", name: "loop", widget: "boolean", default: true, required: false }
+                  - { label: "Show Controls", name: "controls", widget: "boolean", default: false, required: false }
+
+          - label: "Types / Service Cards"
+            name: "types"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Card Title", name: "title", widget: "string" }
+                  - { label: "Card Text", name: "text", widget: "text" }
+
+          - label: "Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Step Title", name: "title", widget: "string" }
+                  - { label: "Step Text", name: "text", widget: "text" }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+
+          - label: "Deck Replacement: Before & After"
+            name: "deckReplacement"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "text", widget: "text" }
+              - label: "Comparison Videos"
+                name: "videos"
+                widget: "list"
+                min: 2
+                max: 2
+                summary: "{{fields.label}} — {{fields.title}}"
+                fields:
+                  - { label: "Before / After Label", name: "label", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "text", widget: "text" }
+                  - { label: "Video File (silent)", name: "src", widget: "file" }
+                  - { label: "Poster Image", name: "poster", widget: "image" }
+
       - name: "drywall_finishing"
         label: "Drywall Finishing Page"
         file: "data/drywall-finishing.json"
@@ -1213,7 +1329,7 @@ collections:
               - { label: "Tag (e.g. Commercial)", name: "tag", widget: "string" }
               - { label: "Short Description", name: "description", widget: "text" }
               - { label: "Location", name: "location", widget: "string" }
-              - { label: "Timeline", name: "timeline", widget: "string" }
+              - { label: "Timeline", name: "timeline", widget: "string", required: false }
 
       - name: "yoga_studio_langley"
         label: "Yoga Studio — Langley"
@@ -1287,6 +1403,138 @@ collections:
               - { label: "Role / Company", name: "role", widget: "string" }
               - { label: "Location", name: "location", widget: "string" }
               - { label: "Avatar Image URL", name: "avatarUrl", widget: "string", required: false }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+
+          - label: "Related Services"
+            name: "relatedServices"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Service Name", name: "label", widget: "string" }
+              - { label: "Link URL (e.g. painting.html)", name: "url", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "Icon File (e.g. paint.svg)", name: "icon", widget: "string" }
+
+      - name: "moutcha_bay"
+        label: "Moutcha Bay Resort — Carpentry"
+        file: "data/moutcha-bay.json"
+        fields:
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Second Line", name: "secondaryTitle", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Project Highlights", name: "highlights", widget: "list" }
+
+          - label: "Gallery Introduction"
+            name: "galleryIntro"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Project Details"
+            name: "details"
+            widget: "list"
+            summary: "{{fields.label}}: {{fields.value}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
+
+          - label: "Site Conditions"
+            name: "challenge"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Our Approach"
+            name: "approach"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Walkthrough Introduction"
+            name: "walkthroughIntro"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Page Images"
+            name: "media"
+            widget: "object"
+            fields:
+              - { label: "Hero Background Image", name: "heroBg", widget: "image" }
+
+              - label: "Work Gallery"
+                name: "gallery"
+                widget: "list"
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+              - label: "About Section Image"
+                name: "aboutImage"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+
+              - label: "Process & Result Videos"
+                name: "videos"
+                widget: "list"
+                min: 3
+                max: 3
+                summary: "{{fields.stage}} — {{fields.title}}"
+                fields:
+                  - { label: "Video File", name: "src", widget: "file" }
+                  - { label: "Poster Image", name: "poster", widget: "image" }
+                  - { label: "Stage Label", name: "stage", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "About the Project"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "para1", widget: "text" }
+              - { label: "Paragraph 2", name: "para2", widget: "text" }
+
+          - label: "What We Completed (Scope)"
+            name: "scope"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - label: "Scope Cards"
+                name: "cards"
+                widget: "list"
+                summary: "{{fields.number}} — {{fields.title}}"
+                fields:
+                  - { label: "Number (e.g. 01)", name: "number", widget: "string" }
+                  - { label: "Card Title", name: "title", widget: "string" }
+                  - { label: "Card Text", name: "text", widget: "text" }
 
           - label: "FAQ"
             name: "faq"

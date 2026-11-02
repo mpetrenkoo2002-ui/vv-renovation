@@ -36,20 +36,7 @@ if (heroImg && hero.backgroundImage) {
     heroButtons[1].href = hero.secondaryButtonLink;
 
     document.querySelector(".services-title").textContent = data.services.title;
-    document.querySelector(".services-grid").innerHTML = data.services.cards.map(card => `
-      <article class="service-card">
-        <div class="service-media">
-          <img class="service-photo" src="${esc(card.image)}" alt="${esc(card.imageAlt || card.title)}">
-        </div>
-        <div class="service-panel">
-          ${card.icon ? `<img class="service-icon" src="${esc(card.icon)}" alt="">` : ""}
-          <h3 class="service-heading"><a href="${esc(card.link)}">${esc(card.title)}</a></h3>
-          <ul class="service-list">
-            ${(card.items || []).map(item => `<li>${esc(item)}</li>`).join("")}
-          </ul>
-        </div>
-      </article>
-    `).join("");
+    document.querySelector(".services-grid").innerHTML = VVServiceCards.render(data.services.cards, "h3");
 
     document.querySelector(".why-title").textContent = data.why.title;
     document.querySelector(".why-subtitle").textContent = data.why.subtitle;

@@ -1,0 +1,103 @@
+{
+  "media": {
+    "heroBg": "jericho-exterior.jpg",
+    "gallery": [
+      { "src": "jericho-stairwell.jpg",    "alt": "Curved stairwell with round porthole windows masked for interior painting in a luxury Jericho Beach estate, Vancouver" },
+      { "src": "jericho-pool.jpg",          "alt": "Indoor pool room with mirrored glass wall prepared during luxury home preparation in Jericho Beach" },
+      { "src": "jericho-hallway.jpg",       "alt": "Curved board-formed concrete hallway with disc lighting in a high-end Vancouver estate" },
+      { "src": "jericho-living-work.jpg",   "alt": "Large living and pool room with masked column during interior painting in Jericho Beach" },
+      { "src": "jericho-walkway.jpg",       "alt": "Freshly recoated exterior concrete walkway running alongside the house and glass doors at a Jericho Beach estate in Vancouver" },
+      { "src": "jericho-wine-room.jpg",     "alt": "Wine room with built-in wood shelving and freshly painted ceiling in a luxury Vancouver home" },
+      { "src": "jericho-detail.jpg",        "alt": "Detailed caulking and finishing work around glass partition during estate preparation in Jericho Beach" },
+      { "src": "jericho-panels-outdoor.jpg","alt": "Outdoor panels refinished on the terrace overlooking the tennis court at a Jericho Beach estate" }
+    ],
+    "aboutImage": {
+      "src": "jericho-painting.jpg",
+      "alt": "Interior painting in progress in a large curved-ceiling room of a luxury Jericho Beach estate"
+    },
+    "beforeSrc": "jericho-hottub-before.jpg",
+    "beforeAlt": "Hot tub mid-assembly with panels and mechanical components exposed at a Jericho Beach estate",
+    "afterSrc": "jericho-hottub-after.jpg",
+    "afterAlt": "Assembled hot tub positioned indoors by the glass doors after preparation at a Jericho Beach estate",
+    "finalGallery": [
+      { "src": "jericho-final-gym.jpg",     "alt": "Finished home gym and living area with floor-to-ceiling glass overlooking the tennis court in a Jericho Beach estate" },
+      { "src": "jericho-final-hallway.jpg", "alt": "Finished curved white hallway with glass spiral staircase railing in a luxury Vancouver home" },
+      { "src": "jericho-final-corridor.jpg","alt": "Finished curved board-formed concrete corridor with disc lighting in a Jericho Beach estate" }
+    ]
+  },
+  "about": {
+    "heading": "Preparing a Luxury Jericho Beach Estate for Summer",
+    "para1": "VV Renovation prepared a luxury residential estate in Jericho Beach, Vancouver, getting the multi-level home — with its curved architecture, indoor pool, home gym, wine room and tennis court — fully ready for the summer season.",
+    "para2": "The scope covered interior painting of curved walls and ceilings, stucco crack repair and exterior repainting, concrete crack repair and walkway recoating, hot tub assembly, outdoor panel refinishing, lock replacement and a range of detailed handyman tasks — all completed to a high standard within a tight timeline."
+  },
+  "scope": {
+    "heading": "What We Completed",
+    "intro": "This Jericho Beach estate project combined interior painting of curved walls and ceilings, stucco and concrete crack repair, exterior repainting and walkway recoating, hot tub assembly, outdoor panel refinishing and detailed handyman work to prepare the home for seasonal occupancy.",
+    "cards": [
+      {
+        "number": "01",
+        "title": "Interior Painting",
+        "text": "Painted curved walls and ceilings throughout the home, carefully masking porthole windows, glass partitions and feature surfaces to keep clean lines across the estate's non-standard architecture."
+      },
+      {
+        "number": "02",
+        "title": "Stucco Crack Repair & Exterior Repainting",
+        "text": "Repaired cracks in the exterior stucco and repainted the affected areas to restore a clean, consistent and well-maintained appearance to the property's facade."
+      },
+      {
+        "number": "03",
+        "title": "Concrete Crack Repair & Walkway Recoating",
+        "text": "Repaired cracks in the exterior concrete and recoated the walkways, giving the surrounding hard surfaces a refreshed, uniform and durable finish."
+      },
+      {
+        "number": "04",
+        "title": "Hot Tub Assembly & Positioning",
+        "text": "Assembled the hot tub, connected its mechanical components and positioned the unit in place, ready for use in the estate's indoor spa area."
+      },
+      {
+        "number": "05",
+        "title": "Outdoor Panel Refinishing",
+        "text": "Refinished outdoor panels on the terrace, restoring their look and protecting them for ongoing use in the property's exterior areas."
+      },
+      {
+        "number": "06",
+        "title": "Locks, Windows & Handyman Work",
+        "text": "Replaced locks, adjusted windows and completed a range of detailed handyman tasks to resolve deficiencies and make the home fully functional and move-in ready."
+      }
+    ]
+  },
+  "relatedServices": [
+    { "label": "Painting",          "url": "painting.html",          "image": "exterior-painting-service.webp", "imageAlt": "Exterior house painting in progress by VV Renovation in Greater Vancouver",          "icon": "paint.svg"        },
+    { "label": "Accent Walls",      "url": "accent-walls.html",      "image": "accent.webp",          "imageAlt": "Navy blue accent wall with a geometric wood-trim pattern by VV Renovation in Vancouver",       "icon": "accent-walls.svg" },
+    { "label": "Flooring",          "url": "flooring.html",          "image": "self-leveling.png",    "imageAlt": "Freshly poured self-leveling floor compound being smoothed during a flooring renovation in Vancouver",          "icon": "flooring.svg"     },
+    { "label": "Drywall Finishing", "url": "drywall-finishing.html", "image": "drywall-hero.jpg",     "imageAlt": "Taped drywall partition walls in a commercial build-out, drywall finishing by VV Renovation in Vancouver", "icon": "drywall.svg"      }
+  ],
+  "faq": {
+    "items": [
+      {
+        "question": "What type of project was this?",
+        "answer": "This was a luxury residential renovation and seasonal preparation project at a high-end estate in Jericho Beach, Vancouver. The scope included interior painting of curved walls and ceilings, stucco crack repair, exterior repainting, concrete crack repair and walkway recoating, hot tub assembly, outdoor panel refinishing, lock replacement and a range of handyman tasks."
+      },
+      {
+        "question": "How long did the project take?",
+        "answer": "The estate was prepared and delivered move-in ready within approximately one month, with interior, exterior and mechanical work coordinated on a tight seasonal timeline."
+      },
+      {
+        "question": "Do you work on large luxury residential properties?",
+        "answer": "Yes. VV Renovation works on high-end and luxury residential homes, including multi-level estates with curved architecture and non-standard interior details. We handle painting, repairs, finishing and seasonal preparation across the Greater Vancouver Area."
+      },
+      {
+        "question": "What exterior repair work do you provide?",
+        "answer": "We provide stucco crack repair and exterior repainting, concrete crack repair and walkway recoating, outdoor panel refinishing and related exterior preparation to restore a clean, well-maintained appearance to the property."
+      },
+      {
+        "question": "Can you prepare a seasonal or vacation home?",
+        "answer": "Yes. We prepare seasonal and vacation homes for occupancy, handling painting, repairs, mechanical assembly such as hot tubs, lock and window adjustments and the detailed handyman work needed to make a property move-in ready."
+      },
+      {
+        "question": "How much does a similar project cost?",
+        "answer": "The cost depends on the size of the property, the condition of interior and exterior surfaces, the amount of repair, painting and finishing required and any mechanical or handyman work involved. The best way to price a similar project is to request a site visit and free estimate."
+      }
+    ]
+  }
+}

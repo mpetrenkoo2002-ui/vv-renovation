@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Accent Walls Poster — VV Renovation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A4A;
+    --navy-deep:#06192F;
+    --accent:#ED7C0E;
+    --accent-soft:#F59B3D;
+    --cream:#F4EFE8;
+    --ink:#0F172A;
+    --white:#ffffff;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:#3a3f47; }
+  body{
+    font-family:Inter, system-ui, sans-serif;
+    display:flex; justify-content:center; padding:40px;
+  }
+
+  /* ===== STAGE ===== */
+  .poster{
+    position:relative;
+    width:1100px; height:1480px;
+    background:var(--white);
+    overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+
+  /* ===== HEADER ===== */
+  .head{
+    position:relative; z-index:5;
+    flex:0 0 122px; min-height:0; background:var(--white);
+    display:flex; align-items:center;
+    padding:0 48px;
+  }
+  .head img{ height:72px; }
+  .head .city{
+    margin-left:22px; padding-left:22px;
+    border-left:2px solid #e3dccf;
+    font-family:Poppins; font-weight:700; font-size:20px;
+    letter-spacing:6px; color:var(--navy); opacity:.85;
+  }
+  /* slanted accent that ties header into hero */
+  .head::after{
+    content:""; position:absolute; right:0; top:0; bottom:0; width:240px;
+    background:linear-gradient(120deg, transparent 0 48%, var(--accent) 48% 56%, transparent 56%);
+    opacity:.9;
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative; flex:0 0 580px; min-height:0;
+    background:#1a1410;
+    overflow:hidden;
+  }
+  .hero .bg{
+    position:absolute; inset:0;
+    background:url('accent-wall-for-hero.JPG') center/cover no-repeat;
+  }
+  .hero .overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(102deg,
+      rgba(6,25,47,.97) 0%,
+      rgba(6,25,47,.93) 34%,
+      rgba(6,25,47,.55) 56%,
+      rgba(6,25,47,.12) 78%,
+      rgba(6,25,47,0) 100%);
+  }
+  .hero .content{
+    position:relative; z-index:2;
+    height:100%; display:flex; flex-direction:column; justify-content:center;
+    padding:0 56px; max-width:900px;
+  }
+  .badge{
+    display:inline-flex; align-items:center; gap:12px; align-self:flex-start;
+    background:var(--accent); color:var(--white);
+    font-family:Poppins; font-weight:700; font-size:23px; letter-spacing:2px;
+    padding:11px 26px; border-radius:999px; text-transform:uppercase;
+    margin-bottom:26px;
+  }
+  .badge svg{ width:22px; height:22px; fill:var(--white); }
+
+  .hero h1{
+    font-family:Poppins; font-weight:800; color:var(--white);
+    font-size:78px; line-height:1.0; letter-spacing:-1.5px; white-space:nowrap;
+    text-shadow:0 4px 30px rgba(0,0,0,.45);
+  }
+  .hero h1 .orange{ color:var(--accent); }
+  .script{
+    font-family:'Kaushan Script', cursive; color:var(--accent);
+    font-size:64px; line-height:1; margin-top:14px;
+    text-shadow:0 4px 26px rgba(0,0,0,.5);
+  }
+  .script-rule{ width:330px; height:5px; background:var(--accent); border-radius:3px; margin-top:14px; opacity:.95; }
+  .hero p.sub{
+    margin-top:28px; max-width:540px;
+    color:#eaf1f8; font-size:26px; line-height:1.45; font-weight:500;
+  }
+  .hero p.sub b{ color:var(--white); font-weight:800; }
+
+  /* ===== MID BAND (work photos + quality panel) ===== */
+  .mid{
+    flex:0 0 236px; min-height:0; display:grid;
+    grid-template-columns:1fr 1fr 1.28fr;
+    overflow:hidden;
+  }
+  .mid figure{ position:relative; overflow:hidden; }
+  .mid figure img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .mid figure.deco img{ object-position:center 28%; }
+  .mid .quality{
+    background:var(--cream);
+    padding:26px 38px;
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .quality .qhead{ display:flex; align-items:center; gap:16px; margin-bottom:12px; }
+  .quality .qhead svg{ width:50px; height:50px; flex:0 0 auto; }
+  .quality h3{
+    font-family:Poppins; font-weight:800; color:var(--navy);
+    font-size:31px; line-height:1.05;
+  }
+  .quality p{ color:#46535f; font-size:22px; line-height:1.45; font-weight:500; }
+
+  /* ===== WE ALSO DO ===== */
+  .also{
+    position:relative; flex:1 1 auto; min-height:0;
+    background:var(--white);
+    padding:34px 48px 24px;
+    overflow:hidden;
+  }
+  .also-title{
+    display:flex; align-items:center; gap:24px; margin-bottom:24px;
+  }
+  .also-title h2{
+    font-family:Poppins; font-weight:800; color:var(--navy);
+    font-size:42px; letter-spacing:.5px;
+  }
+  .also-title .rule{ flex:1; height:4px; background:var(--accent); border-radius:2px; max-width:430px; }
+
+  .svc-cols{
+    display:grid; grid-template-columns:1fr 1fr; gap:15px 38px;
+    max-width:600px;
+  }
+  .svc-col{ display:flex; flex-direction:column; gap:12px; }
+  .svc{ display:flex; gap:12px; align-items:flex-start; }
+  .svc .ck{
+    flex:0 0 auto; margin-top:3px;
+    color:var(--accent); font-size:22px; font-weight:800; line-height:1;
+  }
+  .svc span{ color:#2b3540; font-size:22px; line-height:1.28; font-weight:500; }
+
+  /* CALL NOW block */
+  .callnow{
+    position:absolute; right:0; bottom:34px; width:452px;
+    background:var(--accent);
+    clip-path:polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+    padding:22px 40px 22px 74px;
+    display:flex; align-items:center; gap:18px;
+    box-shadow:0 16px 36px rgba(237,124,14,.30);
+  }
+  .callnow .pic{
+    width:66px; height:66px; border-radius:50%;
+    background:var(--navy-deep);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;
+  }
+  .callnow .pic svg{ width:34px; height:34px; fill:var(--white); }
+  .callnow .ct .cn{
+    font-family:Poppins; font-weight:800; color:var(--white);
+    font-size:25px; letter-spacing:3px; line-height:1; margin-bottom:7px;
+  }
+  .callnow .ct .num{
+    font-family:Poppins; font-weight:900; color:var(--white);
+    font-size:34px; line-height:1.12; letter-spacing:-.5px; white-space:nowrap;
+  }
+
+  /* ===== FOOTER ===== */
+  .foot{
+    flex:0 0 116px; min-height:0;
+    background:var(--navy-deep);
+    display:flex; align-items:center;
+    padding:0 48px; gap:26px;
+  }
+  .foot .fhouse{ width:58px; height:58px; flex:0 0 auto; }
+  .foot .fhouse svg{ width:100%; height:100%; stroke:var(--white); fill:none; }
+  .foot .ftxt .l1{
+    font-family:Poppins; font-weight:800; color:var(--white);
+    font-size:25px; letter-spacing:.3px; line-height:1.15;
+  }
+  .foot .ftxt .l1 b{ color:var(--accent); }
+  .foot .ftxt .l2{ color:#9fb3c6; font-size:19px; margin-top:5px; white-space:nowrap; }
+  .foot .ftxt .l2 b{ color:#e7eef6; font-weight:700; }
+  .foot .fdiv{ width:2px; height:70px; background:rgba(255,255,255,.16); margin-left:auto; }
+  .foot .fbadge{ display:flex; align-items:center; gap:16px; }
+  .foot .fbadge svg{ width:52px; height:52px; flex:0 0 auto; }
+  .foot .fbadge .bt{
+    font-family:Poppins; font-weight:800; color:var(--white);
+    font-size:20px; line-height:1.2; letter-spacing:1px; white-space:nowrap;
+  }
+  .foot .fbadge .bt span{ color:var(--accent); }
+</style>
+</head>
+<body>
+  <div class="poster">
+
+    <!-- HEADER -->
+    <header class="head">
+      <img src="logo.png" alt="VV Renovation">
+      <div class="city">VANCOUVER</div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="bg"></div>
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>
+          Accent Walls · Vancouver
+        </div>
+        <h1>Thinking About<br><span style="font-weight:800;">an </span><span class="orange">Accent Wall?</span></h1>
+        <div class="script">Think No More.</div>
+        <div class="script-rule"></div>
+        <p class="sub">Custom accent walls that instantly upgrade your space with <b>style, texture, and character.</b></p>
+      </div>
+    </section>
+
+    <!-- MID BAND -->
+    <section class="mid">
+      <figure><img src="yoga-wall.jpg" alt="Black wood slat accent wall" style="object-position:18% 42%;"></figure>
+      <figure class="deco"><img src="work-accent-wall.jpeg" alt="Marble microcement accent wall"></figure>
+      <div class="quality">
+        <div class="qhead">
+          <svg viewBox="0 0 24 24"><path fill="#ED7C0E" d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4z"/><path fill="#fff" d="M10.4 14.6l-2.5-2.5-1.4 1.4 3.9 3.9 7-7-1.4-1.4z"/></svg>
+          <h3>Quality Work.<br>Beautiful Results.</h3>
+        </div>
+        <p>We focus on craftsmanship, clean execution, and finishes that elevate your home.</p>
+      </div>
+    </section>
+
+    <!-- WE ALSO DO -->
+    <section class="also">
+      <div class="also-title">
+        <h2>WE ALSO DO:</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="also-body">
+        <div class="svc-cols">
+          <div class="svc-col">
+            <div class="svc"><span class="ck">✓</span><span>Layout</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Wood framing &amp; steel studs</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Drywall installation</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Taping &amp; mudding</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Flooring &amp; self-leveling</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Hardwood, laminate &amp; vinyl</span></div>
+          </div>
+          <div class="svc-col">
+            <div class="svc"><span class="ck">✓</span><span>Venetian plaster</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Painting &amp; decorative</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Door installation</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Baseboard &amp; casing</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Tile, backsplash &amp; countertop</span></div>
+            <div class="svc"><span class="ck">✓</span><span>Demolition</span></div>
+          </div>
+        </div>
+
+        <div class="callnow">
+          <div class="pic">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.6 15.6 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.3 2.3z"/></svg>
+          </div>
+          <div class="ct">
+            <div class="cn">CALL NOW</div>
+            <div class="num">647-834-8017</div>
+            <div class="num">778-266-7999</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+      <div class="fhouse">
+        <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
+      </div>
+      <div class="ftxt">
+        <div class="l1">YOUR TRUSTED RENOVATION PARTNER IN <b>VANCOUVER</b></div>
+        <div class="l2">From concept to completion — <b>vvrenovation.ca</b></div>
+      </div>
+      <div class="fdiv"></div>
+      <div class="fbadge">
+        <svg viewBox="0 0 24 24"><path fill="#ED7C0E" d="M12 1l2.4 2.1 3.1-.5.9 3 2.7 1.6-1.2 2.9 1.2 2.9-2.7 1.6-.9 3-3.1-.5L12 23l-2.4-2.1-3.1.5-.9-3L2.9 16l1.2-2.9L2.9 10l2.7-1.6.9-3 3.1.5z"/><path fill="#06192F" d="M10.6 15.2l-2.3-2.3-1.3 1.3 3.6 3.6 6.4-6.4-1.3-1.3z"/></svg>
+        <div class="bt">PROFESSIONAL.<br><span>RELIABLE.</span><br>DETAIL-FOCUSED.</div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -22,23 +22,7 @@ fetch("data/services.json", { cache: "no-cache" })
 
     var grid = document.querySelector(".services-hub-grid");
     if (grid && Array.isArray(data.cards)) {
-      grid.innerHTML = data.cards.map(function(card) {
-        return '<a href="' + esc(card.link) + '" class="services-hub-card">' +
-          '<div class="services-hub-media">' +
-            '<img src="' + esc(card.image) + '" alt="' + esc(card.imageAlt) + '" loading="lazy">' +
-          '</div>' +
-          '<div class="services-hub-body">' +
-            '<div class="services-hub-icon-row">' +
-              '<img src="' + esc(card.icon) + '" class="services-hub-icon" alt="">' +
-              '<h2 class="services-hub-card-title">' + esc(card.title) + '</h2>' +
-            '</div>' +
-            '<ul class="services-hub-list">' +
-              (card.items || []).map(function(item) { return '<li>' + esc(item) + '</li>'; }).join('') +
-            '</ul>' +
-            '<span class="services-hub-link">Learn more →</span>' +
-          '</div>' +
-        '</a>';
-      }).join('');
+      grid.innerHTML = VVServiceCards.render(data.cards, "h2");
     }
 
     var cta = data.cta;

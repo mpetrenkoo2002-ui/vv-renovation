@@ -14,7 +14,7 @@
     "title": "Our Renovation & Concrete Services",
     "cards": [
       {
-        "title": "Accent Wall & Decoration Ideas",
+        "title": "Decorative Finishes",
         "link": "accent-walls.html",
         "image": "/images/uploads/work-accent-wall.jpeg",
         "imageAlt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior",
@@ -26,7 +26,8 @@
           "Stucco",
           "Texture",
           "And more..."
-        ]
+        ],
+        "summary": "Accent walls, microcement & textures"
       },
       {
         "title": "Drywall Finishing",
@@ -39,7 +40,8 @@
           "Taping & mudding",
           "Drywall level 5",
           "And more..."
-        ]
+        ],
+        "summary": "Installation, taping & smooth finishes"
       },
       {
         "title": "Tile & Stone",
@@ -53,7 +55,8 @@
           "Commercial",
           "Kitchen countertop",
           "And more..."
-        ]
+        ],
+        "summary": "Bathrooms, backsplashes & countertops"
       },
       {
         "title": "Flooring",
@@ -67,8 +70,10 @@
           "Hardwood",
           "Engineered wood",
           "Laminate",
-          "Vinyl"
-        ]
+          "Vinyl",
+          "And more..."
+        ],
+        "summary": "Floor preparation & installation"
       },
       {
         "title": "Painting",
@@ -79,7 +84,8 @@
         "items": [
           "Commercial painting",
           "Residential painting"
-        ]
+        ],
+        "summary": "Residential & commercial painting"
       },
       {
         "title": "Framing",
@@ -88,10 +94,40 @@
         "imageAlt": "Commercial corridor renovation with partition walls and exposed ceiling ductwork",
         "icon": "framing.svg",
         "items": [
-          "Steel stud & wood framing",
+          "Steel stud framing",
+          "Wood framing",
           "Finish carpentry",
           "And more..."
-        ]
+        ],
+        "summary": "Steel stud & wood framing"
+      },
+      {
+        "title": "Carpentry",
+        "link": "carpentry.html",
+        "image": "images/carpentry/moutcha-bay-railings.webp",
+        "imageAlt": "Timber walkway and wooden railings under construction at Moutcha Bay Resort",
+        "icon": "carpentry.svg",
+        "items": [
+          "Decks & walkways",
+          "Stairs & railings",
+          "Wood repairs",
+          "Interior trim",
+          "Custom wood details"
+        ],
+        "summary": "Decks, stairs & woodwork"
+      },
+      {
+        "title": "Concrete Services",
+        "link": "concrete-scanning-core-drilling.html",
+        "image": "images/concrete/wall-drilling-small.webp",
+        "imageAlt": "Core drilling equipment mounted against a marked concrete wall",
+        "icon": "images/icons/drill.svg",
+        "items": [
+          "Concrete scanning",
+          "Surface marking",
+          "Core drilling"
+        ],
+        "summary": "Scanning & core drilling"
       }
     ]
   },

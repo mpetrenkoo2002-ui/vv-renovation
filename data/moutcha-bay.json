@@ -1,0 +1,193 @@
+{
+  "hero": {
+    "eyebrow": "Resort Carpentry · Vancouver Island",
+    "title": "Moutcha Bay Resort",
+    "secondaryTitle": "Custom Carpentry",
+    "subtitle": "Custom timber walkways, stairs and railings around the forest cabins — woodwork fitted to a wooded hillside on Vancouver Island.",
+    "highlights": [
+      "Vancouver Island, BC",
+      "Resort / Hospitality",
+      "Custom Carpentry"
+    ]
+  },
+  "galleryIntro": {
+    "heading": "Timber Details, Up Close",
+    "text": "From the supporting frame to the deck boards and railing details, a look at our carpentry work around the forest cabins."
+  },
+  "media": {
+    "heroBg": "images/projects/moutcha-bay/resort-hero.webp",
+    "gallery": [
+      {
+        "src": "images/carpentry/moutcha-bay-railings.webp",
+        "alt": "Timber walkway and wooden railings under construction beside a forest cabin at Moutcha Bay Resort",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "images/carpentry/moutcha-bay-walkway-framing.webp",
+        "alt": "Carpenter working on the timber support framing beside a Moutcha Bay forest cabin",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "images/carpentry/moutcha-bay-deck-installation.webp",
+        "alt": "Deck boards being installed on a timber walkway at Moutcha Bay Resort",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "images/projects/moutcha-bay/deck-around-tree.webp",
+        "alt": "Timber decking fitted around an existing tree beside a forest cabin",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "src": "images/projects/moutcha-bay/walkway-framing.webp",
+        "alt": "Open timber walkway framing shaped around a tree at Moutcha Bay Resort",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "src": "images/projects/moutcha-bay/on-site-woodwork.webp",
+        "alt": "Carpentry tools and timber being prepared on site beside the forest cabins",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "src": "images/projects/moutcha-bay/deck-work-inlet-view.webp",
+        "alt": "Deck work area overlooking the forest and inlet at Moutcha Bay Resort",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "src": "images/carpentry/moutcha-bay-cabins.webp",
+        "alt": "Forest cabins and timber walkways among the trees at Moutcha Bay Resort",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "aboutImage": {
+      "src": "images/projects/moutcha-bay/walkway-framing.webp",
+      "alt": "Timber walkway framing fitted around an existing tree on the wooded hillside",
+      "width": 900,
+      "height": 1200
+    },
+    "videos": [
+      {
+        "src": "images/projects/moutcha-bay/timber-shaping-silent.mp4",
+        "poster": "images/projects/moutcha-bay/timber-shaping-poster.webp",
+        "stage": "01 / The Process",
+        "title": "Shaping the Timber",
+        "description": "Working the timber on site, with attention to the edges and wood details."
+      },
+      {
+        "src": "images/projects/moutcha-bay/decking-process-silent.mp4",
+        "poster": "images/projects/moutcha-bay/decking-process-poster.webp",
+        "stage": "02 / The Process",
+        "title": "Decking in Progress",
+        "description": "A closer look at the decking, cuts and fitting around the cabin."
+      },
+      {
+        "src": "images/projects/moutcha-bay/finished-walkthrough-silent.mp4",
+        "poster": "images/projects/moutcha-bay/finished-walkthrough-poster.webp",
+        "stage": "03 / The Result",
+        "title": "Stairs & Walkways",
+        "description": "A walkthrough of the completed steps, timber paths and wooden railings."
+      }
+    ]
+  },
+  "about": {
+    "heading": "Woodwork That Follows the Forest",
+    "para1": "At Moutcha Bay Resort, our carpentry work focused on the outdoor connections around the forest cabins: timber walkways, steps, landings and wooden railings. The layout follows the cabins and the hillside, with decking fitted around the existing trees.",
+    "para2": "The site photos follow the work from exposed timber framing and on-site cutting through to deck-board installation and railing assembly. Individual cuts around trunks, posts and cabin corners connect these separate details into one continuous timber route."
+  },
+  "details": [
+    {
+      "label": "Location",
+      "value": "Moutcha Bay, Vancouver Island, BC"
+    },
+    {
+      "label": "Project Type",
+      "value": "Resort / Hospitality"
+    },
+    {
+      "label": "Service",
+      "value": "Custom Carpentry"
+    },
+    {
+      "label": "Main Work",
+      "value": "Timber walkways, stairs, landings & railings"
+    },
+    {
+      "label": "Setting",
+      "value": "Forest cabins on a wooded hillside"
+    }
+  ],
+  "scope": {
+    "heading": "The Carpentry Scope",
+    "intro": "The work brings together the supporting timber, walking surfaces and railing details around the cabins. Each part is fitted to the changes in level and the surrounding site.",
+    "cards": [
+      {
+        "number": "01",
+        "title": "Timber Walkway Framing",
+        "text": "Supporting timber framing for the outdoor walkways and landings, shaped to follow the cabin edges and the hillside layout."
+      },
+      {
+        "number": "02",
+        "title": "Decking & Walking Surfaces",
+        "text": "Deck-board installation along the paths and cabin approaches, including the cuts needed around posts, corners and existing trees."
+      },
+      {
+        "number": "03",
+        "title": "Wooden Stairs & Landings",
+        "text": "Steps and timber landings connecting different levels along the outdoor routes beside the cabins."
+      },
+      {
+        "number": "04",
+        "title": "Railings & Wood Details",
+        "text": "Wooden posts, rails and vertical railing members fitted along the walkways and stair sections."
+      }
+    ]
+  },
+  "challenge": {
+    "heading": "Working With the Site",
+    "text": "Cabin entrances, trees and changes in ground level all influence the route. The timber work has to follow these conditions rather than repeat a single straight layout."
+  },
+  "approach": {
+    "heading": "Fitted on Site",
+    "text": "The framing, deck boards and railing sections were cut and assembled around the actual spaces between cabins and trees. The photos show these details taking shape throughout the work."
+  },
+  "walkthroughIntro": {
+    "heading": "The Process & the Result",
+    "text": "Two videos from the carpentry work, followed by a walkthrough of the finished stairs, walkways and railings."
+  },
+  "relatedServices": [
+    {
+      "label": "Carpentry",
+      "url": "carpentry.html",
+      "image": "images/carpentry/moutcha-bay-railings.webp",
+      "imageAlt": "Custom timber walkway and railings at Moutcha Bay Resort",
+      "icon": "carpentry.svg"
+    }
+  ],
+  "faq": {
+    "items": [
+      {
+        "question": "What work did VV Renovation carry out at Moutcha Bay?",
+        "answer": "Our work shown here is the outdoor carpentry around the forest cabins: timber walkway framing, decking, steps, landings and wooden railings."
+      },
+      {
+        "question": "Where is Moutcha Bay Resort?",
+        "answer": "Moutcha Bay Resort is on Vancouver Island, near Gold River, on the shores of Nootka Sound in British Columbia."
+      },
+      {
+        "question": "How does the woodwork fit around the trees?",
+        "answer": "The decking and supporting frame follow the spaces between the cabins and existing trees. The site photos show individual cuts around trunks, changes in direction and the connections between steps, landings and walkways."
+      },
+      {
+        "question": "Can we discuss a similar carpentry project?",
+        "answer": "Yes. Send photos, approximate dimensions and a description of the work through the form below. VV Renovation is based in Richmond and serves Greater Vancouver; work elsewhere can be discussed individually."
+      }
+    ]
+  }
+}

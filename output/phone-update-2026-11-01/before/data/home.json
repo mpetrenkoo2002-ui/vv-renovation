@@ -1,0 +1,195 @@
+{
+  "hero": {
+    "secondaryButtonLink": "#contact",
+    "primaryButtonText": "Call Us",
+    "accent": "Renovation & Interior Finishing",
+    "backgroundImage": "/images/uploads/hero.webp",
+    "primaryButtonLink": "tel:+17782667999",
+    "secondaryButtonText": "Get Free Quote",
+    "subtitle": "Richmond-based home renovation contractor serving Greater Vancouver. Precision framing, drywall, flooring and finishing work. Request a project estimate.",
+    "line1": "VV Renovation",
+    "line2": "Commercial & Residential"
+  },
+  "services": {
+    "title": "Our Renovation & Concrete Services",
+    "cards": [
+      {
+        "title": "Decorative Finishes",
+        "link": "accent-walls.html",
+        "image": "/images/uploads/work-accent-wall.jpeg",
+        "imageAlt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior",
+        "icon": "accent-walls.svg",
+        "items": [
+          "Accent walls",
+          "Micro cement",
+          "Marble",
+          "Stucco",
+          "Texture",
+          "And more..."
+        ],
+        "summary": "Accent walls, microcement & textures"
+      },
+      {
+        "title": "Drywall Finishing",
+        "link": "drywall-finishing.html",
+        "image": "/images/uploads/whistler-finishing.jpg",
+        "imageAlt": "Worker applying a Level 5 skim finish to drywall joints on a sloped ceiling during a Whistler renovation",
+        "icon": "drywall.svg",
+        "items": [
+          "Drywall",
+          "Taping & mudding",
+          "Drywall level 5",
+          "And more..."
+        ],
+        "summary": "Installation, taping & smooth finishes"
+      },
+      {
+        "title": "Tile & Stone",
+        "link": "tile-stone.html",
+        "image": "tile.jpeg",
+        "imageAlt": "Large-format marble-look porcelain wall tile being installed with red leveling clips above a bathtub during a bathroom renovation in Vancouver",
+        "icon": "tile.svg",
+        "items": [
+          "Bathroom",
+          "Backsplash",
+          "Commercial",
+          "Kitchen countertop",
+          "And more..."
+        ],
+        "summary": "Bathrooms, backsplashes & countertops"
+      },
+      {
+        "title": "Flooring",
+        "link": "flooring.html",
+        "image": "/images/uploads/flooring-work-1.jpg",
+        "imageAlt": "Self-leveling floor compound being poured and spread across a commercial storefront during a flooring renovation in Vancouver",
+        "icon": "flooring.svg",
+        "items": [
+          "Self leveling",
+          "Micro cement floor",
+          "Hardwood",
+          "Engineered wood",
+          "Laminate",
+          "Vinyl",
+          "And more..."
+        ],
+        "summary": "Floor preparation & installation"
+      },
+      {
+        "title": "Painting",
+        "link": "painting.html",
+        "image": "exterior-painting-service.webp",
+        "imageAlt": "Exterior house painting in progress by VV Renovation in Greater Vancouver",
+        "icon": "paint.svg",
+        "items": [
+          "Commercial painting",
+          "Residential painting"
+        ],
+        "summary": "Residential & commercial painting"
+      },
+      {
+        "title": "Framing",
+        "link": "framing.html",
+        "image": "/images/uploads/commercial-corridor-framing.png",
+        "imageAlt": "Commercial corridor renovation with partition walls and exposed ceiling ductwork",
+        "icon": "framing.svg",
+        "items": [
+          "Steel stud framing",
+          "Wood framing",
+          "Finish carpentry",
+          "And more..."
+        ],
+        "summary": "Steel stud & wood framing"
+      },
+      {
+        "title": "Carpentry",
+        "link": "carpentry.html",
+        "image": "images/carpentry/moutcha-bay-railings.webp",
+        "imageAlt": "Timber walkway and wooden railings under construction at Moutcha Bay Resort",
+        "icon": "carpentry.svg",
+        "items": [
+          "Decks & walkways",
+          "Stairs & railings",
+          "Wood repairs",
+          "Interior trim",
+          "Custom wood details"
+        ],
+        "summary": "Decks, stairs & woodwork"
+      },
+      {
+        "title": "Concrete Services",
+        "link": "concrete-scanning-core-drilling.html",
+        "image": "images/concrete/wall-drilling-small.webp",
+        "imageAlt": "Core drilling equipment mounted against a marked concrete wall",
+        "icon": "images/icons/drill.svg",
+        "items": [
+          "Concrete scanning",
+          "Surface marking",
+          "Core drilling"
+        ],
+        "summary": "Scanning & core drilling"
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Should You Choose Us",
+    "subtitle": "VV Renovation delivers clean, detail-focused renovation and finishing work for residential and commercial spaces across the Greater Vancouver Area, including home renovations in Richmond, BC.",
+    "cards": [
+      {
+        "title": "Licensed & Insured",
+        "text": "Fully licensed and insured for your peace of mind."
+      },
+      {
+        "title": "Detail-Oriented Execution",
+        "text": "We focus on precision and finishing quality."
+      },
+      {
+        "title": "Clean & Organized Worksites",
+        "text": "We maintain tidy worksites and clean up thoroughly."
+      },
+      {
+        "title": "On-Time Project Delivery",
+        "text": "We stick to schedules and meet deadlines."
+      },
+      {
+        "title": "Experienced Craftsmanship",
+        "text": "Skilled workmanship backed by years of experience."
+      },
+      {
+        "title": "Clear Communication",
+        "text": "We keep you informed at every stage of the project — no surprises."
+      }
+    ]
+  },
+  "work": {
+    "title": "Our Work",
+    "images": [
+      {
+        "image": "work-1.webp",
+        "alt": "Modern multi-storey building with curved rooflines and a sports court, exterior renovation by VV Renovation in the Greater Vancouver Area"
+      },
+      {
+        "image": "/images/uploads/yoga-owner.jpg",
+        "alt": "Finished yoga studio interior with blue LED cove lighting and a full mirror wall after commercial renovation in Langley, BC"
+      },
+      {
+        "image": "/images/uploads/whistler-demolition.jpg",
+        "alt": "Demolition stage with tile and marble removed exposing the substrate on a sloped wall of a Whistler chalet"
+      },
+      {
+        "image": "exterior-painting-service.webp",
+        "alt": "Exterior house painting in progress by VV Renovation in Greater Vancouver"
+      },
+      {
+        "image": "work-accent-wall.jpeg",
+        "alt": "Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior"
+      },
+      {
+        "image": "work-6.webp",
+        "alt": "Large-format black floor tile installed with red leveling clips during a renovation in Vancouver"
+      }
+    ],
+    "buttonText": "See More on Facebook",
+    "buttonLink": "https://www.facebook.com/groups/670230694826930/?ref=share&mibextid=KtfwRi"
+  }
+}
