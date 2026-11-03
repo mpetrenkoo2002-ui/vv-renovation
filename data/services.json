@@ -130,7 +130,7 @@
     "heading": "Ready to start your renovation?",
     "text": "Tell us about your project and we'll provide a free, no-obligation estimate.",
     "primaryButtonText": "Get Free Quote",
-    "primaryButtonLink": "index.html#contact",
+    "primaryButtonLink": "#contact",
     "secondaryButtonText": "Call (778) 358-4010",
     "secondaryButtonLink": "tel:+17783584010"
   }

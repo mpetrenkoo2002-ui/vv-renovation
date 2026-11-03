@@ -90,6 +90,7 @@
   <link rel="stylesheet" href="style.css?v=20260910">
   <link rel="icon" href="favicon.ico">
 
+  <link rel="stylesheet" href="estimate-form.css?v=20261103">
 </head>
 
 <body class="project-page">
@@ -149,7 +150,7 @@ src="https://www.facebook.com/tr?id=1789259645630228&amp;ev=PageView&amp;noscrip
         </div>
 
         <a href="index.html#work">Our Work</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <button class="burger" aria-label="Open menu">
@@ -590,61 +591,40 @@ src="https://www.facebook.com/tr?id=1789259645630228&amp;ev=PageView&amp;noscrip
   </div>
 </section>
 
-<section class="contact" id="contact" aria-label="Contact">
+<section class="contact estimate-section" id="contact" aria-labelledby="estimate-contact-title">
   <div class="container contact-grid">
     <div class="contact-left">
-      <h2 class="contact-title">Get Your Free Quote</h2>
-
+      <h2 class="contact-title" id="estimate-contact-title">Get a Free Estimate</h2>
+      <p class="estimate-copy">Tell us about your renovation, where the property is and when you hope to start. If you do not have every detail yet, send what you know.</p>
       <ul class="contact-info">
-        <li class="contact-item">
-          <img class="contact-ico" src="phone.svg" alt="" aria-hidden="true">
-          <a href="tel:+17783584010" class="phone-link">
-            <span>Call Us: (778) 358-4010</span>
-          </a>
-        </li>
-        <li class="contact-item">
-          <img class="contact-ico" src="pin.svg" alt="" aria-hidden="true">
-          <span>Greater Vancouver Area</span>
-        </li>
-        <li class="contact-item">
-          <img class="contact-ico" src="clock.svg" alt="" aria-hidden="true">
-          <span>Responsive Within 24 Hours</span>
-        </li>
-        <li class="contact-item">
-          <img class="contact-ico" src="mail.svg" alt="" aria-hidden="true">
-          <a class="contact-link" href="mailto:volodymyr@vvrenovation.ca">volodymyr@vvrenovation.ca</a>
-        </li>
+        <li class="contact-item"><img class="contact-ico" src="phone.svg" alt="" aria-hidden="true"><a href="tel:+17783584010" class="phone-link"><span>(778) 358-4010</span></a></li>
+        <li class="contact-item"><img class="contact-ico" src="mail.svg" alt="" aria-hidden="true"><a class="contact-link" href="mailto:volodymyr@vvrenovation.ca">volodymyr@vvrenovation.ca</a></li>
+        <li class="contact-item"><img class="contact-ico" src="pin.svg" alt="" aria-hidden="true"><span>Greater Vancouver, BC</span></li>
       </ul>
+      <div class="estimate-email-note">
+        <p>Have photos or plans? Email them with your name and project address.</p>
+        <a href="mailto:volodymyr@vvrenovation.ca?subject=VV%20Renovation%20project">Email project photos or plans ↗</a>
+      </div>
     </div>
-
     <div class="contact-card">
-      <form class="contact-form"
-      action="https://formspree.io/f/mqedjzqz"
-      method="POST">
-        <label class="field">
-          <span class="sr-only">Your Name</span>
-          <input type="text" name="name" placeholder="Your Name" required>
-        </label>
-
-        <label class="field">
-          <span class="sr-only">Phone Number</span>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-        </label>
-
-        <label class="field">
-          <span class="sr-only">Email (optional)</span>
-          <input type="email" name="email" placeholder="Email (optional)">
-        </label>
-
-        <label class="field">
-          <span class="sr-only">Your Message</span>
-          <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
-        </label>
-
-        <button class="btn btn-primary contact-submit" type="submit">
-          Request a Quote
-        </button>
+      <form class="contact-form" action="https://formspree.io/f/mqedjzqz" method="POST">
+        <p class="estimate-form-note">Fields marked * are required. Approximate details are fine.</p>
+        <div class="form-row">
+          <div class="field"><label for="estimate-name">Your name *</label><input id="estimate-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="estimate-phone">Phone number *</label><input id="estimate-phone" type="tel" name="phone" autocomplete="tel" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="estimate-email">Email <span>(optional)</span></label><input id="estimate-email" type="email" name="email" autocomplete="email"></div>
+          <div class="field"><label for="estimate-area">Project address or area *</label><input id="estimate-area" name="site_location" autocomplete="street-address" placeholder="Where is the property?" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="estimate-type">Project type *</label><select id="estimate-type" name="project_type" required><option value="">Select one</option><option>Kitchen renovation</option><option>Bathroom renovation</option><option>Full interior renovation</option><option>Drywall or framing</option><option>Flooring or tile</option><option>Painting or accent wall</option><option>Carpentry</option><option>Commercial renovation</option><option>Other</option></select></div>
+          <div class="field"><label for="estimate-timing">Preferred timing <span>(optional)</span></label><select id="estimate-timing" name="preferred_timing"><option value="">Select one</option><option>As soon as possible</option><option>Within 1–3 months</option><option>Within 3–6 months</option><option>More than 6 months</option><option>Still planning</option></select></div>
+        </div>
+        <div class="field"><label for="estimate-message">Project details *</label><textarea id="estimate-message" name="message" rows="5" placeholder="Include the rooms, approximate size, current condition and desired work." required></textarea></div>
         <input type="hidden" name="_subject" value="New Quote Request from VV Renovation">
+        <input type="hidden" name="source_page" value="whistler-residential-renovation">
+        <button class="btn btn-primary form-submit" type="submit">Request a Free Estimate</button>
       </form>
     </div>
   </div>
