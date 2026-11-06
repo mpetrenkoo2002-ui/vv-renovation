@@ -100,6 +100,43 @@
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
   window.gtag('config', gaId);
+  window.gtag('config', 'AW-17683165064/IUXTCNbKzLMdEIjf_u9B', {
+    phone_conversion_number: '(778) 358-4010',
+    phone_conversion_callback: function (formattedNumber, mobileNumber) {
+      var dialNumber = String(mobileNumber || '').replace(/[\s().-]/g, '');
+      if (state.internal || !formattedNumber || !/^\+?\d{10,15}$/.test(dialNumber) ||
+          /^\+?1?7783584010$/.test(dialNumber)) return;
+      var originalHref = 'tel:+17783584010';
+
+      function updatePhoneLinks() {
+        if (state.internal) return;
+        document.querySelectorAll('a[href="' + originalHref + '"]').forEach(function (link) {
+          link.setAttribute('data-business-phone', '+17783584010');
+          link.setAttribute('href', 'tel:' + dialNumber);
+          // Preserve icons and button labels when replacing the visible number.
+          var textNodes = document.createTreeWalker(link, 4); // NodeFilter.SHOW_TEXT
+          while (textNodes.nextNode()) {
+            var node = textNodes.currentNode;
+            node.nodeValue = node.nodeValue.replaceAll('(778) 358-4010', formattedNumber);
+          }
+        });
+      }
+
+      function startPhoneReplacement() {
+        updatePhoneLinks();
+        // Some pages render their call buttons after their CMS content loads.
+        new MutationObserver(updatePhoneLinks).observe(document.body, {
+          childList: true, subtree: true, attributes: true, attributeFilter: ['href']
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', startPhoneReplacement, { once: true });
+      } else {
+        startPhoneReplacement();
+      }
+    }
+  });
   load('https://www.googletagmanager.com/gtag/js?id=' + gaId);
 
   if (!window.fbq) {

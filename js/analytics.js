@@ -159,7 +159,8 @@
       weekday = new Intl.DateTimeFormat('en-GB', { timeZone: 'America/Vancouver', weekday: 'short' }).format(now);
     } catch (_) { /* GA4 still records its own event timestamp. */ }
     // Only business destinations are sent, never a visitor's phone or email.
-    var destination = link.href.replace(/^(tel:\/\/|tel:|mailto:)/, '').split('?')[0];
+    var destination = (method === 'phone' && link.getAttribute('data-business-phone')) ||
+      link.href.replace(/^(tel:\/\/|tel:|mailto:)/, '').split('?')[0];
     var params = {
       event_category: 'contact', event_label: destination, page_name: pageName,
       interaction_id: eventId, contact_method: method, contact_destination: destination,

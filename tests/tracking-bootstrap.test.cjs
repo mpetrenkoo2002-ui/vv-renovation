@@ -13,11 +13,17 @@ function browser(options = {}) {
   const body = [];
   const callbacks = {};
   let reloads = 0;
+  let onPhoneLinksChanged;
   const document = {
     readyState: 'loading',
     addEventListener: (name, cb) => { callbacks[name] = cb; },
     getElementById: id => body.find(el => el.id === id),
     createElement: tag => ({ tag, style: {}, children: [], setAttribute() {}, addEventListener() {}, appendChild(el) { this.children.push(el); } }),
+    querySelectorAll: selector => (options.phoneLinks || []).filter(link => selector === 'a[href="' + link.href + '"]'),
+    createTreeWalker: link => {
+      let pending = true;
+      return { currentNode: link.label, nextNode() { const next = pending; pending = false; return next; } };
+    },
     head: { appendChild: el => loaded.push(el.src) },
     body: { appendChild: el => body.push(el) },
   };
@@ -42,9 +48,13 @@ function browser(options = {}) {
   };
   const reload = () => { reloads++; };
   Object.defineProperty(window.location, 'reload', { value: reload });
-  const context = vm.createContext({window, document, URL, URLSearchParams});
+  class MutationObserver {
+    constructor(callback) { onPhoneLinksChanged = callback; }
+    observe() {}
+  }
+  const context = vm.createContext({window, document, URL, URLSearchParams, MutationObserver});
   vm.runInContext(script, context);
-  return { window, stored, cookies, loaded, body, callbacks, run: () => vm.runInContext(script, context), reloads: () => reloads };
+  return { window, stored, cookies, loaded, body, callbacks, run: () => vm.runInContext(script, context), reloads: () => reloads, phoneLinksChanged: () => onPhoneLinksChanged() };
 }
 
 test('public browsing initializes each existing tracker once, including when evaluated twice', () => {
@@ -53,7 +63,34 @@ test('public browsing initializes each existing tracker once, including when eva
   assert.equal(h.loaded.length, 2);
   assert.equal(h.loaded.filter(url => url.includes('gtag/js')).length, 1);
   assert.equal(h.window.fbq.queue.filter(event => event[1] === 'PageView').length, 1);
-  assert.equal(h.window.dataLayer.filter(event => event[0] === 'config').length, 1);
+  const configs = h.window.dataLayer.filter(event => event[0] === 'config');
+  assert.equal(configs.filter(event => event[1] === 'G-0G7MC17H0V').length, 1);
+  assert.equal(configs.filter(event => event[1].startsWith('AW-17683165064/')).length, 1);
+});
+
+test('website call tracking swaps both display and dial target, including CMS buttons', () => {
+  function link(text) {
+    return {
+      href: 'tel:+17783584010', label: { nodeValue: text },
+      setAttribute(key, value) { this[key] = value; }
+    };
+  }
+  const header = link('Call (778) 358-4010');
+  const phoneLinks = [header];
+  const h = browser({ phoneLinks });
+  const config = h.window.dataLayer.find(event => event[2]?.phone_conversion_callback)[2];
+  config.phone_conversion_callback('(778) 358-4010', '+17783584010');
+  assert.equal(header.href, 'tel:+17783584010');
+  config.phone_conversion_callback('(604) 555-0123', '+16045550123');
+  h.callbacks.DOMContentLoaded();
+  assert.equal(header.href, 'tel:+16045550123');
+  assert.equal(header.label.nodeValue, 'Call (604) 555-0123');
+  assert.equal(header['data-business-phone'], '+17783584010');
+  const cmsButton = link('Call Us');
+  phoneLinks.push(cmsButton);
+  h.phoneLinksChanged();
+  assert.equal(cmsButton.href, 'tel:+16045550123');
+  assert.equal(cmsButton.label.nodeValue, 'Call Us');
 });
 
 test('owner activation runs before trackers, persists, removes only the control query and shows status', () => {
