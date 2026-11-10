@@ -1164,15 +1164,21 @@ body[data-page="tile-stone"] #work .work-item{
   display: block;
 }
 
-.footer-social{
-  display: block;
+.footer-socials{
+  display: flex;
+  align-items: center;
+  gap: 14px;
   margin-top: 12px;
+}
+
+.footer-social{
+  display: inline-flex;
 }
 
 .footer-social img{
   width: 22px;
   height: 22px;
-  display: inline-flex;
+  display: block;
 }
 
 /* Нижняя полоска */
