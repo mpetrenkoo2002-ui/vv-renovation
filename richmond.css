@@ -273,58 +273,6 @@
   line-height: 1.7;
 }
 
-.location-page .location-service-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0;
-  border-top: 1px solid var(--richmond-line);
-  border-left: 1px solid var(--richmond-line);
-}
-
-.location-page .location-service-card {
-  display: grid;
-  grid-template-rows: 238px 1fr;
-  min-width: 0;
-  overflow: hidden;
-  background: #fff;
-  border: 0;
-  border-right: 1px solid var(--richmond-line);
-  border-bottom: 1px solid var(--richmond-line);
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.location-page .location-service-card > img {
-  width: 100%;
-  height: 238px;
-  aspect-ratio: auto;
-  object-fit: cover;
-  transition: transform .5s ease;
-}
-
-.location-page .location-service-card:hover > img {
-  transform: scale(1.035);
-}
-
-.location-page .location-service-card > div {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 290px;
-  padding: 34px 32px 30px;
-}
-
-.location-page .location-service-index {
-  display: block;
-  margin-bottom: 24px;
-  color: var(--richmond-orange);
-  font-family: Poppins, Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: .12em;
-}
-
-.location-page .location-service-card h3,
 .location-page .location-process-grid h3,
 .location-page .location-project-card h3 {
   margin: 0;
@@ -336,7 +284,6 @@
   line-height: 1.18;
 }
 
-.location-page .location-service-card p,
 .location-page .location-process-grid p,
 .location-page .location-project-card p {
   margin: 16px 0 0;
@@ -345,18 +292,24 @@
   line-height: 1.68;
 }
 
-.location-page .location-service-card a {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: auto;
-  padding-top: 25px;
-  color: var(--richmond-navy);
-  font-size: 14px;
-  font-weight: 800;
-  text-decoration: underline;
-  text-decoration-color: var(--richmond-orange);
-  text-underline-offset: 6px;
+.richmond-service-description {
+  margin: 8px 0 0;
+  color: #566678;
+  font-size: 13px;
+  line-height: 1.45;
+  opacity: var(--service-list-opacity);
+  visibility: var(--service-list-visibility);
+  transition: opacity .2s ease, visibility .2s;
+}
+
+.location-services .service-tile-list {
+  margin-top: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .richmond-service-description {
+    transition: none;
+  }
 }
 
 .location-more-services-toggle {
@@ -829,10 +782,6 @@
     padding: 24px;
   }
 
-  .location-page .location-service-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .location-page .location-process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -927,23 +876,9 @@
     font-size: 16px;
   }
 
-  .location-page .location-service-grid,
   .location-page .location-process-grid,
   .location-page .location-project-grid {
     grid-template-columns: 1fr;
-  }
-
-  .location-page .location-service-card {
-    grid-template-rows: 225px 1fr;
-  }
-
-  .location-page .location-service-card > img {
-    height: 225px;
-  }
-
-  .location-page .location-service-card > div {
-    min-height: 270px;
-    padding: 30px 25px;
   }
 
   .location-page .location-planning-media {

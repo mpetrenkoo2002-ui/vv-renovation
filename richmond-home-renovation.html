@@ -103,7 +103,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=20260916">
-  <link rel="stylesheet" href="richmond.css?v=20261114">
+  <link rel="stylesheet" href="services-cards.css?v=20261114-tile-photo">
+  <link rel="stylesheet" href="richmond.css?v=20261114-cards">
   <link rel="icon" href="favicon.ico">
 
 </head>
@@ -203,59 +204,72 @@ src="https://www.facebook.com/tr?id=1789259645630228&amp;ev=PageView&amp;noscrip
           <h2>Build the right scope for your space</h2>
           <p>Choose a single trade or combine services for a coordinated renovation.</p>
         </div>
-        <div class="location-service-grid">
-          <article class="location-service-card">
-            <img src="/images/uploads/work-accent-wall.jpeg" alt="Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior" loading="lazy" decoding="async">
-            <div>
-              <span class="location-service-index">01</span>
-              <h3>Decorative Finishes</h3>
-              <p>Custom surface finishes for feature walls and other interior details.</p>
-              <ul class="location-service-list">
+        <div class="services-catalog-grid">
+          <article class="service-tile" id="accent-walls-service" aria-labelledby="accent-walls-service-title">
+            <div class="service-tile-media"><img src="/images/uploads/work-accent-wall.jpeg" alt="Hand-textured decorative accent wall with a three-dimensional stone-and-gold plaster relief finish in a Vancouver interior" loading="lazy" decoding="async"></div>
+            <div class="service-tile-body">
+              <span class="service-tile-icon" aria-hidden="true"><img src="accent-walls.svg" alt="" width="58" height="58"></span>
+              <h3 class="service-tile-title" id="accent-walls-service-title"><a class="service-tile-title-link" href="accent-walls.html">Decorative Finishes</a></h3>
+              <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="accent-walls-service-list">
+                <span data-service-toggle-label>View services</span>
+                <span data-service-toggle-icon aria-hidden="true">+</span>
+              </button>
+              <p class="richmond-service-description">Custom surface finishes for feature walls and other interior details.</p>
+              <ul class="service-tile-list" id="accent-walls-service-list">
                 <li>Accent walls</li>
                 <li>Micro cement</li>
                 <li>Marble</li>
                 <li>Stucco</li>
                 <li>Texture</li>
               </ul>
-              <a href="accent-walls.html">Explore decorative finishes →</a>
             </div>
           </article>
-          <article class="location-service-card">
-            <img src="/images/uploads/whistler-finishing.jpg" alt="Worker applying a Level 5 skim finish to drywall joints on a sloped ceiling during a Whistler renovation" loading="lazy" decoding="async">
-            <div>
-              <span class="location-service-index">02</span>
-              <h3>Drywall Finishing</h3>
-              <p>Drywall installation and paint-ready finishing for walls and ceilings.</p>
-              <ul class="location-service-list">
+          <article class="service-tile" id="drywall-finishing-service" aria-labelledby="drywall-finishing-service-title">
+            <div class="service-tile-media"><img src="/images/uploads/whistler-finishing.jpg" alt="Worker applying a Level 5 skim finish to drywall joints on a sloped ceiling during a Whistler renovation" loading="lazy" decoding="async"></div>
+            <div class="service-tile-body">
+              <span class="service-tile-icon" aria-hidden="true"><img src="drywall.svg" alt="" width="58" height="58"></span>
+              <h3 class="service-tile-title" id="drywall-finishing-service-title"><a class="service-tile-title-link" href="drywall-finishing.html">Drywall Finishing</a></h3>
+              <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="drywall-finishing-service-list">
+                <span data-service-toggle-label>View services</span>
+                <span data-service-toggle-icon aria-hidden="true">+</span>
+              </button>
+              <p class="richmond-service-description">Drywall installation and paint-ready finishing for walls and ceilings.</p>
+              <ul class="service-tile-list" id="drywall-finishing-service-list">
                 <li>Drywall</li>
                 <li>Taping &amp; mudding</li>
                 <li>Drywall level 5</li>
               </ul>
-              <a href="drywall-finishing.html">Explore drywall finishing →</a>
             </div>
           </article>
-          <article class="location-service-card">
-            <img src="tile.jpeg" alt="Large-format marble-look porcelain wall tile being installed with red leveling clips above a bathtub during a renovation in Vancouver" loading="lazy" decoding="async">
-            <div>
-              <span class="location-service-index">03</span>
-              <h3>Tile &amp; Stone</h3>
-              <p>Tile and stone installation for homes and commercial interiors.</p>
-              <ul class="location-service-list">
+          <article class="service-tile" id="tile-stone-service" aria-labelledby="tile-stone-service-title">
+            <div class="service-tile-media"><img src="/images/uploads/terrazzo-wood-bathroom.png" alt="Bathroom with terrazzo tile, wood-look finishes and a black vessel sink" loading="lazy" decoding="async"></div>
+            <div class="service-tile-body">
+              <span class="service-tile-icon" aria-hidden="true"><img src="tile.svg" alt="" width="58" height="58"></span>
+              <h3 class="service-tile-title" id="tile-stone-service-title"><a class="service-tile-title-link" href="tile-stone.html">Tile &amp; Stone</a></h3>
+              <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="tile-stone-service-list">
+                <span data-service-toggle-label>View services</span>
+                <span data-service-toggle-icon aria-hidden="true">+</span>
+              </button>
+              <p class="richmond-service-description">Tile and stone installation for homes and commercial interiors.</p>
+              <ul class="service-tile-list" id="tile-stone-service-list">
                 <li>Bathroom Renovation</li>
                 <li>Backsplash</li>
                 <li>Commercial</li>
                 <li>Kitchen Renovation</li>
               </ul>
-              <a href="tile-stone.html">Explore tile &amp; stone →</a>
             </div>
           </article>
-          <article class="location-service-card">
-            <img src="/images/uploads/flooring-work-1.jpg" alt="Self-leveling floor compound being poured and spread across a commercial storefront during a flooring renovation in Vancouver" loading="lazy" decoding="async">
-            <div>
-              <span class="location-service-index">04</span>
-              <h3>Flooring</h3>
-              <p>Subfloor preparation and flooring installation for renovations and new interiors.</p>
-              <ul class="location-service-list">
+          <article class="service-tile" id="flooring-service" aria-labelledby="flooring-service-title">
+            <div class="service-tile-media"><img src="/images/uploads/flooring-work-1.jpg" alt="Self-leveling floor compound being poured and spread across a commercial storefront during a flooring renovation in Vancouver" loading="lazy" decoding="async"></div>
+            <div class="service-tile-body">
+              <span class="service-tile-icon" aria-hidden="true"><img src="flooring.svg" alt="" width="58" height="58"></span>
+              <h3 class="service-tile-title" id="flooring-service-title"><a class="service-tile-title-link" href="flooring.html">Flooring</a></h3>
+              <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="flooring-service-list">
+                <span data-service-toggle-label>View services</span>
+                <span data-service-toggle-icon aria-hidden="true">+</span>
+              </button>
+              <p class="richmond-service-description">Subfloor preparation and flooring installation for renovations and new interiors.</p>
+              <ul class="service-tile-list" id="flooring-service-list">
                 <li>Self leveling</li>
                 <li>Micro cement floor</li>
                 <li>Hardwood</li>
@@ -263,7 +277,6 @@ src="https://www.facebook.com/tr?id=1789259645630228&amp;ev=PageView&amp;noscrip
                 <li>Laminate</li>
                 <li>Vinyl</li>
               </ul>
-              <a href="flooring.html">Explore flooring →</a>
             </div>
           </article>
         </div>
@@ -272,63 +285,75 @@ src="https://www.facebook.com/tr?id=1789259645630228&amp;ev=PageView&amp;noscrip
             <span class="location-more-services-show">Show 4 more services</span>
             <span class="location-more-services-hide">Show fewer services</span>
           </summary>
-          <div class="location-service-grid">
-            <article class="location-service-card">
-              <img src="exterior-painting-service.webp" alt="Exterior house painting in progress by VV Renovation in Greater Vancouver" loading="lazy" decoding="async">
-              <div>
-                <span class="location-service-index">05</span>
-                <h3>Painting</h3>
-                <p>Surface preparation and painting for interiors and exteriors.</p>
-                <ul class="location-service-list">
+          <div class="services-catalog-grid">
+            <article class="service-tile" id="painting-service" aria-labelledby="painting-service-title">
+              <div class="service-tile-media"><img src="exterior-painting-service.webp" alt="Exterior house painting in progress by VV Renovation in Greater Vancouver" loading="lazy" decoding="async"></div>
+              <div class="service-tile-body">
+                <span class="service-tile-icon" aria-hidden="true"><img src="paint.svg" alt="" width="58" height="58"></span>
+                <h3 class="service-tile-title" id="painting-service-title"><a class="service-tile-title-link" href="painting.html">Painting</a></h3>
+                <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="painting-service-list">
+                  <span data-service-toggle-label>View services</span>
+                  <span data-service-toggle-icon aria-hidden="true">+</span>
+                </button>
+                <p class="richmond-service-description">Surface preparation and painting for interiors and exteriors.</p>
+                <ul class="service-tile-list" id="painting-service-list">
                   <li>Commercial painting</li>
                   <li>Residential painting</li>
                   <li>Exterior &amp; Interior Painting</li>
                 </ul>
-                <a href="painting.html">Explore painting →</a>
               </div>
             </article>
-            <article class="location-service-card">
-              <img src="/images/uploads/commercial-corridor-framing.png" alt="Commercial corridor renovation with partition walls and exposed ceiling ductwork" loading="lazy" decoding="async">
-              <div>
-                <span class="location-service-index">06</span>
-                <h3>Framing</h3>
-                <p>Framing for new partitions, ceilings and changes to existing layouts.</p>
-                <ul class="location-service-list">
+            <article class="service-tile" id="framing-service" aria-labelledby="framing-service-title">
+              <div class="service-tile-media"><img src="/images/uploads/commercial-corridor-framing.png" alt="Commercial corridor renovation with partition walls and exposed ceiling ductwork" loading="lazy" decoding="async"></div>
+              <div class="service-tile-body">
+                <span class="service-tile-icon" aria-hidden="true"><img src="framing.svg" alt="" width="58" height="58"></span>
+                <h3 class="service-tile-title" id="framing-service-title"><a class="service-tile-title-link" href="framing.html">Framing</a></h3>
+                <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="framing-service-list">
+                  <span data-service-toggle-label>View services</span>
+                  <span data-service-toggle-icon aria-hidden="true">+</span>
+                </button>
+                <p class="richmond-service-description">Framing for new partitions, ceilings and changes to existing layouts.</p>
+                <ul class="service-tile-list" id="framing-service-list">
                   <li>Steel stud framing</li>
                   <li>Wood framing</li>
                   <li>Finish carpentry</li>
                 </ul>
-                <a href="framing.html">Explore framing →</a>
               </div>
             </article>
-            <article class="location-service-card">
-              <img src="images/carpentry/moutcha-bay-railings.webp" alt="Timber walkway and wooden railings under construction at Moutcha Bay Resort" loading="lazy" decoding="async">
-              <div>
-                <span class="location-service-index">07</span>
-                <h3>Carpentry</h3>
-                <p>Woodwork for outdoor spaces and interior finishing projects.</p>
-                <ul class="location-service-list">
+            <article class="service-tile service-tile--carpentry" id="carpentry-service" aria-labelledby="carpentry-service-title">
+              <div class="service-tile-media"><img src="images/carpentry/moutcha-bay-railings.webp" alt="Timber walkway and wooden railings under construction at Moutcha Bay Resort" loading="lazy" decoding="async"></div>
+              <div class="service-tile-body">
+                <span class="service-tile-icon" aria-hidden="true"><img src="carpentry.svg" alt="" width="58" height="58"></span>
+                <h3 class="service-tile-title" id="carpentry-service-title"><a class="service-tile-title-link" href="carpentry.html">Carpentry</a></h3>
+                <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="carpentry-service-list">
+                  <span data-service-toggle-label>View services</span>
+                  <span data-service-toggle-icon aria-hidden="true">+</span>
+                </button>
+                <p class="richmond-service-description">Woodwork for outdoor spaces and interior finishing projects.</p>
+                <ul class="service-tile-list" id="carpentry-service-list">
                   <li>Decks &amp; walkways</li>
                   <li>Stairs &amp; railings</li>
                   <li>Wood repairs</li>
                   <li>Interior trim</li>
                   <li>Custom wood details</li>
                 </ul>
-                <a href="carpentry.html">Explore carpentry →</a>
               </div>
             </article>
-            <article class="location-service-card">
-              <img src="images/concrete/wall-drilling-small.webp" alt="Core drilling equipment mounted against a marked concrete wall" loading="lazy" decoding="async">
-              <div>
-                <span class="location-service-index">08</span>
-                <h3>Concrete Services</h3>
-                <p>Scanning and drilling for plumbing, electrical and mechanical openings in concrete.</p>
-                <ul class="location-service-list">
+            <article class="service-tile" id="concrete-scanning-core-drilling-service" aria-labelledby="concrete-scanning-core-drilling-service-title">
+              <div class="service-tile-media"><img src="images/concrete/wall-drilling-small.webp" alt="Core drilling equipment mounted against a marked concrete wall" loading="lazy" decoding="async"></div>
+              <div class="service-tile-body">
+                <span class="service-tile-icon service-tile-icon--outline" aria-hidden="true"><img src="images/icons/drill.svg" alt="" width="58" height="58"></span>
+                <h3 class="service-tile-title" id="concrete-scanning-core-drilling-service-title"><a class="service-tile-title-link" href="concrete-scanning-core-drilling.html">Concrete Services</a></h3>
+                <button class="service-tile-toggle" type="button" data-service-toggle aria-expanded="false" aria-controls="concrete-scanning-core-drilling-service-list">
+                  <span data-service-toggle-label>View services</span>
+                  <span data-service-toggle-icon aria-hidden="true">+</span>
+                </button>
+                <p class="richmond-service-description">Scanning and drilling for plumbing, electrical and mechanical openings in concrete.</p>
+                <ul class="service-tile-list" id="concrete-scanning-core-drilling-service-list">
                   <li>Concrete scanning</li>
                   <li>Surface marking</li>
                   <li>Core drilling</li>
                 </ul>
-                <a href="concrete-scanning-core-drilling.html">Explore concrete services →</a>
               </div>
             </article>
           </div>
@@ -567,6 +592,7 @@ src="https://www.facebook.com/tr?id=1789259645630228&amp;ev=PageView&amp;noscrip
 
 <script src="js/site-settings.js?v=20260927-decoration"></script>
   <script src="js/analytics.js?v=20261106-website-calls"></script>
+  <script src="js/service-cards.js?v=20261031-hover"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const burger = document.querySelector('.burger');
