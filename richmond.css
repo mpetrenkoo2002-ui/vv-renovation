@@ -306,6 +306,13 @@
   margin-top: 8px;
 }
 
+@media (max-width: 600px), (hover: none), (pointer: coarse) {
+  .location-services .service-tile[data-open="true"],
+  .location-services .service-tile:has(.service-tile-title-link:focus-visible) {
+    --service-panel-height: 330px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .richmond-service-description {
     transition: none;
