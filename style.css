@@ -5437,6 +5437,8 @@ a.project-testimonial-google-badge:hover {
 }
 
 .location-service-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(11, 42, 74, .1);
@@ -5445,10 +5447,13 @@ a.project-testimonial-google-badge:hover {
 }
 
 .location-service-card > img {
+  height: auto;
   aspect-ratio: 16 / 10;
 }
 
 .location-service-card > div {
+  display: flex;
+  flex-direction: column;
   padding: 24px;
 }
 
@@ -5467,7 +5472,16 @@ a.project-testimonial-google-badge:hover {
   line-height: 1.65;
 }
 
+.location-service-list {
+  margin: 0 0 18px;
+  padding-inline-start: 1.2em;
+  color: #526071;
+  line-height: 1.55;
+}
+
 .location-service-card a {
+  align-self: flex-start;
+  margin-top: auto;
   color: #c75f00;
   font-weight: 800;
   text-decoration: none;
