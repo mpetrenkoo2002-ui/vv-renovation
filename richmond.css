@@ -275,7 +275,7 @@
 
 .location-page .location-service-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
   border-top: 1px solid var(--richmond-line);
   border-left: 1px solid var(--richmond-line);
@@ -357,6 +357,59 @@
   text-decoration: underline;
   text-decoration-color: var(--richmond-orange);
   text-underline-offset: 6px;
+}
+
+.location-more-services-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  min-height: 44px;
+  margin: 24px auto 0;
+  padding: 10px 20px;
+  border: 1px solid var(--richmond-navy);
+  background: #fff;
+  color: var(--richmond-navy);
+  font-weight: 800;
+  list-style: none;
+  cursor: pointer;
+}
+
+.location-more-services-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.location-more-services-toggle::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.location-more-services-toggle:hover {
+  background: var(--richmond-navy);
+  color: #fff;
+}
+
+.location-more-services-toggle:focus-visible {
+  outline: 2px solid var(--richmond-navy);
+  outline-offset: 3px;
+}
+
+.location-more-services:not([open]) .location-more-services-hide,
+.location-more-services[open] .location-more-services-show {
+  display: none;
+}
+
+.location-more-services[open] > .location-more-services-toggle {
+  margin-bottom: 24px;
+}
+
+.location-more-services[open] > .location-more-services-toggle::after {
+  transform: rotate(225deg);
 }
 
 .location-page .location-planning {
