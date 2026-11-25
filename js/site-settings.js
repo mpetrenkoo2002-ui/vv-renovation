@@ -53,10 +53,10 @@ function initializeNavigationMenus() {
     { label: "Carpentry", url: "carpentry.html" }
   ]);
   renderProjectsMenu([
+    { label: "Moutcha Bay Resort — Carpentry", url: "moutcha-bay-resort.html" },
     { label: "Yoga Studio — Langley", url: "yoga-studio-langley.html" },
     { label: "Luxury Home — Jericho Beach", url: "jericho-beach.html" },
-    { label: "Interior Renovation — Whistler", url: "whistler-residential-renovation.html" },
-    { label: "Moutcha Bay Resort — Carpentry", url: "moutcha-bay-resort.html" }
+    { label: "Interior Renovation — Whistler", url: "whistler-residential-renovation.html" }
   ]);
 
   fetch("data/site-settings.json?v=20260927-decoration", { cache: "no-cache" })
